@@ -4,6 +4,8 @@
 https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%3A1
 
 
+
+
 # Objetivo del sitio: 
 Objetivo del sitio: eData-LOG permite capturar los datos públicos de los clientes que acceden al Wifi de tu local para generar una base de datos segmentada y hacer acciones de marketing productivas. 
 Nuestro servicio va dirigido a bares, restaurantes, shoppings y cualquier negocio que esté en permanente interacción con sus clientes.
