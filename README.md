@@ -8,6 +8,8 @@ El funcionamiento es muy sencillo. El cliente debe conectarse a la red Wi-Fi a t
 
 Poseer esta base de datos, que se irá haciendo mayor con el paso del tiempo, te abre la posibilidad, como estábamos comentando, de tener una comunicación directa con los clientes. Por ejemplo, se pueden realizar y programar mailings para todos ellos informando de nuevas promociones o platos de temporada, agradeciendo su paso por el establecimiento, o pidiendo valoraciones sobre sus experiencias en tu local. Incluso, se pueden diseñar acciones personalizadas para cada uno de ellos en días señalados como los cumpleaños. De todas estas acciones, además, se obtienen estadísticas de todas las campañas y se controlan los envíos para monitorizar los resultados.
 
+eData-LOG poseera un catalogo que ira variando segun quien contrate el servicio. el servicio no sera el mismo para una cafeteria que para una restaurant por ejemplo.
+
 # lista de referentes: 
 1-https://www.socialwibox.es/ (sugestión del producto)
 
