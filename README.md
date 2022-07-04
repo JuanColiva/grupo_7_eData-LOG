@@ -10,7 +10,7 @@ Poseer esta base de datos, que se irá haciendo mayor con el paso del tiempo, te
 
 eData-LOG poseera un catalogo que ira variando segun quien contrate el servicio. el servicio no sera el mismo para una cafeteria que para una restaurant por ejemplo.
 
-#Tematica del sitio: Venta de software.
+# Tematica del sitio: Venta de software.
 
 # Lista de referentes: 
 1-https://www.socialwibox.es/ (sugestión del producto)
