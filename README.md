@@ -8,7 +8,10 @@ El funcionamiento es muy sencillo. El cliente debe conectarse a la red Wi-Fi a t
 
 Poseer esta base de datos, que se irá haciendo mayor con el paso del tiempo, te abre la posibilidad, como estábamos comentando, de tener una comunicación directa con los clientes. Por ejemplo, se pueden realizar y programar mailings para todos ellos informando de nuevas promociones o platos de temporada, agradeciendo su paso por el establecimiento, o pidiendo valoraciones sobre sus experiencias en tu local. Incluso, se pueden diseñar acciones personalizadas para cada uno de ellos en días señalados como los cumpleaños. De todas estas acciones, además, se obtienen estadísticas de todas las campañas y se controlan los envíos para monitorizar los resultados.
 
-eData-LOG poseera un catalogo que ira variando segun quien contrate el servicio. el servicio no sera el mismo para una cafeteria que para una restaurant por ejemplo.
+eData-LOG poseera un catalogo que irá variando según quien contrate el servicio. El servicio no será el mismo para una cafeteria que para una restaurant por ejemplo.
+
+Nuestros programas ofrecen el adicional de las tecnologías  más avanzadas del mercado contra los ciberataques (Antivirus integrado al programa como opción de contrato mensual). Inmunidad contra: 
+Ataque DDos; Páginas maliciosas; Protección de IoT; Protección de los puertos del enrutador; Virus, etc;
 
 # Tematica del sitio: 
 1- Venta de software.
@@ -18,10 +21,6 @@ eData-LOG poseera un catalogo que ira variando segun quien contrate el servicio.
 
 
 3- Catalogo de opciones: el plan se adaptara al negocio, es decir que nuestro servicio variara segun la dimencion del local (cantidad de gente que concurra y espacio fisico del que disponen). contaremos de tres planes: 1- Plan Basico ELOG: pequeños y medianos negocios. 2- Plan premium: puede ser contratado por una misma persona que posea muchos negocios. 3- Plan Multiespacio: lugares grandes y que sean concurridos por un gran flujo de gente (por ejemplo: shoppings, aeropuertos).
-
-
-Nuestros programas ofrecen el adicional de las tecnologías  más avanzadas del mercado contra los ciberataques (Antivirus integrado al programa como opción de contrato mensual). Inmunidad contra: 
-Ataque DDos; Páginas maliciosas; Protección de IoT; Protección de los puertos del enrutador; Virus, etc;
 
 
 # Lista de referentes: 
