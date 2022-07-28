@@ -1,0 +1,35 @@
+.login-form {
+    text-align: center;
+    display: block;
+    background-color: #ebebeb;
+    border-bottom: 10px white solid;
+}
+
+.login-form {
+    padding: 20px 15px;
+}
+
+form div {
+    margin-bottom: 8px;
+}
+
+form div label {
+    display: block;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.control {
+    width: 85%;
+    padding: 8px;
+    border: black solid 1px;
+}
+
+.botton-form {
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+}

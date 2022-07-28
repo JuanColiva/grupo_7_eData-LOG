@@ -1,0 +1,68 @@
+/*
+section h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #4B4B4B;
+    background-color: #D0D3D4;
+}
+
+article img {
+    border-bottom: #717D7E 1px solid;
+}
+
+section {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    background-color: #ebebeb;
+}
+
+section article div {
+    text-align: right;
+    font-size: 21px;
+    color: #39b54a;
+}
+
+h3 {
+    font-size: 16px;
+    color: #424949;
+    text-align: left;
+}
+
+h4.green {
+    color: #39b54a;
+    font-size: 16px;
+}
+
+h4.precio {
+    font-size: 18px;
+    color: #424949;
+}
+
+section h4 {
+    text-align: left;
+}
+
+form {
+    display: none;
+}
+
+section.class {
+    border-left: 15px #717D7E solid;
+    border-right: 15px #717D7E solid;
+    border-top: 15px #717D7E solid;
+}
+
+section article {
+    border-bottom: 10px #717D7E solid;
+}
+*/
+
+.product {
+    border: 5px solid #ebebeb;
+    padding: 0 15px;
+}
+
+.product image {
+    width: 100%;
+}

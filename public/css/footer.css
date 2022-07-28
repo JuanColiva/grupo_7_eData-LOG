@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+footer i {
+    font-size: 32px;
+    line-height: 10px;
+    color: #1259c3;
+}
+
+footer p {
+    font-size: 16px;
+    color: #717D7E;
+}
+
+footer h4 {
+    text-align: center;
+    font-size: 16px;
+    color: #424949;
+}
