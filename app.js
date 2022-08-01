@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "/register"));
+app.get("/login", (req, res) => {
+    let file = path.join(__dirname, "views", "login.html")
+    res.sendFile(file);
 });

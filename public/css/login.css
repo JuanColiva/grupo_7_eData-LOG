@@ -1,35 +1,154 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto";
+    }
 .login-form {
-    text-align: center;
     display: block;
     background-color: #ebebeb;
     border-bottom: 10px white solid;
+    text-align: start;
+    font-size: 18px;
 }
-
+.login-form h2 {
+    text-align: start;
+    margin: 10px 0px 15px 0px;
+}
 .login-form {
     padding: 20px 15px;
 }
-
-form div {
-    margin-bottom: 8px;
+.barra-login {
+    display: list-item;
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: start;
 }
-
-form div label {
-    display: block;
-    padding: 5px;
-    font-weight: bolder;
+.recordarme-aqui {
+    display: inline;
 }
-
-.control {
-    width: 85%;
-    padding: 8px;
-    border: black solid 1px;
+.caja{
+    display:inline;
 }
-
+.contraseña-olvidada{
+    display:block;
+    margin: 10px 0px 20px 0;
+}
 .botton-form {
+    display: block;
     background-color: #39b54a;
     border: none;
     border-radius: 8px;
     font-size: 20px;
     color: white;
     padding: 5px 10px;
+    margin:auto;
+}
+.botton-form:hover {
+    background-color: #013220;
+}
+.login-box{
+    margin-bottom: 50px;
+}
+.texto-bienvenida{
+    margin: 10px 0px 20px 0px;
+}
+.comentrios-login{
+    display: block;
+    width: 60%;
+    height: 10rem;
+    text-align: start;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px){
+    .barra-login {
+        display: list-item;
+        width: 70%;
+        padding: 10px;
+        margin: 10px 0 20px 15%;
+        text-align: center;
+    }
+    .recordarme-aqui{
+        display: inline-block;
+        margin:0;
+        margin-left: 20%;;
+    }
+    .contraseña-olvidada{
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        margin: 10px 0 40px 0;
+    }
+    .comentrios-login{
+        display: block;
+        width: 60%;
+        height: 200px;
+        margin: 5% 0px 15px 20%;
+    }
+}
+@media (min-width: 1200px){
+    .login-form{
+        display: block;
+        max-width: 90%;
+        margin:auto;
+    }
+    .login-form h2 {
+        margin: 0px 0px 15px 30px;
+    }
+    .login-box{
+        display: inline-block;
+        width: 49%;
+        border-right: #666 solid 1px;
+        text-align: center;
+    }
+    .comentary-box{
+        text-align: start;
+        display: inline-block;
+        width: 49%;
+        margin-left: 15px;
+    }
+    .barra-login {
+        display: list-item;
+        width: 70%;
+        padding: 10px;
+        margin: 30px 0px 20px 30px; 
+    }
+    .recordarme-aqui{
+        display: inline-block;
+        margin:0;
+        text-align: left;
+    }
+    .contraseña-olvidada{
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .comentary-box h2 {
+        margin: auto;
+        text-align: center;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        max-width: 50%;
+        margin: auto;
+    }
+    .comentrios-login{
+        margin: auto;
+        width: 65%;
+        height: 200px;
+        text-align: start;
+    }
+    .botton-form {
+        display: block;
+        background-color: #39b54a;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        float: left;
+        margin:15px 0px 15px 230px;
+    }
 }
