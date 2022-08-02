@@ -4,7 +4,7 @@
 https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%3A1
 
 # Tablero de trabajo:
-https://trello.com/invite/b/bWGR93HT/2c28d3e89b49fe4294e79173ae8618d9/kanban-template
+https://trello.com/invite/b/bWGR93HT/2c28d3e89b49fe4294e79173ae8618d9/edata-logs-workboard
 
 # Objetivo del sitio: 
 Objetivo del sitio: eData-LOG permite capturar los datos públicos de los clientes que acceden al Wifi de tu local para generar una base de datos segmentada y hacer acciones de marketing productivas. 
