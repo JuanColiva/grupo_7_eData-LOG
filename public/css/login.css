@@ -2,7 +2,6 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        font-family: "Roboto";
     }
 .login-form {
     display: block;
@@ -93,7 +92,7 @@
     .login-form{
         display: block;
         max-width: 90%;
-        margin:auto;
+        margin: 3% 5%;
     }
     .login-form h2 {
         margin: 0px 0px 15px 30px;

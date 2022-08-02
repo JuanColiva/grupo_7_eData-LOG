@@ -15,7 +15,6 @@ body {
 
 @media (min-width: 360px) and (max-width: 768px) {
     .main-header {
-        position: fixed;
         top: 0;
         width: 100%;
     }
@@ -46,7 +45,6 @@ body {
 
 @media (min-width: 769px) {
     .main-header {
-        position: fixed;
         top: 0;
         width: 100%;
     }
@@ -90,7 +88,6 @@ body {
 
 @media (min-width: 1028px) {
     .main-header {
-        position: fixed;
         top: 0;
         width: 100%;
     }

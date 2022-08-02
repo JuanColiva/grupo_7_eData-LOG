@@ -1,338 +1,208 @@
-@media screen and (max-width:600px){
-    .banner{
+    .banner img {
         display: none;
     }
     .section3{
         color: #2a3354;
         text-align: center;
         margin-top: 0.5rem;
-      
     }
     .section3 img{
-width: 100%;
+        width: 100%;
     }
-    .section4{
-        color: #2a3354;
-        text-align: center;
-        margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-     margin: 1rem;
-     position: relative;
-     justify-content: space-evenly;
-     font-size: 0.5rem;
-     }
-     h3{
+    h3{
         color: #2a3354;
         text-align: center;
         padding-top: 0.5rem;
-        font-size: 0.5rem;
+        font-size: 1rem;
         display: block;
      }
-     .section4 i{
+    .main-nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+     }
+     .main-nav li{
+        text-decoration: none;
+        color: #2a3354;
+        display: list-item;
+        padding: 5px 0px;
+        font-size: 17px; 
+     }
+     .main-nav i{
         color: #2a3354;
         display: inline-block;
         flex-basis: 10%;
         padding: 0.3rem;
         font-size: 1rem;
      }
-     .section4 i:hover{
-    color: green;
+     .main-nav i:hover{
+        color: #39b54a;
      }
-     .section6{
+     .sobreImagen{
+        display: none;
+     }
+     .section4{
+        display: flex;
         color: #2a3354;
-        text-align: center;
         margin-top: 1rem;
+     }
+     .section4 img {
+        width: 49%;
+     }
+     .section4 h2 {
+        text-align: center;
+        font-size: 18px;
+        padding: 1rem;
+     }
+     .section4 div{
+        width: 49%;
+        font-size: 16px;
+        text-align: center;
+     }
+     .section5{
+        display: flex;
+        color: #2a3354;
+     }
+     .section5 img{
+        width: 49%;
+        order: 1
+     }
+     .section5 h2{
+        text-align: center;
+        font-size: 18px;
+        padding: 1rem;
+     }
+     .section5 div{
+        width: 49%;
+        font-size: 16px;
+        text-align: center;
+     }
+     .section6 h3{
+        font-size: 18px;
      }
      .section6 img{
         width: 100%;
      }
-    .section7{
-        color: #2a3354;
-        position: relative;
-    }
-    .section7 div{
-        position: absolute;
-        display: block ;
-        align-items: flex-end;
-        font-size: 0.5rem;
-        left: 13rem;
-        top: 2rem;
-        text-align: justify;
-    }
-    h2{
-        font-size: 0.6rem;
-    }
-    .section7 h2{
+     .section7 h2{
         position: absolute;
         display: block;
         align-items: flex-end;
         left: 15rem;
         top: -0.1rem;
     }
-     .section7 img{
-        width: 50%;
+@media (min-width:768px){
+    .main-nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
      }
-     .section8{
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-     }
-     .section8 img{
-        display: flex;
-        width: 50%;
-       align-items: flex-end;
-     }
-     .section9{
+     .main-nav li{
+        text-decoration: none;
         color: #2a3354;
-        position: relative;
+        display: inline-block;
+        font-size: 17px; 
      }
-    .section9 h2{
-    position: absolute;
-        text-align: left;
-        font-size: 0.5rem;
-        padding-right: 60%;
-        padding-left: 5%;
-        top: -7rem;
+     .main-nav i{
+        margin-right: 2rem;
+     }
+     .section4 img {
+        width: 49%;
+     }
+     .section4 h2 {
+        text-align: center;
+        font-size: 25x;
+     }
+     .section4 div{
+        width: 49%;
+        font-size: 20px;
+        text-align: center;
+     }
+     .section5 img {
+      width: 49%;
+   }
+   .section5 h2 {
+      text-align: center;
+      font-size: 25x;
+   }
+   .section5 div{
+      width: 49%;
+      font-size: 20px;
+      text-align: center;
+   }
+     h3{
+      color: #2a3354;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.7rem;
+     }
+}
+@media (min-width:1200px){
+     .banner img {
+        display: flex;
+        max-width: 100%;
     }
-    .section9 div{
+     .sobreImagen{
+        display: flex;
         position: absolute;
-        text-align: justify;
-        font-size: 0.5rem;
-        padding-right: 60%;
-        padding-left: 5%;
-        top: -5rem;
+        top: 60vw;
+        left: 8vw;
+        font-size: 40px;
+        color: #fff;
     }
-    .sobreImagen{
-    display: none;
-    
+     .section3 img{
+        width: 100%;
     }
-}
-
-
-
-
-@media screen and (min-width:1100px){
-.banner img{
-    width: 100vw;
-}
-.section3{
-    color: #2a3354;
-    text-align: center;
-    margin-top: 1rem;
-  
-}
-.section4{
-    color: #2a3354;
-    text-align: center;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
- margin: 4rem;
- position: relative;
- justify-content: space-evenly;
- font-size: 1rem;
- }
- h3{
-    color: #2a3354;
-    text-align: center;
-    padding-top: 3rem;
- }
- .section4 i{
-    color: #2a3354;
-    display: inline-block;
-    flex-basis: 10%;
-    padding: 2rem;
-    font-size: 3rem;
- }
- h3{
-    font-size: 1.7rem;
- }
- .section4 i:hover{
-color: green;
- }
- .section6{
-    color: #2a3354;
-    text-align: center;
-    margin-top: 1rem;
- }
- .section6 img{
-    width: 100%;
- }
-.section7{
-    color: #2a3354;
-    position: relative;
-}
-.section7 div{
-    position: absolute;
-    display: block;
-    align-items: flex-end;
-    left: 55rem;
-    top: 7rem;
-    font-size: 2rem;
-    padding-right: 2rem;
-    text-align: justify;
-}
-.section7 h2{
-    position: absolute;
-    display: block;
-    align-items: flex-end;
-    left: 55rem;
-    top: 2rem;
-    font-size: 3rem;
- 
-}
- .section7 img{
-    width: 50%;
- }
- .section8{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
- }
- .section8 img{
-    display: flex;
-    width: 50%;
-   align-items: flex-end;
- }
- .section9{
-    color: #2a3354;
-    position: relative;
- }
-.section9 h2{
-position: absolute;
-    text-align: left;
-    top: -30rem;
-    padding: 10px;
-    font-size: 2.3rem;
-    padding-right: 60%;
-    padding-left: 5%;
-}
-.section9 div{
-    position: absolute;
-    text-align: justify;
-    top: -19rem;
-    padding-right: 60%;
-    padding-left: 5%;
-    font-size: 1.8rem;
-}
-.sobreImagen{
-    position: absolute;
-    font-size: 1.5rem;
-    top: 49rem;
-    right: 3rem;
-    color: #ebebeb;
-    font-weight: bold;
-
-}
-}
-@media screen and (min-width:600px) and (max-width:1000px){
-    .banner img{
-      display: none;
-    }
-    .section3{
-        color: #2a3354;
-        text-align: center;
-        margin-top: 0.5rem;
-      
-    }
-    .section3 img{
-        width: 70%;
-    }
-    .section4{
-        color: #2a3354;
-        text-align: center;
-        margin-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-     margin: 2rem;
-     position: relative;
-     justify-content: space-evenly;
-     font-size: 0.7rem;
-     }
      h3{
         color: #2a3354;
         text-align: center;
         padding-top: 0.6rem;
-        font-size: 0.7rem;
-     }
-     .section4 i{
-        color: #2a3354;
-        display: inline-block;
-        flex-basis: 10%;
-        padding: 0.5rem;
         font-size: 1rem;
      }
-  
-     .section4 i:hover{
-    color: green;
-     }
-     .section6{
-        color: #2a3354;
+   .main-nav li{
+      text-decoration: none;
+      color: #2a3354;
+      display: inline-block;
+      font-size: 20px;
+      text-align: start;
+      margin-top: 2rem;
+      margin-bottom:2rem ;
+   }
+   .main-nav i{
+      margin-right: 9px;
+   }
+    .section4 img {
+        max-width: 60%;
+        margin-left: 7rem;
+    }
+     .section4 h2 {
+        font-size: 35px;
+    }
+     .section4 div{
+        width: 29%;
+        font-size: 30px;
         text-align: center;
-        margin-top: 1rem;
-     }
+    }
+    .section5 img{
+      max-width: 70%;
+      height: 65%;
+   }
+   .section5 h2{
+      font-size: 35px;
+   }
+   .section5 div{
+      width: 29%;
+      font-size: 30px;
+      margin-left: 7rem;
+      margin-right: 1rem;
+      text-align: center;
+   }
+   .section6{
+       color: #2a3354;
+       text-align: center;
+       margin-top: 1rem;
+    }
      .section6 img{
         width: 80%;
-     }
-    .section7{
-        color: #2a3354;
-        position: relative;
-    }
-    .section7 div{
-        position: absolute;
-        display: block;
-        align-items: flex-end;
-        left: 30rem;
-        top: 6rem;
-        font-size: 0.8rem;
-        padding-right: 1rem;
-        text-align: justify;
-    }
-    .section7 h2{
-        position: absolute;
-        display: block;
-        align-items: flex-end;
-        left: 30rem;
-        top: 2rem;
-        font-size: 1rem;
-     
-    }
-     .section7 img{
-        width: 50%;
-     }
-     .section8{
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-     }
-     .section8 img{
-        display: flex;
-        width: 50%;
-       align-items: flex-end;
-     }
-     .section9{
-        color: #2a3354;
-        position: relative;
-     }
-    .section9 h2{
-    position: absolute;
-        text-align: left;
-        top: -17rem;
-        padding: 10px;
-        font-size: 1rem;
-        padding-right: 60%;
-        padding-left: 5%;
-    }
-    .section9 div{
-        position: absolute;
-        text-align: justify;
-        top: -13rem;
-        padding-right: 60%;
-        padding-left: 5%;
-        font-size: 0.8rem;
-    }
-    .sobreImagen{
-  display: none;
     }
 }
