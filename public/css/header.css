@@ -6,7 +6,7 @@
 .top-bar{
     width: 100%;
 }
-.logo {
+ #logo img{
     max-width: 20%;
     margin: 2% 2%;
 }
@@ -24,14 +24,26 @@
     font-size: 15px;
     margin: 0 2% 2% 2%;    
 } 
-.nav-bar a {
+.lista a {
     color: #fff;
+    
 }
 @media (min-width: 768px){
     
 }
 @media (min-width: 1200px){
-    .logo{
-        margin: 5%
+    #logo img{
+        margin: 5%;
     }
+    header{
+        width: 100%;
+        background-color: #2a3354;
+    }
+    .lista a{
+        padding: 4rem;
+
+    }
+    
+
+
 }
