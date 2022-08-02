@@ -18,3 +18,8 @@ app.get("/login", (req, res) => {
     let file = path.join(__dirname, "views", "login.html")
     res.sendFile(file);
 });
+
+app.get("/productCar", (req, res) => {
+    let file = path.join(__dirname, "views", "productCar.html")
+    res.sendFile(file);
+});
