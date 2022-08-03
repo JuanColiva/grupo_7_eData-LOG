@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: row;
 }
+header{
+    width: 100%;
+    background-color: #2a3354;
+}
 .top-bar{
     width: 100%;
 }
