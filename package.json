@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/JuanColiva/grupo_7_eData-LOG/issues"
   },
-  "homepage": "https://github.com/JuanColiva/grupo_7_eData-LOG#readme"
+  "homepage": "https://github.com/JuanColiva/grupo_7_eData-LOG#readme",
+  "devDependencies": {}
 }

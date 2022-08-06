@@ -145,9 +145,9 @@
      .sobreImagen{
         display: flex;
         position: absolute;
-        top: 60vw;
+        top: 50vw;
         left: 8vw;
-        font-size: 40px;
+        font-size: 2rem;
         color: #fff;
     }
      .section3 img{

@@ -88,10 +88,10 @@
             flex-direction: row;
             align-self: flex-end;
             position: absolute;
-            right: 84%;
+            right: 90%;
         }
         .section13 a {
-            font-size: 1.2rem;
-            margin: 0 0 10% 2%;
+            font-size: 1.5rem;
+            margin: 10% 10% 15% 10%;
         }
     }
