@@ -1,0 +1,131 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+
+.contacto1{
+    background-color: rgb(196, 196, 196);
+}
+.contacto1 img {
+    max-width: 30%;
+    margin: 20px 0 5px 10px;
+}
+.contacto1 p{
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+    margin-left: 20px;
+    text-align: center;
+}
+.nav-contactos{
+    display: block;
+}
+.nav-contactos a {
+    display: list-item;
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+.contacto2 {
+    background-color: rgb(196, 196, 196);
+}
+.form-contactos{
+    display: list-item;
+}
+.barra-contacto{
+    width: 60%;
+    height: 40px;
+    margin: 15px 10px;
+}
+.comentarios-contacto{
+    width: 60%;
+    height: 80px;
+    margin: 10px 10px;
+    margin-right: 30%;
+}
+.caja-contactos{
+    display: inline;
+    width: 10%;
+}
+.terminos-contactos{
+    display: inline;
+    width: 60%;
+}
+.botton-contactos{
+    display: list-item;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    width: 50%;
+}
+.botton-contactos:hover {
+    background-color: #013220;
+}
+
+@media (min-width: 768px){
+    .contacto1 p{
+        display: block;
+        width: 60%;
+        position:absolute;
+        top: 40vw;
+        left: 30vw;
+        font-size: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .nav-contactos a {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px){
+    main{
+        display: flex;
+        flex-direction: row;
+        max-width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .contacto1{
+        display: flex;
+        flex-direction: column;
+        max-width: 49%;
+        
+    }
+    .contacto1 img {
+        max-width: 30%;
+        margin: 40px 0 5px 35px;
+        flex-direction: column;
+    }
+    .contacto1 p{
+        display: block;
+        width: 60%;
+        position:initial;
+        font-size: 20px;
+        flex-direction: column;
+        text-align: start;
+        margin-top: 10px;
+    }
+    .nav-contactos{
+        margin-top: 50px;
+    }
+    .nav-contactos a {
+        margin-top: 50px;
+    }
+    .contacto2{
+        width: 49%;
+        list-style: none;
+    }
+    .barra-contacto{
+        width: 60%;
+        height: 60px;
+        margin: 15px 50px;
+    }
+    .comentarios-contacto{
+        margin: 15px 30% 0 50px;
+    }
+}

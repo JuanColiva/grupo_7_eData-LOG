@@ -1,173 +1,97 @@
-footer picture img{
-    width: 30%;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    }
-    footer{
+    .main-footer{
+        display: flex;
+        justify-content: flex-start;
         background-color: #ebebeb;
-        display: flex;
-        position: relative;
-        height: 22rem;
-        display: flex;
-    
+    }
+    footer picture img{
+        max-width: 100%;
+        margin: 5% 5%;
+    }
+    footer picture{
+        max-width: 40%;
     }
     .section10{
-        margin-top: 2rem;
-        margin-left: 5rem;
-    
-    }
-    .section10 a{
-        margin: 3rem;
-        font-size: 1.2rem;
-        color: #2a3354
-    }
-    .footer2 a{
-    display: flex;
-    display: block;
-    margin: 14px;
-    margin-left: 45.8rem;
-    padding-left: 1rem;
-    color: #2a3354
-    
-        
-    }
-    .footer2{
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        top: 10rem;
-    }
-    
-    .footer3 a {
         display: flex;
-    display: block;
-    margin: 14px;
-    padding-left: 1rem;
-    margin-left: 69rem;
-    color: #2a3354
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 5%;
+        font-size: 18px;
     }
-    .footer3{
-            box-sizing: border-box;
-            display: block;
+    .section11{
+        display: none;
+    }
+    
+    .section12{
+        display: none;
+    }
+    .section13{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+        font-size: 25px;
+    }
+    @media (min-width:768px){
+        .section10{
+            flex-direction: row;
+            max-width: 60%;
             position: absolute;
-            top: 10rem;
+            left: 40%;
+            margin-top: 3rem;
+            font-size: 18px;
+        }
+        .section10 a{
+            margin-right: 1rem;
+        }
+        .section13{
+            flex-direction: row;
+            align-self: center;
+            justify-content: center;
+        }
+        .section13 a {
+            font-size: 4rem;
+            margin: 1.1rem 1rem 0 0;
+        }
     }
-    .footer4{
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        top: 14rem;
-        margin-left: 1.3rem;
-    }
-    
-    .footer4 a {
-        display: flex;
-    display: inline-block;
-    margin: 1rem;
-    font-size: 2.8rem;
-    color: #2a3354 ;
-    
-    }
-    
-    
-    @media screen and (max-width:600px){
-        footer picture img{
-            width: 30%;
-            margin-left: 3rem;
-            margin-top: 1rem;
-            }
-            footer{
-                background-color: #ebebeb;
-                display: flex;
-                position: relative;
-                height: 8rem;
-                display: flex;
-            
-            }
-            .section10{
-                margin-top: 1rem;
-                margin-left: 1rem;
-            
-            }
-            .section10 a{
-                margin: 0.5rem;
-                font-size: 0.6rem;
-                color: #2a3354
-            }
-            .footer2 a{
+    @media (min-width:1200px){
+        footer picture{
+            max-width: 10%;
+            margin: 1% 2% 5% 2%;
+        }
+        .section10{
+            flex-direction: row;
+            max-width: 60%;
+            position: absolute;
+            left: 13%;
+            margin-top: 0.5rem;
+            font-size: 20px;
+        }
+        .section11{
             display: flex;
-            display: block;
-            margin: 14px;
-            margin-left: 45.8rem;
-            padding-left: 1rem;
-            color: #2a3354
-            
-                
-            }
-            .footer2{
-                box-sizing: border-box;
-                display: block;
-                position: absolute;
-                top: 2rem;
-            }
-            
-            .footer3{
-              display: none;
-            }
-            .footer4 i{
-      font-size: 0.5rem;
-      position: absolute;
-      top: -8rem;
-            }
-    }
-    @media screen and (min-width:600px) and (max-width:1000px){
-        footer picture img{
-            width: 30%;
-            margin-left: 1.5rem;
-            margin-top: 1rem;
-            }
-            footer{
-                background-color: #ebebeb;
-                display: flex;
-                position: relative;
-                height: 14rem;
-                display: flex;
-            
-            }
-            .section10{
-                margin-top: 2rem;
-                margin-left: 3rem;
-            
-            }
-            .section10 a{
-                margin: 2rem;
-                font-size: 0.8rem;
-                color: #2a3354
-            }
-      
-            .footer2{
-           display: none;
-            }
-      
-            .footer3{
-              display: none;
-            }
-            .footer4{
-                box-sizing: border-box;
-                display: block;
-                position: absolute;
-                top: 7rem;
-                margin-left: 1rem;
-            }
-            
-            .footer4 a {
-                display: flex;
-            display: inline-block;
-            margin: 1rem;
-            font-size: 1rem;
-            color: #2a3354 ;
-            
-    }
-    
-    
+            flex-direction: column;
+            margin: 3rem 3rem 0 3rem;
+            font-size: 18px;
+        }
+        .section11 a{
+            margin-bottom: 8px;
+        }
+        .section12{
+            display: flex;
+            flex-direction: column;
+            margin: 3rem 0 0 5rem;
+            font-size: 18px;
+        }
+        .section12 a{
+            margin-bottom: 8px;
+        }
+        .section13{
+            flex-direction: row;
+            align-self: flex-end;
+            position: absolute;
+            right: 90%;
+        }
+        .section13 a {
+            font-size: 1.5rem;
+            margin: 10% 10% 15% 10%;
+        }
     }

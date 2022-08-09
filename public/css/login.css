@@ -1,22 +1,13 @@
-*{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: "Roboto";
-    }
-.login-form {
-    display: block;
-    background-color: #ebebeb;
-    border-bottom: 10px white solid;
-    text-align: start;
-    font-size: 18px;
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+
+.main-login{
+    margin-left: 20px;
 }
-.login-form h2 {
+.login-box h2 {
     text-align: start;
     margin: 10px 0px 15px 0px;
-}
-.login-form {
-    padding: 20px 15px;
 }
 .barra-login {
     display: list-item;
@@ -90,13 +81,16 @@
     }
 }
 @media (min-width: 1200px){
-    .login-form{
+    .main-login{
         display: block;
         max-width: 90%;
-        margin:auto;
+        background-color: rgb(196, 196, 196);
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    .login-form h2 {
-        margin: 0px 0px 15px 30px;
+    .login-box h2 {
+        margin: 0px 0px 0px 100px;
     }
     .login-box{
         display: inline-block;
@@ -108,14 +102,9 @@
         text-align: start;
         display: inline-block;
         width: 49%;
-        margin-left: 15px;
+        margin: 0 0 20px 15px;
     }
-    .barra-login {
-        display: list-item;
-        width: 70%;
-        padding: 10px;
-        margin: 30px 0px 20px 30px; 
-    }
+
     .recordarme-aqui{
         display: inline-block;
         margin:0;
@@ -127,6 +116,7 @@
     }
     .comentary-box h2 {
         margin: auto;
+        margin-top: 20px;
         text-align: center;
     }
     .texto-bienvenida{
@@ -136,8 +126,9 @@
     }
     .comentrios-login{
         margin: auto;
+        margin-bottom: 15px;
         width: 65%;
-        height: 200px;
+        height: 150px;
         text-align: start;
     }
     .botton-form {
@@ -148,7 +139,6 @@
         font-size: 20px;
         color: white;
         padding: 5px 10px;
-        float: left;
-        margin:15px 0px 15px 230px;
+        margin: auto;
     }
 }

@@ -14,7 +14,17 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
 
+app.get("/contacto", (req, res) => {
+    let file = path.join(__dirname, "views", "contacto.html")
+    res.sendFile(file);
+});
+
 app.get("/login", (req, res) => {
     let file = path.join(__dirname, "views", "login.html")
+    res.sendFile(file);
+});
+
+app.get("/productCar", (req, res) => {
+    let file = path.join(__dirname, "views", "productCar.html")
     res.sendFile(file);
 });
