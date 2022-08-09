@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
 
 .main-login{
     margin-left: 20px;
+=======
+
+.login-form {
+    display: block;
+    background-color: #ebebeb;
+    border-bottom: 10px white solid;
+    text-align: start;
+    font-size: 18px;
+>>>>>>> 4a42eac9fb39b9a1d26201a76ef3ab5f44729d08
 }
 .login-box h2 {
     text-align: start;
@@ -84,10 +94,14 @@
     .main-login{
         display: block;
         max-width: 90%;
+<<<<<<< HEAD
         background-color: rgb(196, 196, 196);
         margin: auto;
         margin-top: 30px;
         margin-bottom: 30px;
+=======
+        margin: 3% 5%;
+>>>>>>> 4a42eac9fb39b9a1d26201a76ef3ab5f44729d08
     }
     .login-box h2 {
         margin: 0px 0px 0px 100px;
