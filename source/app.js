@@ -28,3 +28,8 @@ app.get("/productCar", (req, res) => {
     let file = path.join(__dirname, "views", "productCar.html")
     res.sendFile(file);
 });
+
+app.get("/detalle", (req, res) => {
+    let file = path.join(__dirname, "views", "detalle.html")
+    res.sendFile(file);
+});
