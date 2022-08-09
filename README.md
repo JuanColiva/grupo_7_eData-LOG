@@ -1,5 +1,4 @@
 # grupo_7_eData-LOG
-HOLA
 
 # Wireframe:
 https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%3A1
