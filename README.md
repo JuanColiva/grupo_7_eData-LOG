@@ -27,7 +27,11 @@ Ataque DDos; Páginas maliciosas; Protección de IoT; Protección de los puertos
 2- Publico objetivo: bares, restaurantes, aeropuertos, cafeterias, tiendas y centros comerciales.
 
 
-3- Catalogo de opciones: el plan se adaptara al negocio, es decir que nuestro servicio variara segun la dimencion del local (cantidad de gente que concurra y espacio fisico del que disponen). contaremos de tres planes: 1- Plan Basico ELOG: pequeños y medianos negocios. 2- Plan premium: puede ser contratado por una misma persona que posea muchos negocios. 3- Plan Multiespacio: lugares grandes y que sean concurridos por un gran flujo de gente (por ejemplo: shoppings, aeropuertos).
+3- Catalogo de opciones: el plan se adaptara al negocio, es decir que nuestro servicio variara segun la dimencion del local (cantidad de gente que concurra y espacio fisico del que disponen).
+Contaremos de tres planes:
+   1- Plan Básico: pequeños y medianos negocios.
+   2- Plan Premium: puede ser contratado por una misma persona que posea muchos negocios.
+   3- Plan Multiespacio: lugares grandes y que sean concurridos por un gran flujo de gente (por ejemplo: shoppings, aeropuertos).
 
 
 # Lista de referentes: 
