@@ -15,20 +15,26 @@ app.get("/", (req, res) => {
 });
 
 app.get("/contacto", (req, res) => {
-    let file = path.join(__dirname, "views", "contacto.html")
+    let file = path.join(__dirname, "./views/contacto.html")
     res.sendFile(file);
 });
 
 app.get("/login", (req, res) => {
-    let file = path.join(__dirname, "views", "login.html")
+    let file = path.join(__dirname, "./views/login.html")
     res.sendFile(file);
 });
 
-app.get("/productCar", (req, res) => {
-    let file = path.join(__dirname, "views", "productCar.html")
+app.get("/carrito", (req, res) => {
+    let file = path.join(__dirname, "./views/carrito.html")
     res.sendFile(file);
 });
+
 app.get("/detalle", (req, res) => {
-    let file = path.join(__dirname, "views", "detalle.html")
+    let file = path.join(__dirname, "./views/detalle.html")
+    res.sendFile(file);
+});
+
+app.get("/precios", (req, res) => {
+    let file = path.join(__dirname, "./views/precios.html")
     res.sendFile(file);
 });
