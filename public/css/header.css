@@ -1,17 +1,17 @@
-
 header{
     width: 100%;
     background-color: #2a3354;
     position: relative;
- 
 }
- #logo img{
+
+#logo img{
     max-width: 40%;
 }
 
-.lista{
+.lista {
     display: none;
 }
+
 @media (min-width: 768px){
     
 }
