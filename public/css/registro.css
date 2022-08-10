@@ -1,3 +1,6 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
 
 .caja-padre{
     width: 50%;

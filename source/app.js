@@ -40,6 +40,6 @@ app.get("/precios", (req, res) => {
 });
 
 app.get("/registro", (req, res) => {
-    let file = path.join(__dirname, "./views/register.html")
+    let file = path.join(__dirname, "./views/registro.html")
     res.sendFile(file);
 });
