@@ -21,7 +21,9 @@ main{
     flex-basis: 40%;
     flex-direction: row;
 }
-
+.caja-general:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 .caja {
     display: flex;
     flex-direction: column;
