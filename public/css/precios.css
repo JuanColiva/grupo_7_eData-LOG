@@ -1,3 +1,152 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
+
+body{
+    background-color: rgb(196, 196, 196);
+}
+.titulo-precio{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.precios-box1{
+    display:block;
+    width: 80%;
+    border:solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+}
+.precios-box1 h2 {
+    font-size: 30px;
+    height: 3rem;
+    background-color: #3f4c7e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.precios-box1 h1 {
+    font-size: 40px;
+    height: 5rem;
+    background-color: #2a3354;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.precios-box1 p{
+    font-size: 25px;
+    height: 4rem;
+    color: rgb(36, 40, 53);
+    background-color: white;
+}
+.boton-precios {
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin:auto;
+}
+.boton-precios:hover {
+    background-color: #013220;
+}
+
+.precios-box2{
+    display:block;
+    width: 80%;
+    border:solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+}
+.precios-box2 h2 {
+    font-size: 30px;
+    height: 3rem;
+    background-color: #c74848;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.precios-box2 h1 {
+    font-size: 40px;
+    height: 5rem;
+    background-color: #921a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.precios-box2 p{
+    font-size: 25px;
+    height: 4rem;
+    color: rgb(36, 40, 53);
+    background-color: white;
+}
+.precios-box3{
+    display:block;
+    width: 80%;
+    border:solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.precios-box3 h2 {
+    font-size: 30px;
+    height: 3rem;
+    background-color: #3f4c7e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.precios-box3 h1 {
+    font-size: 40px;
+    height: 5rem;
+    background-color: #2a3354;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.precios-box3 p{
+    font-size: 25px;
+    height: 4rem;
+    color: rgb(36, 40, 53);
+    background-color: white;
+}
+@media (min-width: 768px){
+    .precios-box1{
+        max-width: 30%;
+        display: inline-block;
+        margin-left: 50px;
+    }
+    .precios-box2{
+        max-width: 30%;
+        display: inline-block;
+    }
+    .precios-box3{
+        max-width: 30%;
+        display: inline-block;
+    }
+    .precios-box1 h1 {
+        font-size: 33px;
+        padding: 5px;
+    }
+    .precios-box2 h1 {
+        font-size: 33px;
+        padding: 5px;
+    }
+    .precios-box3 h2 {
+        font-size: 25px;
+    }
+    .precios-box3 h1 {
+        font-size: 33px;
+        padding: 5px;
+    }
+}

@@ -8,13 +8,14 @@
 .contacto1 img {
     max-width: 30%;
     margin: 20px 0 5px 10px;
+    border-radius: 10px;
 }
-.contacto1 p{
-    display: inline-block;
+.contacto1 strong{
     width: 50%;
-    font-size: 18px;
+    font-size: 25px;
+    display: block;
     margin-left: 20px;
-    text-align: center;
+    color: #2a3354;
 }
 .nav-contactos{
     display: block;
@@ -22,7 +23,13 @@
 .nav-contactos a {
     display: list-item;
     list-style: none;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 10px;
+}
+.nav-contactos a:hover {
+    color: #39b54a;
+}
+.nav-contactos i {
+    margin-right: 5px;
 }
 .contacto2 {
     background-color: rgb(196, 196, 196);
@@ -66,16 +73,6 @@
 }
 
 @media (min-width: 768px){
-    .contacto1 p{
-        display: block;
-        width: 60%;
-        position:absolute;
-        top: 40vw;
-        left: 30vw;
-        font-size: 20px;
-        margin-left: 20px;
-        text-align: center;
-    }
     .nav-contactos a {
         margin: 20px 0 0 0;
         font-size: 20px;
@@ -84,41 +81,32 @@
 @media (min-width: 1200px){
     main{
         display: flex;
-        flex-direction: row;
-        max-width: 95%;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        width: 100%;
+        margin: auto
     }
     .contacto1{
-        display: flex;
-        flex-direction: column;
-        max-width: 49%;
-        
+        width: 50%; 
     }
     .contacto1 img {
         max-width: 30%;
         margin: 40px 0 5px 35px;
         flex-direction: column;
     }
-    .contacto1 p{
-        display: block;
-        width: 60%;
-        position:initial;
-        font-size: 20px;
-        flex-direction: column;
-        text-align: start;
-        margin-top: 10px;
+    .contacto1 strong{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 30px;
     }
     .nav-contactos{
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .nav-contactos a {
-        margin-top: 50px;
+        margin-bottom: 40px;
     }
     .contacto2{
-        width: 49%;
+        width: 50%;
         list-style: none;
+        
     }
     .barra-contacto{
         width: 60%;
@@ -126,6 +114,6 @@
         margin: 15px 50px;
     }
     .comentarios-contacto{
-        margin: 15px 30% 0 50px;
+        margin-left: 50px;
     }
 }
