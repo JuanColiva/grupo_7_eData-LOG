@@ -40,9 +40,10 @@ h3{
    padding: 0.3rem;
    font-size: 1rem;
 }
-.main-nav i:hover{
+.main-nav li:hover{
    color: #39b54a;
 }
+
 .sobreImagen{
    display: none;
 }
