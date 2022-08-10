@@ -38,3 +38,8 @@ app.get("/precios", (req, res) => {
     let file = path.join(__dirname, "./views/precios.html")
     res.sendFile(file);
 });
+
+app.get("/registro", (req, res) => {
+    let file = path.join(__dirname, "./views/register.html")
+    res.sendFile(file);
+});
