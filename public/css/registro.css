@@ -2,49 +2,77 @@
 @import url("footer.css");
 @import url("base.css");
 
-.caja-padre{
-    width: 50%;
-    height: 60%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(196, 196, 196);
-}
-.caja-padre button{
 
+.register-box form{
+    display: block;
+    list-style: none;
+    background-color: #ebebeb;
+    border: black 1px solid;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+.register-box h2 {
+    margin: 10px 5px;
+}
+.register-box h3 {
+    margin: 5px 5px;
+}
+.barra-register{
+    width: 80%;
+    height: 30px;
+    margin: 15px;
+    font-size: 20px;
+}
+.deacuerdo {
+    display: inline;
+    width: 60%;
+}
+#deacuerdo {
+    display: inline;
+}
+.botton-form {
     display: block;
     background-color: #39b54a;
     border: none;
-    border-radius: 4px;
-    font-size: 10px;
+    border-radius: 8px;
+    font-size: 20px;
     color: white;
-    padding: 2px 5px;
+    padding: 5px 10px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botton-form:hover {
+    background-color: #013220;
+}
+.register-box2{
+    display: block;
+    list-style: none;
+    background-color: #7861fc;
+    border: black 1px solid;
+    max-width: 90%;
     margin: auto;
-    }
+    margin-top: 15px;
+}
+.register-box2 p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
 
-.caja-padre li{
-    padding: 2%;
-}
-.caja-padre h1{
-    padding: 2%;
-}
-.caja-padre input{
-    width: 40%;
+@media (min-width: 768px){
+    .register-box form{
+        width: 45%;
+    }   
+    
+    .barra-register{
+        width: 70%;
+        margin: 15px 15%;
+    }
 }
 @media (min-width: 1200px){
-.caja-padre button{
-
-display: block;
-background-color: #39b54a;
-border: none;
-border-radius: 8px;
-font-size: 20px;
-color: white;
-padding: 5px 10px;
-margin: auto;
-}
-
-
+    .register-box form{
+        width: 35%;
+    }
 }

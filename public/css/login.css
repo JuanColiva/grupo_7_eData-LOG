@@ -20,7 +20,8 @@
 .barra-login {
     display: list-item;
     width: 70%;
-    padding: 15px;
+    font-size: 20px;
+    padding: 10px;
     margin-bottom: 20px;
     text-align: start;
 }
@@ -55,8 +56,9 @@
 }
 .comentrios-login{
     display: block;
-    width: 60%;
-    height: 10rem;
+    font-size: 25px;
+    width: 70%;
+    height: 9rem;
     text-align: start;
     margin-bottom: 10px;
 }

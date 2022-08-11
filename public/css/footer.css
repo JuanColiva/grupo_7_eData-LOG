@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-content: space-around;
         margin-left: 5%;
-        font-size: 18px;
+        font-size: 20px;
     }
     .section11{
         display: none;
@@ -38,7 +38,7 @@
             position: absolute;
             left: 40%;
             margin-top: 3rem;
-            font-size: 18px;
+            font-size: 20px;
         }
         .section10 a{
             margin-right: 1rem;
@@ -64,7 +64,7 @@
             position: absolute;
             left: 13%;
             margin-top: 0.5rem;
-            font-size: 20px;
+            font-size: 25px;
         }
         .section11{
             display: flex;

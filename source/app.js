@@ -1,45 +1,15 @@
 const express = require("express");
-const path = require("path");
-
 const app = express();
 
-const publicPath = path.resolve(__dirname, "../public");
-app.use(express.static(publicPath) );
+app.set("view engine", "ejs");
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Servidor corriendo en el puerto 3000");
-});
+const {port, start} = require("./modules/server")
+app.listen(port, start());
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/home.html"));
-});
+const {join} = require("path");
 
-app.get("/contacto", (req, res) => {
-    let file = path.join(__dirname, "./views/contacto.html")
-    res.sendFile(file);
-});
+const static = require("./modules/static");
+app.use(static(join(__dirname, "../public")));
 
-app.get("/login", (req, res) => {
-    let file = path.join(__dirname, "./views/login.html")
-    res.sendFile(file);
-});
 
-app.get("/carrito", (req, res) => {
-    let file = path.join(__dirname, "./views/carrito.html")
-    res.sendFile(file);
-});
-
-app.get("/detalle", (req, res) => {
-    let file = path.join(__dirname, "./views/detalle.html")
-    res.sendFile(file);
-});
-
-app.get("/precios", (req, res) => {
-    let file = path.join(__dirname, "./views/precios.html")
-    res.sendFile(file);
-});
-
-app.get("/registro", (req, res) => {
-    let file = path.join(__dirname, "./views/registro.html")
-    res.sendFile(file);
-});
+app.use(require("./routes/routes"));
