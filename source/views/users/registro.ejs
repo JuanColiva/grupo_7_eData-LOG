@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include("../products/head.ejs")  %>
+        <link rel="stylesheet" href="/css/registro.css">
+    </head>
+    <body>
+        <header>
+            <%- include ("../products/encabezado.ejs") %> 
+        </header>
+        <main>
+            <section class="register-box">
+                <form>
+                    <h2>Crea tu cuenta.</h2>
+                    <h3>Informacion de cuenta.</h3>
+                    <input type="text" placeholder="nombre"
+                    class="barra-register">
+                    <input type="text" placeholder="apellido"
+                    class="barra-register">
+                    <input type="email" placeholder="email"
+                    class="barra-register">
+                    <input type="email" placeholder="confirmar email"
+                    class="barra-register">
+                    <input type="password" placeholder="contraseña"
+                    class="barra-register">
+                    <input type="password" placeholder="confirmar contraseña"
+                    class="barra-register">
+                    <label for="deacuerdo" class="estoy de acuerdo con los terminos y condiciones">recuerdame
+                    en este equipo</label>
+                    <input type="checkbox" id="deacuerdo">
+                    <button type="submit" class="botton-form">Enviar</button>
+                </form>
+            </section>
+            <section class="register-box2">
+                <p>¡Sea el primero en enterase de nuestras actualizaciones y ofertas!</p>
+                <input type="email" placeholder="Ingrese su email" class="barra-register">
+                <button type="submit" class="botton-form">Enviar</button>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <%- include ("../products/footer.ejs") %> 
+        </footer>
+    </body>
+</html>

@@ -1,7 +1,9 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
-
+body{
+    background-color: rgb(196, 196, 196);
+}
 main{
     position: relative;
     justify-items: center;
@@ -12,8 +14,7 @@ main{
     justify-content: center;
 }
 .caja-general {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+   margin: 1rem;
     height: auto;
     flex-wrap: wrap;
     align-items: flex-start;
