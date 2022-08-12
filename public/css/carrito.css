@@ -2,15 +2,23 @@
 @import url("footer.css");
 @import url("base.css");
 
-.login-box h2 {
+main {
     text-align: center;
-    margin: 10px 0px 15px 0px;
+}
+.login-box{
+    display: block;
+    max-width: 90%;
+    background-color: rgb(196, 196, 196);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 3% 5%;
 }
 .barra-login {
     display: list-item;
     width: 70%;
     padding: 15px;
-    margin-bottom: 20px;
+    margin: 10px 0 20px 15%;
     text-align: center;
 }
 .recordarme-aqui {
@@ -44,6 +52,15 @@
 }
 
 @media (min-width: 768px){
+    .login-box{
+        display: block;
+        max-width: 90%;
+        background-color: rgb(196, 196, 196);
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 3% 5%;
+    }
     .barra-login {
         display: list-item;
         width: 70%;
@@ -54,7 +71,7 @@
     .recordarme-aqui{
         display: inline-block;
         margin:0;
-        margin-left: 20%;;
+        text-align: left;
     }
     .contraseña-olvidada{
         display: inline-block;
@@ -77,12 +94,9 @@
         max-width: 90%;
         background-color: rgb(196, 196, 196);
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         margin: 3% 5%;
-    }
-    .login-box h2 {
-        margin: 0px 0px 0px 100px;
     }
 
     .comentary-box{
