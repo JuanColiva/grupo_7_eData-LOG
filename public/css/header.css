@@ -4,12 +4,15 @@ header{
     position: relative;
 }
 
-#logo img{
-    max-width: 40%;
+.logo{
+    width: 50%;
 }
 
 .lista {
     display: none;
+}
+.lista a {
+    height: 20px;
 }
 
 @media (min-width: 768px){

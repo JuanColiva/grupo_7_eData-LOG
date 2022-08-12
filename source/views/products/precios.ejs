@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <% include("../products/head.ejs")  %>
+        <% include("../partials/head.ejs")  %>
         <link rel="stylesheet" href="/css/precios.css">
     </head>
     <body>
         <header>
             <nav class="encabezado">
-                <%- include ("../products/encabezado.ejs") %> 
+                <picture id="logo"><a href="/"><img src="/images/Logo_eData-LOG-2.0.png" alt=""></a></picture>
+            <nav class="encabezado">
+                <section class="lista">
+                    <a href="/detalle">CATÁLOGO</a>
+                    <a href="/precios">PRECIOS <i class="fa-solid
+                    fa-hand-holding-dollar"></i></a>
+                    <a href="/contacto">CONTACTO <i class="fa-solid
+                    fa-inbox"></i> </a>
+                    <a href="/login">INGRESA <i class="fa-solid
+                    fa-right-to-bracket"></i></a>
+                    <a href="/registro">REGISTRATE <i class="fa-solid
+                    fa-address-card"></i></a>
+                    <a href="/">IDIOMA <i class="fa-solid fa-language"></i></a>
+                    <a href="/carrito"><i class="fa-solid
+                    fa-cart-shopping"></i></a>
+                </section>
+            </nav>  
         </header>
         <main>
             <h1 class="titulo-precio">¡Descubre nuestros precios!</h1>
@@ -59,7 +75,7 @@
             </section>
         </main>
         <footer class="main-footer">
-            <%- include ("../products/footer.ejs") %> 
+            <%- include ("../partials/footer.ejs") %> 
         </footer>
     </body>
 </html>

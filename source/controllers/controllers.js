@@ -13,15 +13,15 @@ const controller = {
         res.render(file);
     },
     carrito: (req, res) => {
-        let file = join(__dirname, "../views/users/carrito")
+        let file = join(__dirname, "../views/products/carrito")
         res.render(file);
     },
     detalle: (req, res) => {
-        let file = join(__dirname, "../views/users/detalle")
+        let file = join(__dirname, "../views/products/detalle")
         res.render(file);
     },
     precios: (req, res) => {
-        let file = join(__dirname, "../views/users/precios")
+        let file = join(__dirname, "../views/products/precios")
         res.render(file);
     },
     registro: (req, res) => {
