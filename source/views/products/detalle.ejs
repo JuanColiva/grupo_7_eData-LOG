@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/detalle.css">
+    </head>
+    <body>
+        <header>
+            <picture id="logo"><a href="/"><img src="/images/Logo_eData-LOG-2.0.png" alt=""></a></picture>
+            <nav class="encabezado">
+                <section class="lista">
+                    <a href="/detalle">CATÁLOGO</a>
+                    <a href="/precios">PRECIOS <i class="fa-solid
+                    fa-hand-holding-dollar"></i></a>
+                    <a href="/contacto">CONTACTO <i class="fa-solid
+                    fa-inbox"></i> </a>
+                    <a href="/login">INGRESA <i class="fa-solid
+                    fa-right-to-bracket"></i></a>
+                    <a href="/registro">REGISTRATE <i class="fa-solid
+                    fa-address-card"></i></a>
+                    <a href="/">IDIOMA <i class="fa-solid fa-language"></i></a>
+                    <a href="/carrito"><i class="fa-solid
+                    fa-cart-shopping"></i></a>
+                </section>
+            </nav>  
+        </header>
+        <main>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/airport.jpg" alt="">
+                <div class="caja">
+                    <h4 class="descripciones">Aeropuertos</h4>
+                    <p class="plan">Plan: Multizona</p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/GYM.webp" alt="">
+                <div class="caja">
+                    <h4 class="descripciones">Gimnasios y centros
+                    deportivos</h4>
+                    <p class="plan">Plan: Básico / Premium</p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/restaurante.webp" alt="">
+                <div class="caja">
+                    <h4 class="descripciones"> Restaurantes, cafeterias,
+                    bares y discotecas</h4>
+                    <p class="plan"> Plan: Básico / Premium</p>   
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/centros-comerciales.jpg"
+                alt="">
+                <div class="caja">
+                    <h4 class="descripciones">Tiendas de moda, retail y
+                    centros comerciales</h4>
+                    <p class="plan"> Plan: Multizona</p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/peluquerias.jpg" alt="">
+                <div class="caja">
+                    <h4 class="descripciones">  Peluquerías, barberías y
+                    centros de estetica </h4>
+                    <p class="plan">Plan: Básico / Premium </p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/hoteles.jpg" alt="">
+                <div class="caja">
+                    <h4 class="descripciones"> Hoteles  </h4>
+                    <p class="plan">Plan: Multizona </p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/eventos.jpg" alt="">
+                <div class="caja">
+                    <h4 class="descripciones">Eventos y conciertos</h4>
+                    <p class="plan"> Plan: Multizona</p>
+                </div>
+            </section>
+            <section class="caja-general">
+                <img class="imagenes" src="/images/centro-medico.jpg"
+                alt="">
+                <div class="caja">
+                    <h4 class="descripciones">Centros medicos y salas de
+                    espera</h4>
+                    <p class="plan"> Plan: Básico / Premium </p>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <%- include ("../partials/footer.ejs") %> 
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/precios.css">
+    </head>
+    <body>
+        <header>
+            <nav class="encabezado">
+                <picture id="logo"><a href="/"><img src="/images/Logo_eData-LOG-2.0.png" alt=""></a></picture>
+            <nav class="encabezado">
+                <section class="lista">
+                    <a href="/detalle">CATÁLOGO</a>
+                    <a href="/precios">PRECIOS <i class="fa-solid
+                    fa-hand-holding-dollar"></i></a>
+                    <a href="/contacto">CONTACTO <i class="fa-solid
+                    fa-inbox"></i> </a>
+                    <a href="/login">INGRESA <i class="fa-solid
+                    fa-right-to-bracket"></i></a>
+                    <a href="/registro">REGISTRATE <i class="fa-solid
+                    fa-address-card"></i></a>
+                    <a href="/">IDIOMA <i class="fa-solid fa-language"></i></a>
+                    <a href="/carrito"><i class="fa-solid
+                    fa-cart-shopping"></i></a>
+                </section>
+            </nav>  
+        </header>
+        <main>
+            <h1 class="titulo-precio">¡Descubre nuestros precios!</h1>
+            <section class="precios-box1">
+                <h2>Pack Básico</h2>
+                <h1>$42,90 AL MES</h1>
+                <p>Solución Integral Socialwibox</p>
+                <p>Router Configurado</p>
+                <p>Acceso A Panel De Control</p>
+                <p>APP Exclusiva Para Clientes</p>
+                <p>Mail Marketing</p>
+                <p>Supervisión Remota De La Instalación</p>
+                <p>Personalización Del Acceso</p>
+                <p>Atención Telefónica</p>
+                <p>Precio Router Inicial 30 €</p>
+                <p>Pago Semestral 257,40 €</p>
+                <button type="submit" class="boton-precios">COMPRAR</button>
+            </section>
+            <section class="precios-box2">
+                <h2>Pack Premium</h2>
+                <h1>$39,90 AL MES</h1>
+                <p>Solución Integral Socialwibox</p>
+                <p>Router Configurado</p>
+                <p>Acceso A Panel De Control</p>
+                <p>APP Exclusiva Para Clientes</p>
+                <p>Mail Marketing</p>
+                <p>Supervisión Remota De La Instalación</p>
+                <p>Personalización Del Acceso</p>
+                <p>Atención Telefónica</p>
+                <p>Router GRATIS</p>
+                <p>Ahorro Del 15% Aprox.</p>
+                <p>Pago Anual 478,80 €</p>
+                <button type="submit" class="boton-precios">COMPRAR</button>
+            </section>
+            <section class="precios-box3">
+                <h2>PACK MULTIZONA</h2>
+                <h1>A CALCULAR</h1>
+                <p>Cobertura Multizonal</p>
+                <p>Solución Integral Socialwibox</p>
+                <p>Router Configurado</p>
+                <p>Acceso A Panel De Control</p>
+                <p>APP Exclusiva Para Clientes</p>
+                <p>Mail Marketing</p>
+                <p>Supervisión Remota De La Instalación</p>
+                <p>Personalización Del Acceso</p>
+                <p>Atención Telefónica</p>
+                <p>Presupuesto Sin Compromiso</p>
+                <button type="submit" class="boton-precios">PEDIR RESUPUESTO</button>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <%- include ("../partials/footer.ejs") %> 
+        </footer>
+    </body>
+</html>
