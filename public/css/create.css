@@ -1,0 +1,63 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+
+.formularioPadre{
+    display: block;
+    list-style: none;
+    background-color: #ebebeb;
+    border: black 1px solid;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.formularioHijo{
+    width: 80%;
+    height: 40px;
+    margin: 2rem;
+    font-size: 15px;
+    border: none;
+}
+.formularioHijo2{
+    width: 80%;
+    height: 40px;
+    margin: 2rem;
+    font-size: 15px;
+    border: none;
+}
+.formularioHijo2 label{
+    margin: 0.5rem;
+}
+.formularioHijo input{
+    width: 70%;
+}
+
+.botton{
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.botton:hover {
+    background-color: #013220;
+}
+
+
+@media (min-width: 768px){
+    .formularioPadre{
+        width: 45%;
+    }   
+    
+}
+@media (min-width: 1200px){
+    .formularioPadre{
+        width: 35%;
+    }
+}

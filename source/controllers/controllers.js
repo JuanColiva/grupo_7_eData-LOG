@@ -27,6 +27,10 @@ const controller = {
     registro: (req, res) => {
         let file = join(__dirname, "../views/users/registro")
         res.render(file);
-    }
+    },
+    create: (req,res) =>{
+        let file = join(__dirname, "../views/users/create")
+        res.render(file);
+      },
 }
 module.exports = controller;

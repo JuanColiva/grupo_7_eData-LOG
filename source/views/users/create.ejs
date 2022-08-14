@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs')  %> 
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<header>
+    <%- include("../products/encabezado.ejs")  %> 
+</header>
+<body>
+    <main>
+    <nav>
+    </nav>
+    <form action="/productos/guardar" method="post">
+        <section class="formularioPadre">
+
+        <fieldset class="formularioHijo">
+            <legend>Nombre de producto</legend>
+            <input type="text" name="name" id="name">
+        </fieldset>
+
+        <fieldset class="formularioHijo">
+            <legend>Precio del producto</legend>
+            <input type="text" name="price" id="price">
+        </fieldset>
+        <fieldset class="formularioHijo2">
+            <legend>Plan del producto</legend>
+            <input type="radio" name="category" id="category-mult">
+            <label for="category-mult">Multiespacio</label>
+            <input type="radio" name="category" id="category-bas">
+            <label for="category-bas">Basico</label>
+            <input type="radio" name="category" id="category-pre" >
+            <label for="category-pre">Premium</label> 
+        </fieldset>
+
+
+        <button type="submit" class="botton">guardar</button>
+    </section>
+    </form>
+</main>
+
+    <footer>
+
+        <%- include("../products/footer.ejs")  %> 
+
+    </footer>
+</body>
+</html>
