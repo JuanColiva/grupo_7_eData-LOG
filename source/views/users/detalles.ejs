@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("./partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/detalles.css">
+    </head>
+    <body>
+        <header>
+            <%- include("./partials/header.ejs")  %>   
+        </header>
+        <main>
+<% if (product){ %>
+    <article>
+        <p> <%= product.name %> </p>
+        <span><%= product.plan %></span>
+        <span><%= product.descripcion %> </span>
+        <img  src="<%= product.imagen %>" width="100px">
+        <a href="/productos/editar/<%= product.id %>"></a>
+    </article>
+<% } else { %>
+    <h2>No se encontro el producto</h2>
+    <a href="/productos">vea nuestros productos aqui</a>
+<% } %>
+</main>
+<footer class="main-footer">
+    <%- include ("./partials/footer.ejs") %> 
+</footer>
+</body>
+</html>
+    

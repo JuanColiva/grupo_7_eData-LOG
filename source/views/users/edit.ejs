@@ -12,21 +12,22 @@
     <main>
     <nav>
     </nav>
-    <form action="/productos/guardar" method="post">
+    <form action="/productos/actualizar?m=PUT" method="post">
+        <input type="hidden" name="id"  value= "<%= products.name %>" >
         <section class="formularioPadre">
             <a href="/detalles">Volver</a>
 
         <fieldset class="formularioHijo">
             <legend>Nombre de producto</legend>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value= "<%= products.name %> " >
         </fieldset>
         <fieldset class="formularioHijo">
             <legend>Descripción del producto</legend>
-            <input type="text" name="Descripcion" id="Descripcion">
+            <input type="text" name="Descripcion" id="Descripcion" value="<%= products.descripcion %>" >
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>
-            <input type="radio" name="plan"id="plan-mult">
+            <input type="radio" name="plan"id="plan-mult" >
             <label for="category-mult">Multiespacio</label>
             <input type="radio" name="plan" id="plan-bas">
             <label for="category-bas">Basico</label>

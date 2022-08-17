@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/productos.css">
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header.ejs")  %>   
+        </header>
+        <main>
+            <% if (products.length > 0) { %>
+                <ul>
+                    <% products.forEach(element => { %>
+                        <%- include( "../partials/producto.ejs", {element:element})  %>
+                   <% }) %>
+                </ul>
+            <% } %> 
+
+            <nav>
+                <a href="/productos/nuevo">Nuevo</a>
+            </nav>
+        </main>
+        <footer class="main-footer">
+            <%- include ("../partials/footer.ejs") %> 
+        </footer>
+    </body>
+</html>

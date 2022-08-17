@@ -1,20 +1,64 @@
 [
-    {
-        "name": "Basico",
-        "price": 42,
-        "category": "Basic",
-        "sku":1
-    },
-    {
-        "name": "Priemium",
-        "price": 59,
-        "category": "Premium",
-        "sku":2
-    },
-    {
-        "name": "Multiespacio",
-        "price": 70,
-        "category": "Multiespacio",
-        "sku":3
-    }
+  {
+    "name": "aeropuertos",
+    "plan": "multizonal",
+    "imagen": "/images/airport.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 1
+  },
+  {
+    "name": "Gimnasios y centros deportivos",
+    "plan": "Basico/premium",
+    "imagen": "/images/gimnasio.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 2
+  },
+  {
+    "name": "Restaurantes, cafeterias, bares y discotecas",
+    "plan": "Basico/premium",
+    "imagen": "/images/restaurante.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 3
+  },
+  {
+    "name": "Tiendas de moda, retail y centros comerciales",
+    "plan": "multizonal",
+    "imagen": "/images/centros-comerciales.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 4
+  },
+  {
+    "name": "Peluquerías, barberías y centros de esteticas",
+    "plan": "Básico / Premium",
+    "imagen": "/images/peluquerias.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 5
+  },
+  {
+    "name": "Hoteles",
+    "plan": "multizonal",
+    "imagen": "/images/hoteles.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 6
+  },
+  {
+    "name": "Eventos y conciertos",
+    "plan": "multizonal",
+    "imagen": "/images/eventos.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 7
+  },
+  {
+    "name": "Centros medicos y salas de espera",
+    "plan": "Básico/premium",
+    "imagen": "/images/centro-medico.jpg",
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
+    "id": 8
+  },
+
+  {
+    "name": "hostels",
+    "plan": "on",
+    "id": 13
+  }
 ]

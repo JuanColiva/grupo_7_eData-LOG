@@ -1,20 +1,30 @@
 const {Router} = require("express")
 const route = Router();
-const {home, contacto, login, carrito, detalle, precios, registro, create} = require("../controllers/controllers")
+const controller = require("../controllers/controllers")
 
-route.get("/", home)
+route.get("/", controller.home)
 
-route.get("/contacto", contacto);
+route.get("/contacto", controller.contacto);
 
-route.get("/login", login); 
+route.get("/detalles", controller.detalle);
 
-route.get("/carrito", carrito);
+route.get("/login", controller.login); 
 
-route.get("/detalle", detalle);
+route.get("/carrito", controller.carrito);
 
-route.get("/precios", precios);
+route.get("/precios", controller.precios);
 
-route.get("/registro", registro);
+route.get("/registro", controller.registro);
 
-route.get('/productos/nuevo', create);
+route.get("/productos", controller.index);
+
+route.get("/productos/nuevo", controller.create);
+
+route.post("/productos/guardar", controller.save);
+
+route.get("/productos/editar/:producto", controller.edit);
+
+route.put("/productos/actualizar", controller.update)
+
+route.get("/productos/:detalles?/:producto", controller.show);
 module.exports = route;
