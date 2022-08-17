@@ -1,3 +1,77 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
+
+body{
+    background-color: #ebebeb;
+}
+.container-detalle{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+}
+.container-detalle h1{
+    margin: 10px 10px;
+}
+.container-detalle h2{
+    margin: 15px 10px;
+}
+.container-detalle span{
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.container-detalle img {
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 70%
+}
+.container-detalle a{
+    margin: auto;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px){
+    .container-detalle{
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+    .container-detalle h1{
+        margin: 10px;
+        font-size: 24px;
+        width: 40%;
+    }
+    .container-detalle h2{
+        margin: 15px 10px;
+        width: 40%;
+    }
+    .container-detalle span{
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        width: 45%;
+        text-align: center;
+    }
+    .container-detalle img {
+        align-self: flex-end;
+        order: 1;
+        margin: 0;
+        width: 280px;
+        position: absolute;
+        top: auto;
+        left: auto;
+    }
+    .container-detalle a{
+        margin: 10px;
+        font-size: 18px;
+        width: 30%;
+    }
+}
+@media (min-width: 1200px){ 
+}

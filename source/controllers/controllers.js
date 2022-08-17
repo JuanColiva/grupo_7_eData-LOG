@@ -44,9 +44,9 @@ const controller = {
         let product = one(req.params.producto);
 
         if(product){
-        return res.render("detalles", {product})
+        return res.render("./products/detalles", {product})
     }
-        return res.render("detalles", {product:null})
+        return res.render("./products/detalles", {product:null})
 
     },
     create: (req, res) =>{

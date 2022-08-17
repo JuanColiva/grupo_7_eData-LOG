@@ -3,63 +3,59 @@
 @import url("base.css");
 body{
     background-color: rgb(196, 196, 196);
+    text-align: center;
+} 
+h1{
+    margin: 10px 0;
 }
-main{
-    position: relative;
-    justify-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: auto;
-    justify-content: center;
-}
-.caja-general {
-   margin: 1rem;
-    height: auto;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-basis: 40%;
-    flex-direction: row;
-}
-
-.caja {
-    display: flex;
-    flex-direction: column;
+li{
     background-color: white;
-    padding: 1rem;
-    width: auto;
-    height: auto;
+    width: 262px;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
-
-.caja-general img{
-    width: 100%;
-    height: auto;
+.container-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
 }
-
-@media (min-width:768px){
-    main{
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw 20vw;
+.container-productos h2{
+    margin: 10px 0;
+}
+.container-productos img{
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px){
+    li{
+        width:45%;
+        height:280px;
+        display: inline-block;
+        margin: 2%;
+        padding: 15px;
+        text-align: center;
     }
-}
- 
-@media (min-width:1200px){
-main{
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
-}
-.caja-general {
-   margin: 2.2rem;
-   background-color: #ebebeb;
-   flex-basis: 40%;
+    .container-productos h2{
+        text-align: center;
+        font-size: 19px;
+        padding-top: 0%;
+    }
+    .container-productos img{
+        width: 300px;
+        height: 150px;
+    }
     
 }
-.caja {
-   background-color: #ebebeb;
-   justify-content: flex-end;
-}
-.caja-general img{
-    width: 100%;
-    height: 60%;
-}
+@media (min-width: 1200px){
+    li{
+        width: 30%;
+        margin: 10px 10px;
+    }
+    .container-productos img{
+        width: 90%;
+    }
 }

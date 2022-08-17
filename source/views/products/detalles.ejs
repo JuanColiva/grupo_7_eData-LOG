@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <%- include("./partials/head.ejs")  %>
+        <%- include("../partials/head.ejs")  %>
         <link rel="stylesheet" href="/css/detalles.css">
     </head>
     <body>
         <header>
-            <%- include("./partials/header.ejs")  %>   
+            <%- include("../partials/header.ejs")  %>   
         </header>
         <main>
 <% if (product){ %>
-    <article>
-        <p> <%= product.name %> </p>
-        <span><%= product.plan %></span>
+    <article class="container-detalle">
+        <h1> <%= product.name %> </h1>
+        <h2><%= product.plan %></h2>
         <span><%= product.descripcion %> </span>
         <img  src="<%= product.imagen %>" width="100px">
-        <a href="/productos/editar/<%= product.id %>"></a>
+        <a href="/precios">COMPRAR</a>
     </article>
 <% } else { %>
     <h2>No se encontro el producto</h2>
@@ -23,7 +23,7 @@
 <% } %>
 </main>
 <footer class="main-footer">
-    <%- include ("./partials/footer.ejs") %> 
+    <%- include ("../partials/footer.ejs") %> 
 </footer>
 </body>
 </html>

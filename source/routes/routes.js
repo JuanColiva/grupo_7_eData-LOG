@@ -6,8 +6,6 @@ route.get("/", controller.home)
 
 route.get("/contacto", controller.contacto);
 
-route.get("/detalles", controller.detalle);
-
 route.get("/login", controller.login); 
 
 route.get("/carrito", controller.carrito);
@@ -26,5 +24,7 @@ route.get("/productos/editar/:producto", controller.edit);
 
 route.put("/productos/actualizar", controller.update)
 
-route.get("/productos/:detalles?/:producto", controller.show);
+route.get("/productos", controller.index);
+
+route.get("/productos/:producto", controller.show);
 module.exports = route;

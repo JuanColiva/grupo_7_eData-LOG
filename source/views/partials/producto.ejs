@@ -1,6 +1,7 @@
 <li>
-    <a href="/productos/detalles/<%= element.id %>">
-    <p> <%= element.name %> </p>
-    <img  src="<%= element.imagen %>" width="100px">
-    </a>
+    <div class="container-productos">
+        <h2> <%= element.name %> </h2>
+        <img src="<%= element.imagen %>">
+        <a href="/productos/<%= element.id %>">Ver mas</a>
+    </div>
 </li>
