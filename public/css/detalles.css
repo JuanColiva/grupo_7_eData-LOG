@@ -37,6 +37,10 @@ body{
     margin: auto;
     margin-bottom: 10px;
 }
+
+.eliminar{
+    margin: 0.5rem;
+}
 @media (min-width: 768px){
     .container-detalle{
         max-width: 90%;

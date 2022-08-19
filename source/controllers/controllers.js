@@ -58,13 +58,13 @@ const controller = {
         let todos = all();
         todos.push(nuevo)
         write(todos)
-        return res.redirect ("/detalles")
+        return res.redirect ("/productos")
       },
       edit: (req, res) =>{
         let product = one(req.params.producto)
-
-
-        return res.render ("edit")
+        return res.render ("../views/users/edit.ejs",{
+            product
+        })
       },
       update:(req,res)=>{
         let todos = all();
@@ -80,6 +80,13 @@ const controller = {
         write(actualizados)
 
         return res.redirect("/productos")
+      },
+      remove: (req,res)=>{
+        let todos = all();
+        let noEliminados = todos.filter(elemento => elemento.id != req.body.id)
+        write(noEliminados)
+        return res.redirect("/productos")
+
       }
 }
 module.exports = controller;

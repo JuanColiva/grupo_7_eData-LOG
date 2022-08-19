@@ -13,17 +13,17 @@
     <nav>
     </nav>
     <form action="/productos/actualizar?m=PUT" method="post">
-        <input type="hidden" name="id"  value= "<%= products.name %>" >
+        <input type="hidden" name="id" value="<%= product.sku %>" >
         <section class="formularioPadre">
-            <a href="/detalles">Volver</a>
+            <a href="/productos" class="vuelta">Volver</a>
 
         <fieldset class="formularioHijo">
             <legend>Nombre de producto</legend>
-            <input type="text" name="name" id="name" value= "<%= products.name %> " >
+            <input type="text" name="name" id="name" value="<%= product.name %>" >
         </fieldset>
         <fieldset class="formularioHijo">
             <legend>Descripción del producto</legend>
-            <input type="text" name="Descripcion" id="Descripcion" value="<%= products.descripcion %>" >
+            <input type="text" name="Descripcion" id="Descripcion" value="<%= product.descripcion %>"  >
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>
@@ -41,7 +41,7 @@
         </fieldset>
 
 
-        <button type="submit" class="botton">guardar</button>
+        <button type="submit" class="botton">Guardar</button>
     </section>
     </form>
 </main>

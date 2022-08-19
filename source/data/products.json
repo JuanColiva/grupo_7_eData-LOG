@@ -54,11 +54,5 @@
     "imagen": "/images/centro-medico.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 8
-  },
-
-  {
-    "name": "hostels",
-    "plan": "on",
-    "id": 13
   }
 ]

@@ -14,7 +14,7 @@
     </nav>
     <form action="/productos/guardar" method="post">
         <section class="formularioPadre">
-            <a href="/detalles">Volver</a>
+            <a href="/productos" class="vuelta">Volver</a>
 
         <fieldset class="formularioHijo">
             <legend>Nombre de producto</legend>
@@ -33,9 +33,8 @@
             <input type="radio" name="plan" id="plan-pre" >
             <label for="category-pre">Premium</label> 
         </fieldset>
-
-        <fieldset>
-            <legend>Archivos</legend>
+        <legend class="archivos">Archivos</legend>
+        <fieldset class="subirImagen">
             <input type="file" name="imagen">
         </fieldset>
 

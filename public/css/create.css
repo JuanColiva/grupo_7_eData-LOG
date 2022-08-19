@@ -23,8 +23,8 @@
 .formularioHijo2{
     width: 80%;
     height: 40px;
-    margin: 2rem;
-    font-size: 15px;
+    margin: 6% ;
+    font-size: 10px;
     border: none;
 }
 .formularioHijo2 label{
@@ -50,11 +50,35 @@
     background-color: #013220;
 }
 
+.subirImagen{
+    border:none;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+ .archivos{
+    margin-left: 1.9rem;
+    margin-bottom: 1rem;
+}
+.vuelta{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
 
 @media (min-width: 768px){
     .formularioPadre{
         width: 45%;
-    }   
+    } 
+    .formularioHijo2{
+        font-size: 14px;
+    }  
+    .vuelta{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+    }
     
 }
 @media (min-width: 1200px){
@@ -62,5 +86,13 @@
         width: 35%;
         margin-top: 4rem;
         margin-bottom: 4rem;
+    }
+    .formularioHijo2{
+        font-size: 15px;
+    }  
+    .vuelta{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
     }
 }

@@ -15,7 +15,11 @@
         <h2><%= product.plan %></h2>
         <span><%= product.descripcion %> </span>
         <img  src="<%= product.imagen %>" width="100px">
-        <a href="/precios">COMPRAR</a>
+        <a href="/precios">COMPRAR</a>    <a href="/productos/editar/<%= product.id %>">EDITAR</a>
+        <form action="/productos/borrar?m=DELETE" method="post">
+            <input type="hidden" name="id" value="<%= product.id %>">
+            <button type="submit" class="eliminar">Borrar</button>
+        </form>
     </article>
 <% } else { %>
     <h2>No se encontro el producto</h2>

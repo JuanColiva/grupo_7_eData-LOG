@@ -20,11 +20,11 @@ route.get("/productos/nuevo", controller.create);
 
 route.post("/productos/guardar", controller.save);
 
+route.get("/productos/:producto", controller.show);
+
 route.get("/productos/editar/:producto", controller.edit);
 
 route.put("/productos/actualizar", controller.update)
 
-route.get("/productos", controller.index);
-
-route.get("/productos/:producto", controller.show);
+route.delete("/productos/borrar", controller.remove)
 module.exports = route;
