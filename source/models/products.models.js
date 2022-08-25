@@ -19,6 +19,7 @@ let model = {
         product.descripcion = data.descripcion
         product.plan = data.plan
         product.id = last.id + 1
+        product.image = data.image
         return product;
     }, 
     write: function(data){

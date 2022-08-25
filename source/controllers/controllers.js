@@ -73,6 +73,7 @@ const controller = {
                 elemento.name = req.body.name;
                 elemento.plan = req.body.plan;
                 elemento.descripcion = req.body.descripcion;
+                elemento.image = req.files && req.files.length > 0 ? req.files[0].filename : elemento.image
             }
             return elemento
         
