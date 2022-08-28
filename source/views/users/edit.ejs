@@ -12,8 +12,8 @@
     <main>
     <nav>
     </nav>
-    <form action="/productos/actualizar?m=PUT" method="post">
-        <input type="hidden" name="id" value="<%= product.sku %>" >
+    <form action="/productos/actualizar?m=PUT" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<%= product.id %>" >
         <section class="formularioPadre">
             <a href="/productos" class="vuelta">Volver</a>
 
@@ -27,11 +27,11 @@
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>
-            <input type="radio" name="plan"id="plan-mult" >
+            <input type="radio" name="plan"id="plan-mult"  value="Multiespacio" <%= product.plan == "Multiespacio" ? "checked" : "" %>>
             <label for="category-mult">Multiespacio</label>
-            <input type="radio" name="plan" id="plan-bas">
+            <input type="radio" name="plan" id="plan-bas"  value="Basico" <%= product.plan == "Basico" ? "checked" : "" %>>
             <label for="category-bas">Basico</label>
-            <input type="radio" name="plan" id="plan-pre" >
+            <input type="radio" name="plan" id="plan-pre"  value="Premium" <%= product.plan == "Premium" ? "checked" : "" %>>
             <label for="category-pre">Premium</label> 
         </fieldset>
 

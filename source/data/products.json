@@ -21,11 +21,10 @@
     "id": 3
   },
   {
-    "name": "Tiendas de moda, retail y centros comerciales",
-    "plan": "multizonal",
+    "name": "Tiendas de moda, retail y centros comerciales ",
     "imagen": "/images/centros-comerciales.jpg",
-    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
-    "id": 4
+    "id": 4,
+    "plan": "Multiespacio"
   },
   {
     "name": "Peluquerías, barberías y centros de esteticas",

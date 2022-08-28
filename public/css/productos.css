@@ -30,6 +30,17 @@ li{
     border-radius: 15px;
     margin-bottom: 10px;
 }
+.nuevo{
+margin: 1rem auto 1rem auto;
+ font-size: 1.4rem;
+ border: none;
+ width: 15%;
+ background-color: snow;
+ border-radius: 8px;
+}
+.nuevo i{
+    font-size: 1rem;
+   }
 
 @media (min-width: 768px){
     li{
