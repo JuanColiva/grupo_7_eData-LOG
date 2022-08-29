@@ -15,7 +15,7 @@ const destination = function(req, file, cb){
 
 const filename = function(req, file, cb){
 
-    let name = file.fieldname + "-" + date.now() + extname(file.originalname);
+ let name = file.fieldname + "-" + Date.now() + extname(file.originalname);
 
 
     return cb (null, name)

@@ -1,10 +1,10 @@
 [
   {
-    "name": "aeropuertos",
-    "plan": "multizonal",
+    "name": "Aeropuertos",
     "imagen": "/images/airport.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
-    "id": 1
+    "id": 1,
+    "plan": "Multiespacio"
   },
   {
     "name": "Gimnasios y centros deportivos",
@@ -24,6 +24,7 @@
     "name": "Tiendas de moda, retail y centros comerciales ",
     "imagen": "/images/centros-comerciales.jpg",
     "id": 4,
+    "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "plan": "Multiespacio"
   },
   {
@@ -35,7 +36,7 @@
   },
   {
     "name": "Hoteles",
-    "plan": "multizonal",
+    "plan": "multiespacio",
     "imagen": "/images/hoteles.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 6

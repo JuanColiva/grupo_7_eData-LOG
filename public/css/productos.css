@@ -41,6 +41,9 @@ margin: 1rem auto 1rem auto;
 .nuevo i{
     font-size: 1rem;
    }
+   .nuevo:hover{
+    background-color: lightgrey;
+   }
 
 @media (min-width: 768px){
     li{
