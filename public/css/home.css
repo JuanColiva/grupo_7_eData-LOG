@@ -150,10 +150,11 @@ h3{
    .sobreImagen{
       display: flex;
       position: absolute;
-      top: 50vw;
+      top: 46vw;
       left: 8vw;
       font-size: 2rem;
       color: #fff;
+      
    }
    .section3 img{
       width: 100%;
