@@ -11,7 +11,7 @@ let model = {
         let all = model.all();
         return all.find(e => e.id == id)
     },
-    generate: function(data){
+    generate: data => {
         let all =  model.all();
         let last = all.pop()
         let product = {}
@@ -19,10 +19,10 @@ let model = {
         product.descripcion = data.descripcion
         product.plan = data.plan
         product.id = last.id + 1
-        product.imagen = data.imagen
+        product.imagen = "/products/"+data.imagen
         return product;
     }, 
-    write: function(data){
+    write: data=>{
         let file = resolve (__dirname, "../data/products.json");
         let json = JSON.stringify(data, null, 2);
         return fs.writeFileSync(file,json);
