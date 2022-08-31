@@ -10,8 +10,6 @@
         </header>
 <body>
     <main>
-    <nav>
-    </nav>
     <form action="/productos/guardar" method="post" enctype="multipart/form-data">
         <section class="formularioPadre">
             <a href="/productos" >Volver</a>
@@ -22,15 +20,15 @@
         </fieldset>
         <fieldset class="formularioHijo">
             <legend>Descripción del producto</legend>
-            <input type="text" name="Descripcion" id="Descripcion">
+            <input type="text" name="descripcion" id="Descripcion">
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>
-            <input type="radio" name="plan"id="plan-mult">
+            <input type="radio" name="plan"id="plan-mult" value="Multiespacio">
             <label for="category-mult">Multiespacio</label>
-            <input type="radio" name="plan" id="plan-bas">
+            <input type="radio" name="plan" id="plan-bas" value="Basico">
             <label for="category-bas">Basico</label>
-            <input type="radio" name="plan" id="plan-pre" >
+            <input type="radio" name="plan" id="plan-pre" value="Premium" >
             <label for="category-pre">Premium</label> 
         </fieldset>
         <legend class="archivos">Archivos</legend>

@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-const method = require("method-override")
 const {port, start} = require("./modules/server")
 app.listen(port, start());
+const methodOverride = require("method-override")
+
 
 const {join} = require("path");
 
@@ -15,6 +16,6 @@ app.use(static(join(__dirname, "../public")));
 
 app.use(express.urlencoded({extended:true}))
 
-app.use(method("m"))
+app.use(methodOverride("m"))
 
 app.use(require("./routes/routes.js"));
