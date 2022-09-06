@@ -1,6 +1,7 @@
 const {all, one, generate, write} = require("../models/products.models");
 const {unlinkSync} = require ("fs");
 const {join, resolve} = require ("path");
+
 const controller = {
     home: (req, res) => {
         let file = join(__dirname, "../views/users/home")

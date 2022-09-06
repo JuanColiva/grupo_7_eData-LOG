@@ -42,6 +42,7 @@ route.get("/productos/nuevo", controller.create);
 
 route.post("/productos/guardar", upload.any(), controller.save);
 
+
 route.get("/productos/:producto", controller.show);
 
 route.get("/productos/editar/:producto", controller.edit);

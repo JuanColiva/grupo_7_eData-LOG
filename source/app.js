@@ -17,5 +17,6 @@ app.use(static(join(__dirname, "../public")));
 app.use(express.urlencoded({extended:true}))
 
 app.use(methodOverride("m"))
-
+app.use (require ("./middlewares/style"))
 app.use(require("./routes/routes.js"));
+app.use('/users',require('./routes/users.routes'))

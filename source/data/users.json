@@ -1,8 +1,10 @@
 [
-    {
-       "usuario": "Juan Cruz Oliva",
-       "email": "juanchioliva1@gmail.com",
-       "contraseña":"123456",
-       "imagen": "avatar.jpg"
-    }
+  {
+    "nombre": "Juan Cruz",
+    "apellido": "Oliva",
+    "email": "juanchioliva1@gmail.com",
+    "password": "123456",
+    "avatar": null,
+    "id": 10
+  }
 ]

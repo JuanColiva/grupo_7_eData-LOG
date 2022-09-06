@@ -13,10 +13,12 @@
     margin-top: 15px;
 }
 .register-box h2 {
-    margin: 10px 5px;
+    margin: 17px;
+    margin-left: 34%;
 }
 .register-box h3 {
-    margin: 5px 5px;
+    margin: 15px;
+    margin-left: 32%;
 }
 .barra-register{
     width: 80%;
@@ -27,6 +29,7 @@
 .deacuerdo {
     display: inline;
     width: 60%;
+
 }
 #deacuerdo {
     display: inline;
@@ -45,6 +48,15 @@
 }
 .botton-form:hover {
     background-color: #013220;
+}
+.feedback{
+    flex: 0 0 100%;
+    padding: 0.5rem;
+    background-color: #ebebeb;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .register-box2{
     display: block;

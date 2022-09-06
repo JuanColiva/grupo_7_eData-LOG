@@ -9,21 +9,33 @@
             <%- include("../partials/header.ejs")  %> 
         </header>
         <main>
+           
             <section class="register-box">
-                <form>
+                <form action="/users/save" method="post" enctype="multipart/form-data">
+                
                     <h2>Crea tu cuenta.</h2>
                     <h3>Informacion de cuenta.</h3>
-                    <input type="text" placeholder="nombre"
+                    <input type="text" placeholder="nombre" name= "nombre" id="nombre"
                     class="barra-register">
-                    <input type="text" placeholder="apellido"
+                    <input type="text" name= "apellido" id="apellido" placeholder="apellido"
                     class="barra-register">
-                    <input type="email" placeholder="email"
+                    <input type="email" name= "email" id="email" placeholder="email"
+                    class="barra-register"                   value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %>">
+                    <% if (locals.errores && locals.errores.email) { %>
+                        <p class="feedback">
+                            <%= locals.errores.email.msg  %> 
+                        </p>
+                    <% } %>
+                    <input type="email"  placeholder="confirmar email"
                     class="barra-register">
-                    <input type="email" placeholder="confirmar email"
-                    class="barra-register">
-                    <input type="password" placeholder="contraseña"
-                    class="barra-register">
-                    <input type="password" placeholder="confirmar contraseña"
+                    <input type="password" name= "password" id="password" placeholder="contraseña"
+                    class="barra-register" value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
+                    <% if (locals.errores && locals.errores.password) { %>
+                        <p class="feedback">
+                            <%= locals.errores.password.msg  %> 
+                        </p>
+                    <% } %>
+                    <input type="password"  placeholder="confirmar contraseña"
                     class="barra-register">
                     <label for="deacuerdo" class="estoy de acuerdo con los terminos y condiciones">recuerdame
                     en este equipo</label>
