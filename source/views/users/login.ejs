@@ -11,11 +11,28 @@
         <main class="main-login">
             <section class="login-box">
                 <h2>Login</h2>
-                <form>
-                    <input type="text" placeholder="usuario o email"
-                    class="barra-login">
-                    <input type="password" placeholder="contraseña"
-                    class="barra-login">
+                <form action="/users/access" method="post">
+                    <input type="email" 
+                           placeholder="usuario o email"
+                           name="email"
+                           value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %>"
+                           class="barra-login"
+                           >
+                           <% if (locals.errores && locals.errores.email) { %>
+                            <p class="feedback">
+                                <%= locals.errores.email.msg  %> 
+                            </p>
+                            <% } %>
+                    <input type="password"
+                           placeholder="contraseña"
+                           name="password"
+                           value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>"
+                           class="barra-login">
+                           <% if (locals.errores && locals.errores.password) { %>
+                            <p class="feedback">
+                                <%= locals.errores.passwordmsg  %> 
+                            </p>
+                            <% } %>
                     <label for="recordarme" class="recordarme-aqui">recuerdame
                     en este equipo</label>
                     <input type="checkbox" id="recordarme" name="rememberMe"

@@ -19,8 +19,12 @@
                     class="barra-register">
                     <input type="text" name= "apellido" id="apellido" placeholder="apellido"
                     class="barra-register">
-                    <input type="email" name= "email" id="email" placeholder="email"
-                    class="barra-register"                   value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %>">
+                    <input type="email" 
+                           name= "email" 
+                           id="email" 
+                           placeholder="email"
+                           class="barra-register"
+                           value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %>">
                     <% if (locals.errores && locals.errores.email) { %>
                         <p class="feedback">
                             <%= locals.errores.email.msg  %> 
@@ -28,8 +32,12 @@
                     <% } %>
                     <input type="email"  placeholder="confirmar email"
                     class="barra-register">
-                    <input type="password" name= "password" id="password" placeholder="contraseña"
-                    class="barra-register" value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
+                    <input type="password" 
+                           name= "password" 
+                           id="password" 
+                           placeholder="contraseña"
+                           class="barra-register"
+                           value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
                     <% if (locals.errores && locals.errores.password) { %>
                         <p class="feedback">
                             <%= locals.errores.password.msg  %> 

@@ -32,4 +32,20 @@ module.exports = {
         write(all)
         return res.redirect('/users/login')
     },
+    access: (req, res) =>{
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render("../views/users/login", {
+                style: "login",
+                errores: errores,
+                data: req.body
+            })
+
+        }
+        res.cookie("../views/users/", req.body.email,{maxAge: 5000})
+        let all = index()
+        req.session.user = all.find(user => user.email == req.body.email)
+        return res.redirect("/")
+    }
 }
