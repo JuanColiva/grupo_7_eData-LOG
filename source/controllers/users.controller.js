@@ -26,10 +26,11 @@ module.exports = {
 
         let all = index();
         req.body.avatar = req.files && req.files[0] ? req.files[0].filename : null
-        req.body.id = all.length > 0 ? all.pop().id + 1 : 1
+        req.body.id = all.length > 0 ? all[all.length-1].id + 1 : 1
         let user = {...req.body};
         all.push(user)
         write(all)
         return res.redirect('/users/login')
+
     },
 }

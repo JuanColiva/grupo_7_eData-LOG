@@ -6,5 +6,29 @@
     "password": "123456",
     "avatar": null,
     "id": 10
+  },
+  {
+    "nombre": "Juan Cruz",
+    "apellido": "Oliva",
+    "email": "juanchioliva1@gmail.com",
+    "password": "789456",
+    "avatar": null,
+    "id": null
+  },
+  {
+    "nombre": "pedro",
+    "apellido": "lala",
+    "email": "juanchioliva1@gmail.com",
+    "password": "789456",
+    "avatar": null,
+    "id": null
+  },
+  {
+    "nombre": "pedro",
+    "apellido": "gonzalez",
+    "email": "juanchioliva1@gmail.com",
+    "password": "741852",
+    "avatar": null,
+    "id": 1
   }
 ]
