@@ -1,28 +1,5 @@
 [
-  {
-    "nombre": "Juan Cruz",
-    "apellido": "Oliva",
-    "email": "juanchioliva1@gmail.com",
-    "password": "123456",
-    "avatar": null,
-    "id": 10
-  },
-  {
-    "nombre": "Juan Cruz",
-    "apellido": "Oliva",
-    "email": "juanchioliva1@gmail.com",
-    "password": "789456",
-    "avatar": null,
-    "id": null
-  },
-  {
-    "nombre": "pedro",
-    "apellido": "lala",
-    "email": "juanchioliva1@gmail.com",
-    "password": "789456",
-    "avatar": null,
-    "id": null
-  },
+ 
   {
     "nombre": "pedro",
     "apellido": "gonzalez",
@@ -30,5 +7,13 @@
     "password": "741852",
     "avatar": null,
     "id": 1
+  },
+  {
+    "nombre": "juan",
+    "apellido": "perez",
+    "email": "juanchioliva@hotmail.com",
+    "password": "123456",
+    "avatar": null,
+    "id": 2
   }
 ]
