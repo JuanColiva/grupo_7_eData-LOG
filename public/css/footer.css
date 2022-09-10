@@ -1,21 +1,25 @@
-    .main-footer{
+    .contenedor{
         display: flex;
-        justify-content: flex-start;
         background-color: #ebebeb;
     }
-    footer picture img{
-        max-width: 100%;
-        margin: 5% 5%;
+    footer picture {
+        max-width: 30%;
+        margin: 4% 4%;
     }
-    footer picture{
-        max-width: 40%;
+    footer picture img {
+        max-width: 100%;
     }
     .section10{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        width: 150px;
+        margin-top: 60px;
         margin-left: 5%;
-        font-size: 20px;
+        font-size: 16px;
+        flex-direction: column
+        
+    }
+    .section10 a{
+        margin-bottom: 20px;
     }
     .section11{
         display: none;
@@ -25,52 +29,66 @@
         display: none;
     }
     .section13{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-left: 10%;
-        font-size: 25px;
+        margin-top: 60px;
+        font-size: 20px;
+        width: 30px;
+    }
+    .section13 a{
+        margin-bottom: 15px;
+        font-size: 1.5rem;
     }
     @media (min-width:768px){
+        footer picture {
+            max-width: 20%;
+            margin: 2% 2%;
+        }
+        footer picture img {
+            max-width: 100%;
+        }
         .section10{
+            width: 800px;
+            height: 40px;
             flex-direction: row;
-            max-width: 60%;
-            position: absolute;
-            left: 40%;
-            margin-top: 3rem;
-            font-size: 20px;
+            margin:0;
+            margin-top: 30px
         }
         .section10 a{
-            margin-right: 1rem;
+            margin:0;
+            margin-right: 15px;
+            font-size: 20px;
         }
         .section13{
-            flex-direction: row;
+            margin-left: 25vw;
+            width: 200px;
             align-self: center;
-            justify-content: center;
+            position: absolute;
         }
-        .section13 a {
-            font-size: 4rem;
-            margin: 1.1rem 1rem 0 0;
+        .section13 a{
+            margin:0;
+            margin-right: 15px;
         }
     }
     @media (min-width:1200px){
         footer picture{
-            max-width: 10%;
-            margin: 1% 2% 5% 2%;
+            max-width: 170px;
+            height: 150px;
+            margin: 1% 1%
         }
         .section10{
-            flex-direction: row;
-            max-width: 60%;
             position: absolute;
-            left: 13%;
-            margin-top: 0.5rem;
-            font-size: 25px;
+            width: 700px;
+            left: 19.5rem;
+        }
+        .section10 a{
+            font-size: 18px;
         }
         .section11{
             display: flex;
             flex-direction: column;
-            margin: 3rem 3rem 0 3rem;
+            margin: 4rem 3rem 0 7rem;
             font-size: 18px;
+            text-align: start;
         }
         .section11 a{
             margin-bottom: 8px;
@@ -78,20 +96,18 @@
         .section12{
             display: flex;
             flex-direction: column;
-            margin: 3rem 0 0 5rem;
+            margin: 4rem 3rem 0 7rem;
             font-size: 18px;
+            text-align: start;
         }
         .section12 a{
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
         .section13{
-            flex-direction: row;
-            align-self: flex-end;
-            position: absolute;
-            right: 90%;
+            margin-left: 2vw;
+            margin-top: 11vh;
         }
         .section13 a {
             font-size: 1.5rem;
-            margin: 10% 10% 15% 10%;
         }
-    }
+}

@@ -1,10 +1,19 @@
 [
+ 
   {
-    "nombre": "",
-    "apellido": "",
-    "email": "juancruzberrios73@gmail.com",
+    "nombre": "pedro",
+    "apellido": "gonzalez",
+    "email": "juanchioliva1@gmail.com",
+    "password": "741852",
+    "avatar": null,
+    "id": 1
+  },
+  {
+    "nombre": "juan",
+    "apellido": "perez",
+    "email": "juanchioliva@hotmail.com",
     "password": "123456",
     "avatar": null,
-    "id": 13
+    "id": 2
   }
 ]

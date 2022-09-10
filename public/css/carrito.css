@@ -1,0 +1,131 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+
+.login-box h2 {
+    text-align: center;
+    margin: 10px 0px 15px 0px;
+}
+.barra-login {
+    display: list-item;
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.recordarme-aqui {
+    display: inline;
+}
+.caja{
+    display:inline;
+}
+.contraseña-olvidada{
+    display: block;
+    margin: 10px 0px 20px 0;
+}
+.botton-form {
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin: auto;
+}
+.botton-form:hover {
+    background-color: #013220;
+}
+.login-box{
+    margin-bottom: 50px;
+}
+.texto-bienvenida{
+    margin: 10px 0px 20px 0px;
+}
+
+@media (min-width: 768px){
+    .barra-login {
+        display: list-item;
+        width: 70%;
+        padding: 10px;
+        margin: 10px 0 20px 15%;
+        text-align: center;
+    }
+    .recordarme-aqui{
+        display: inline-block;
+        margin:0;
+        margin-left: 20%;;
+    }
+    .contraseña-olvidada{
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        margin: 10px 0 40px 0;
+    }
+    .comentrios-login{
+        display: block;
+        width: 60%;
+        height: 200px;
+        margin: 5% 0px 15px 20%;
+    }
+}
+@media (min-width: 1200px){
+    .login-box{
+        display: block;
+        max-width: 90%;
+        background-color: rgb(196, 196, 196);
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin: 3% 5%;
+    }
+    .login-box h2 {
+        margin: 0px 0px 0px 100px;
+    }
+
+    .comentary-box{
+        text-align: start;
+        display: inline-block;
+        width: 49%;
+        margin: 0 0 20px 15px;
+    }
+
+    .recordarme-aqui{
+        display: inline-block;
+        margin:0;
+        text-align: left;
+    }
+    .contraseña-olvidada{
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .comentary-box h2 {
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        max-width: 50%;
+        margin: auto;
+    }
+    .comentrios-login{
+        margin: auto;
+        margin-bottom: 15px;
+        width: 65%;
+        height: 150px;
+        text-align: start;
+    }
+    .botton-form {
+        display: block;
+        background-color: #39b54a;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        margin: auto;
+    }
+}

@@ -5,7 +5,8 @@ const multer = require('multer');
 const storage = require('../modules/storage');
 const upload = multer({storage:storage('../../public/products')});
 const validator = require("../validations/register");
-const validatorLogin = require("../validations/login")
+const validatorLogin = require("../validations/login");
+
 router.get('/login', login)
 router.get('/register', register)
 router.get('/profile', profile)

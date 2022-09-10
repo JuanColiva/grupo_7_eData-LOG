@@ -2,8 +2,10 @@
 @import url("footer.css");
 @import url("base.css");
 
+
 .contacto1{
     background-color: rgb(196, 196, 196);
+    max-width: 1400px;
 }
 .contacto1 img {
     max-width: 30%;
@@ -19,6 +21,7 @@
 }
 .nav-contactos{
     display: block;
+    margin-left: 20px;
 }
 .nav-contactos a {
     display: list-item;
@@ -41,12 +44,16 @@
     width: 60%;
     height: 40px;
     margin: 15px 10px;
+    border: none;
+    border-radius: 8px;
 }
 .comentarios-contacto{
     width: 60%;
     height: 80px;
     margin: 10px 10px;
     margin-right: 30%;
+    border: none;
+    border-radius: 8px;
 }
 .caja-contactos{
     display: inline;
@@ -99,6 +106,7 @@
     }
     .nav-contactos{
         margin-top: 20px;
+        margin-left: 20px;
     }
     .nav-contactos a {
         margin-bottom: 40px;
