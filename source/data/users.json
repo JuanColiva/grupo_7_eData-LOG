@@ -1,5 +1,4 @@
 [
- 
   {
     "nombre": "pedro",
     "apellido": "gonzalez",
@@ -15,5 +14,13 @@
     "password": "123456",
     "avatar": null,
     "id": 2
+  },
+  {
+    "nombre": "gonzalo",
+    "apellido": "rodriguez",
+    "email": "gonzalo@gmail.com",
+    "password": "$2b$10$WYSni0kuDajNuVaFEdFyXulDUW9DfeuKyOxFWzx9H3WLgE6E1/sRO",
+    "avatar": null,
+    "id": 3
   }
 ]
