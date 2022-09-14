@@ -2,13 +2,23 @@
 <html lang="en">
     <head>
         <%- include("../partials/head.ejs")  %>
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/profile.css">
     </head>
     <body>
         <header>
             <%- include("../partials/header.ejs")  %> 
         </header>
-    <main>
+    <main class="cajaPadre">
+
+    <% if (!user) { %>
+
+    <h2 >Bienvenido a EDATA-LOG</h2>
+
+    <% } else { %>
+     
+        <h2 >Bienvenido a EDATA-LOG <%= user.email %> </h2>
+     
+    <% } %>
 
 
     </main>

@@ -11,8 +11,10 @@ module.exports = {
         let file = join(__dirname, "../views/users/registro")
         res.render(file);
     },
-    profile: (req,res) => res.render('profile',{
-    }),
+    profile: (req, res) => {
+        let file = join(__dirname, "../views/users/profile")
+        res.render(file);
+    },
     save: (req,res) => {
         const result = validationResult(req);
         if(!result.isEmpty()){
