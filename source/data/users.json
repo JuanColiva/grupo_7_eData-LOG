@@ -22,5 +22,13 @@
     "password": "$2b$10$WYSni0kuDajNuVaFEdFyXulDUW9DfeuKyOxFWzx9H3WLgE6E1/sRO",
     "avatar": null,
     "id": 3
+  },
+  {
+    "nombre": "Nazarena",
+    "apellido": "Ceballos",
+    "email": "ceballosnazarena@gmail.com",
+    "password": "$2b$10$ZSpYu5Z/zi.Ey6HkRVanqeoc5BK1c3jNjZH2OviHM/H7VbZ2msNKK",
+    "avatar": null,
+    "id": 4
   }
 ]
