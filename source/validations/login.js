@@ -1,5 +1,6 @@
 const { body } = require("express-validator");
 const {index} = require("../models/users.model")
+const {compareSync} = require("bcrypt")
 let email = body("email").notEmpty().withMessage("Email no puede quedar vacio").bail()
 .isEmail().withMessage("Email no valido").custom((value,{req})=>{
     let users = index()
@@ -17,7 +18,7 @@ let password = body("password").notEmpty().withMessage("contraseña no puede que
     if(!result){
         throw new Error("credenciales invalidas")
     }
-    if (result.password != value){
+    if (!compareSync(value, result.password)){
         throw new Error("contraseña incorrecta")
     }
     return true

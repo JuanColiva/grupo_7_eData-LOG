@@ -44,11 +44,17 @@ module.exports = {
                 errores: errores,
                 data: req.body
             })
+           
 
         }
-        res.cookie("../views/users/", req.body.email,{maxAge: 5000})
+        res.cookie("../views/users", req.body.email,{maxAge: 5000})
         let all = index()
         req.session.user = all.find(user => user.email == req.body.email)
+        return res.redirect("/")
+    },
+    logout:(req, res)=>{
+        delete req.session.user
+        res.cookie("../views/users", null,{maxAge: -1})
         return res.redirect("/")
     }
 }
