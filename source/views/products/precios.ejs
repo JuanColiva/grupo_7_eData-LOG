@@ -23,7 +23,9 @@
                 <p>Atención Telefónica</p>
                 <p>Precio Router Inicial 30 €</p>
                 <p>Pago Semestral 257,40 €</p>
-                <button type="submit" class="boton-precios">COMPRAR</button>
+                <% if (user) { %>
+                    <button type="submit" class="boton-precios">COMPRAR</button>
+                <% } %>
             </section>
             <section class="precios-box2">
                 <h2>Pack Premium</h2>
@@ -39,7 +41,9 @@
                 <p>Router GRATIS</p>
                 <p>Ahorro Del 15% Aprox.</p>
                 <p>Pago Anual 478,80 €</p>
-                <button type="submit" class="boton-precios">COMPRAR</button>
+                <% if (user) { %>
+                    <button type="submit" class="boton-precios">COMPRAR</button>
+                <% } %>
             </section>
             <section class="precios-box3">
                 <h2>PACK MULTIZONA</h2>
@@ -54,7 +58,9 @@
                 <p>Personalización Del Acceso</p>
                 <p>Atención Telefónica</p>
                 <p>Presupuesto Sin Compromiso</p>
-                <button type="submit" class="boton-precios">PEDIR RESUPUESTO</button>
+                <% if (user) { %>
+                    <button type="submit" class="boton-precios">PEDIR RESUPUESTO</button>
+                <% } %>
             </section>
         </main>
         <footer class="main-footer">

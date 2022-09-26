@@ -10,13 +10,11 @@
         <% if (!user) { %>
             <a href="/login">INGRESA <i class="fa-solid
                 fa-right-to-bracket"></i></a>
-                <a href="/registro">REGISTRATE <i class="fa-solid
+            <a href="/registro">REGISTRATE <i class="fa-solid
                 fa-address-card"></i></a>
-                <% } else { %>
-
-                    <a href="/users/profile">PERFIL <i class="fa-solid fa-user"></i></a>
-                    <a href="/users/logout">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
-
+        <% } else { %>
+            <a href="/users/profile">PERFIL <i class="fa-solid fa-user"></i></a>
+            <a href="/users/logout">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
         <% } %>
          
 

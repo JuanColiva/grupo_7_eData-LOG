@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/JuanColiva/grupo_7_eData-LOG#readme",
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.20"
   }
 }

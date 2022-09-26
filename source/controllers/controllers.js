@@ -3,55 +3,45 @@ const {unlinkSync} = require ("fs");
 const {join, resolve} = require ("path");
 const controller = {
     home: (req, res) => {
-        let file = join(__dirname, "../views/users/home")
-        res.render(file)
+        res.render("./users/home")
     },
     contacto: (req, res) => {
-        let file = join(__dirname, "../views/users/contacto")
-        res.render(file);
+        res.render("./users/contacto")
     },
     login: (req, res) => {
-        let file = join(__dirname, "../views/users/login")
-        res.render(file);
+        res.render( "./users/login")
     },
-    carrito: (req, res) => {
-        let file = join(__dirname, "../views/products/carrito")
-        res.render(file);
-    },
+    
     detalle: (req, res) => {
-        let file = join(__dirname, "../views/products/detalles")
-        res.render(file);
+        res.render("./products/detalles")
     },
     precios: (req, res) => {
-        let file = join(__dirname, "../views/products/precios")
-        res.render(file);
+        res.render("./products/precios");
     },
     registro: (req, res) => {
-        let file = join(__dirname, "../views/users/registro")
-        res.render(file);
+        res.render("./users/registro");
     },
     index: (req, res) => {
 
         let products = all();
 
         if (req.params){
-            return res.render("./products/productos.ejs", {products});
+            return res.render("products/productos", {products});
         }
-        return res.render("./products/productos.ejs", {products});
+        return res.render("products/productos", {products});
     },
     show: (req, res) => {
 
         let product = one(req.params.producto);
 
         if(product){
-        return res.render("./products/detalles", {product})
+        return res.render("products/detalles", {product})
     }
-        return res.render("./products/detalles", {product:null})
+        return res.render("products/detalles", {product:null})
 
     },
     create: (req, res) =>{      
-        let file = join(__dirname, "../views/users/create.ejs");
-        res.render(file);
+        res.render("users/create");
       },
     save: (req, res) =>{
         req.body.imagen = req.files && req.files.length > 0 ? req.files[0].filename : "default.jpg"
@@ -63,7 +53,7 @@ const controller = {
       },
       edit: (req, res) =>{
         let product = one(req.params.producto)
-        return res.render ("../views/users/edit.ejs",{
+        return res.render ("users/edit",{
             product
         })
       },

@@ -5,10 +5,9 @@ app.listen(port, start());
 const methodOverride = require("method-override")
 const session = require("express-session")
 const cookie = require("cookie-parser")
+const {join, resolve} = require("path");
 
-const {join} = require("path");
-
-app.set("views", join(__dirname, "./views"))
+app.set("views", join(__dirname, "/views"))
 
 app.set("view engine", "ejs");
 
