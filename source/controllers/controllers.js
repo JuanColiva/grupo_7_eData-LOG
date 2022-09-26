@@ -3,23 +3,23 @@ const {unlinkSync} = require ("fs");
 const {join, resolve} = require ("path");
 const controller = {
     home: (req, res) => {
-        res.render("./users/home")
+        res.render("users/home")
     },
     contacto: (req, res) => {
-        res.render("./users/contacto")
+        res.render("users/contacto")
     },
     login: (req, res) => {
-        res.render( "./users/login")
+        res.render( "users/login")
     },
     
     detalle: (req, res) => {
-        res.render("./products/detalles")
+        res.render("products/detalles")
     },
     precios: (req, res) => {
-        res.render("./products/precios");
+        res.render("products/precios");
     },
     registro: (req, res) => {
-        res.render("./users/registro");
+        res.render("users/registro");
     },
     index: (req, res) => {
 
@@ -64,7 +64,7 @@ const controller = {
                 elemento.name = req.body.name;
                 elemento.plan = req.body.plan;
                 elemento.descripcion = req.body.descripcion;
-                elemento.imagen = req.files && req.files.length > 0 ? "/products/"+req.files[0].filename : elemento.imagen
+                elemento.imagen = req.files && req.files.length > 0 ? req.files[0].filename : elemento.imagen
             }
             return elemento
         
@@ -75,7 +75,7 @@ const controller = {
       },
       remove: (req,res)=>{
         let product = one(req.body.id);
-        if(product.imagen != "/products/default.jpg"){
+        if(product.imagen != "default.jpg"){
             let file = resolve(__dirname, "..", "..", "public", "products", product.imagen)
             unlinkSync(file)
         }

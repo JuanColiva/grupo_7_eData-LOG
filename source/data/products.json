@@ -1,27 +1,27 @@
 [
   {
     "name": "Aeropuertos",
-    "imagen": "/images/airport.jpg",
+    "imagen": "airport.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 1,
     "plan": "Multiespacio"
   },
   {
     "name": "Gimnasios y centros deportivos",
-    "imagen": "/images/gimnasio.jpg",
+    "imagen": "gimnasio.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 2
   },
   {
     "name": "Restaurantes, cafeterias, bares y discotecas",
     "plan": "Basico/premium",
-    "imagen": "/images/restaurante.jpg",
+    "imagen": "restaurante.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 3
   },
   {
     "name": "Tiendas de moda, retail y centros comerciales ",
-    "imagen": "/images/centros-comerciales.jpg",
+    "imagen": "centros-comerciales.jpg",
     "id": 4,
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "plan": "Multiespacio"
@@ -29,36 +29,29 @@
   {
     "name": "Peluquerías, barberías y centros de esteticas",
     "plan": "Básico / Premium",
-    "imagen": "/images/peluquerias.jpg",
+    "imagen": "peluquerias.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 5
   },
   {
     "name": "Hoteles",
     "plan": "multiespacio",
-    "imagen": "/images/hoteles.jpg",
+    "imagen": "hoteles.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 6
   },
   {
     "name": "Eventos y conciertos",
     "plan": "multizonal",
-    "imagen": "/images/eventos.jpg",
+    "imagen": "eventos.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 7
   },
   {
     "name": "Centros medicos y salas de espera",
     "plan": "Básico/premium",
-    "imagen": "/images/centro-medico.jpg",
+    "imagen": "centro-medico.jpg",
     "descripcion": "Nuestros servicios mejoraran su base de datos sobre sus clientes para hacer sus estrategias de marketing más certeras.",
     "id": 8
-  },
-  {
-    "name": "prueba con imagen ",
-    "descripcion": "prueba con imgen",
-    "plan": "Premium",
-    "id": 10,
-    "imagen": "/products/imagen-1663195153167.jpg"
   }
 ]

@@ -19,7 +19,7 @@ let model = {
         product.descripcion = data.descripcion
         product.plan = data.plan
         product.id = last.id + 1
-        product.imagen = "/products/"+data.imagen
+        product.imagen = data.imagen
         return product;
     }, 
     write: data=>{

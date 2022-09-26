@@ -14,12 +14,16 @@
         <h1> <%= product.name %> </h1>
         <h2><%= product.plan %></h2>
         <span><%= product.descripcion %> </span>
-        <img  src="<%= product.imagen %>" >
+        <img  src="/products/<%= product.imagen %>" >
         <a href="/precios" class="comprar">COMPRAR</a>
-        <a href="/productos/editar/<%= product.id %>" class="editar">EDITAR</a>
+        <% if (user && user.admin) { %>
+            <a href="/productos/editar/<%= product.id %>" class="editar">EDITAR</a>
+        <% } %>
         <form action="/productos/borrar?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= product.id %>">
-            <button type="submit" class="eliminar">Borrar</button>
+            <% if (user && user.admin) { %>
+                <button type="submit" class="eliminar">Borrar</button>
+            <% } %>
         </form>
     </article>
 <% } else { %>
