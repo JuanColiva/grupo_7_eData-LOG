@@ -13,25 +13,25 @@
     <nav>
     </nav>
     <form action="/productos/actualizar?m=PUT" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="id" value="<%= product.id %>" >
+        <input type="hidden" name="id_producto" value="<%= producto.id_producto %>" >
         <section class="formularioPadre">
             <a href="/productos" class="vuelta">Volver</a>
 
         <fieldset class="formularioHijo">
             <legend>Nombre de producto</legend>
-            <input type="text" name="name" id="name" value="<%= product.name %>" >
+            <input type="text" name="name" id="name" value="<%= producto.name %>" >
         </fieldset>
         <fieldset class="formularioHijo">
             <legend>Descripción del producto</legend>
-            <input type="text" name="descripcion" id="descripcion" value="<%= product.descripcion %>"  >
+            <input type="text" name="descripcion" id="descripcion" value="<%= producto.descripcion %>"  >
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>
-            <input type="radio" name="plan"id="plan-mult"  value="Multiespacio" <%= product.plan == "Multiespacio" ? "checked" : "" %>>
+            <input type="radio" name="plan"id="plan-mult"  value="Multiespacio" <%= producto.plan == "Multiespacio" ? "checked" : "" %>>
             <label for="category-mult">Multiespacio</label>
-            <input type="radio" name="plan" id="plan-bas"  value="Basico" <%= product.plan == "Basico" ? "checked" : "" %>>
+            <input type="radio" name="plan" id="plan-bas"  value="Basico" <%= producto.plan == "Basico" ? "checked" : "" %>>
             <label for="category-bas">Basico</label>
-            <input type="radio" name="plan" id="plan-pre"  value="Premium" <%= product.plan == "Premium" ? "checked" : "" %>>
+            <input type="radio" name="plan" id="plan-pre"  value="Premium" <%= producto.plan == "Premium" ? "checked" : "" %>>
             <label for="category-pre">Premium</label> 
         </fieldset>
 

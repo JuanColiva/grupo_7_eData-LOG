@@ -1,6 +1,9 @@
-const {all, one, generate, write} = require("../models/products.models");
+const {generate, write} = require("../models/products.models");
 const {unlinkSync} = require ("fs");
 const {join, resolve} = require ("path");
+const db = require('../database/models');
+const sequelize = db.sequelize;
+
 const controller = {
     home: (req, res) => {
         res.render("users/home")
@@ -22,68 +25,61 @@ const controller = {
         res.render("users/registro");
     },
     index: (req, res) => {
-
-        let products = all();
-
-        if (req.params){
-            return res.render("products/productos", {products});
-        }
-        return res.render("products/productos", {products});
+        db.Producto.findAll()
+            .then(productos => {
+                res.render('products/productos', {productos})
+            })
     },
     show: (req, res) => {
-
-        let product = one(req.params.producto);
-
-        if(product){
-        return res.render("products/detalles", {product})
-    }
-        return res.render("products/detalles", {product:null})
-
+        db.Producto.findByPk(req.params.producto)
+            .then(producto => {
+                return res.render('products/detalles.ejs', {producto});
+            });
     },
     create: (req, res) =>{      
         res.render("users/create");
       },
     save: (req, res) =>{
-        req.body.imagen = req.files && req.files.length > 0 ? req.files[0].filename : "default.jpg"
+        req.body.imagene = req.files && req.files.length > 0 ? req.files[0].filename : "default.jpg"
         let nuevo = generate (req.body);
-        let todos = all();
-        todos.push(nuevo)
-        write(todos)
         return res.redirect ("/productos")
       },
-      edit: (req, res) =>{
-        let product = one(req.params.producto)
-        return res.render ("users/edit",{
-            product
+    edit: (req, res) =>{
+        db.Producto.findByPk(req.params.producto)
+        .then(producto => {
+            res.render("users/edit", {producto})
         })
       },
-      update:(req,res)=>{
-        let todos = all();
-        let actualizados = todos.map(elemento =>{
-            if(elemento.id == req.body.id){
-                elemento.name = req.body.name;
-                elemento.plan = req.body.plan;
-                elemento.descripcion = req.body.descripcion;
-                elemento.imagen = req.files && req.files.length > 0 ? req.files[0].filename : elemento.imagen
-            }
-            return elemento
-        
-        })
-        write(actualizados)
-
-        return res.redirect("/productos")
-      },
+    update: (req,res)=>{
+        let data = {}
+            
+        data.name= req.body.name
+        data.descripcion = req.body.descripcion
+        data.plan = req.body.plan
+        if(req.file){
+            data.imagene = req.file.imagene
+        }
+        let selected = db.Producto.findByPk(req.body.Producto)
+        let upload= selected.update(data)
+        return selected.then(selected => !selected ? res.send("no se enncontro el producto"):upload)
+        .then(()=>res.redirect("/productos"))
+        },
       remove: (req,res)=>{
-        let product = one(req.body.id);
-        if(product.imagen != "default.jpg"){
-            let file = resolve(__dirname, "..", "..", "public", "products", product.imagen)
+            db.Producto.destroy({
+            name: req.body.name,
+            descripcion: req.body.descripcion,
+            plan: req.body.plan,
+            imagene: req.body.imagene
+        },{
+            where:{
+                id_producto: req.body.id_producto
+            }
+        });
+        if(req.body.imagene != "default.jpg"){
+            let file = resolve(__dirname, "..", "..", "public", "products", req.body.imagene)
             unlinkSync(file)
         }
-        let todos = all();
-        let noEliminados = todos.filter(elemento => elemento.id != req.body.id)
-        write(noEliminados)
-        return res.redirect("/productos")
-
+        return res.redirect ("/productos")
       }
 }
 module.exports = controller;

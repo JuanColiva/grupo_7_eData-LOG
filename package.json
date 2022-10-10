@@ -1,10 +1,11 @@
 {
-  "name": "proyecto-mercado-liebre",
+  "name": "edata_log",
   "version": "1.0.0",
   "description": "https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%3A1",
   "main": "source/app.js",
   "scripts": {
-    "test": "nodemon source/app.js -e js,mjs,json,ejs,css"
+    "test": "nodemon source/app.js -e js,mjs,json,ejs,css",
+    "sq":"sequelize init"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +17,9 @@
     "express-session": "^1.17.3",
     "express-validator": "^6.14.2",
     "method-override": "^3.0.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.24.0"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
   },
   "homepage": "https://github.com/JuanColiva/grupo_7_eData-LOG#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.1"
   }
 }

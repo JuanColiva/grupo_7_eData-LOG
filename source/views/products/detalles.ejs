@@ -9,18 +9,18 @@
             <%- include("../partials/header.ejs")  %>   
         </header>
         <main>
-<% if (product){ %>
+<% if (producto){ %>
     <article class="container-detalle">
-        <h1> <%= product.name %> </h1>
-        <h2><%= product.plan %></h2>
-        <span><%= product.descripcion %> </span>
-        <img  src="/products/<%= product.imagen %>" >
+        <h1> <%= producto.name %> </h1>
+        <h2><%= producto.plan %></h2>
+        <span><%= producto.descripcion %> </span>
+        <img  src="/products/<%= producto.imagene %>" >
         <a href="/precios" class="comprar">COMPRAR</a>
         <% if (user && user.admin) { %>
-            <a href="/productos/editar/<%= product.id %>" class="editar">EDITAR</a>
+            <a href="/productos/editar/<%= producto.id_producto %>" class="editar">EDITAR</a>
         <% } %>
         <form action="/productos/borrar?m=DELETE" method="post">
-            <input type="hidden" name="id" value="<%= product.id %>">
+            <input type="hidden" name="id_producto" value="<%= producto.id_producto %>">
             <% if (user && user.admin) { %>
                 <button type="submit" class="eliminar">Borrar</button>
             <% } %>

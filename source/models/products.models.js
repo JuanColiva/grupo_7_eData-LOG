@@ -1,26 +1,20 @@
 const {resolve} = require("path");
 const fs = require("fs");
+const db = require('../database/models');
+const sequelize = db.sequelize;
 
 let model = {
-    all: () => {
-        let file = resolve (__dirname, "../data/products.json");
-        let data = fs.readFileSync(file);
-        return JSON.parse(data);
-    },
-    one: (id) =>{
-        let all = model.all();
-        return all.find(e => e.id == id)
-    },
     generate: data => {
-        let all =  model.all();
-        let last = all.pop()
-        let product = {}
-        product.name = data.name
-        product.descripcion = data.descripcion
-        product.plan = data.plan
-        product.id = last.id + 1
-        product.imagen = data.imagen
-        return product;
+        const save = db.Producto.create({
+        name: data.name,
+        descripcion: data.descripcion,
+        plan: data.plan,
+        imagene: data.imagene
+    })
+        const success = data => console.log(data)
+        const error = error => console.log(error)
+    
+        return save.then(success).catch(error)
     }, 
     write: data=>{
         let file = resolve (__dirname, "../data/products.json");

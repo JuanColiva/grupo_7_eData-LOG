@@ -9,13 +9,11 @@
             <%- include("../partials/header.ejs")  %>   
         </header>
         <main>
-            <% if (products.length > 0) { %>
                 <ul>
-                    <% products.forEach(element => { %>
-                        <%- include( "../partials/producto.ejs", {element:element})  %>
-                   <% }) %>
+                    <% for( let i = 0; i < productos.length; i++ ) { %>
+                        <%- include( "../partials/producto.ejs", {producto:productos[i]})  %>
+                   <% } %>
                 </ul>
-            <% } %> 
                 <% if (user && user.admin) { %>
                     <nav class="nuevo">
                         <a href="/productos/nuevo">Agregar Producto <i class="fa-solid fa-plus"></i></a>
