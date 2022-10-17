@@ -6,6 +6,7 @@ const write = data => fs.writeFileSync(resolve(__dirname,'..','data','users.json
 module.exports = {index,one,write}
 const db = require('../database/models');
 const sequelize = db.sequelize;
+const {hashSync} = require("bcrypt");
 
 
 let model ={
@@ -13,7 +14,7 @@ let model ={
     const save = db.Usuario.create({
     nombre: data.nombre,
     apellido: data.apellido,
-    password: data.password,
+    password: hashSync(data.password,8),
     email: data.email
 })
     const success = data => console.log(data)

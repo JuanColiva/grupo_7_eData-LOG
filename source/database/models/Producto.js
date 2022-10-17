@@ -25,11 +25,5 @@ module.exports = (sequelize, dataTypes) => {
     };
     Producto = sequelize.define(alias, cols, config)
 
-    Producto.associate = (models)=>{
-        Producto.hasMany(models.Usuario/*se escribe el alias*/,{
-            as:"usuarios",
-            foreignKey:"usuario_id",
-            })
-    }
     return Producto
 }

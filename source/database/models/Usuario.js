@@ -28,12 +28,7 @@ module.exports = (sequelize, dataTypes) => {
     };
     const Usuario = sequelize.define(alias, cols, config)
 
-    Usuario.associate = (models)=>{
-        Usuario.belongsTo(models.Producto/*se escribe el alias*/,{
-            as:"productos",
-            foreignKey:"producto_id",
-        })
-    }
+    //volver a hacer la relacion
 
     return Usuario
 }

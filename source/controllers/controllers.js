@@ -1,4 +1,4 @@
-const {generate, write} = require("../models/products.models");
+const {generate,actualizar} = require("../models/products.models");
 const {unlinkSync} = require ("fs");
 const {join, resolve} = require ("path");
 const db = require('../database/models');
@@ -51,34 +51,18 @@ const controller = {
         })
       },
     update: (req,res)=>{
-        let data = {}
-            
-        data.name= req.body.name
-        data.descripcion = req.body.descripcion
-        data.plan = req.body.plan
-        if(req.file){
-            data.imagene = req.file.imagene
-        }
-        let selected = db.Producto.findByPk(req.body.Producto)
-        let upload= selected.update(data)
-        return selected.then(selected => !selected ? res.send("no se enncontro el producto"):upload)
-        .then(()=>res.redirect("/productos"))
-        },
+        actualizar(req.body)
+    },
       remove: (req,res)=>{
-            db.Producto.destroy({
-            name: req.body.name,
-            descripcion: req.body.descripcion,
-            plan: req.body.plan,
-            imagene: req.body.imagene
-        },{
-            where:{
-                id_producto: req.body.id_producto
-            }
-        });
-        if(req.body.imagene != "default.jpg"){
-            let file = resolve(__dirname, "..", "..", "public", "products", req.body.imagene)
-            unlinkSync(file)
-        }
+        let data = {}
+            data.name= req.body.name
+            data.descripcion = req.body.descripcion
+            data.plan = req.body.plan
+            req.files && req.files.length > 0 ? data.imagene = req.files[0].filename : null
+            db.Producto.findByPk(req.body.id_producto)
+            .then(producto =>producto.destroy(data))
+            .then(()=>res.redirect("/productos"))
+            .catch(error => console.log(error))
         return res.redirect ("/productos")
       }
 }

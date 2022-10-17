@@ -1,6 +1,5 @@
 const {join} = require ("path");
 const{validationResult} = require("express-validator");
-const {hashSync} = require("bcrypt");
 const model = require("../models/users.model")
 const db = require('../database/models');
 const sequelize = db.sequelize;
@@ -34,8 +33,12 @@ module.exports = {
             })
         }
         res.cookie("/users", req.body.email,{maxAge: 5000})
-        let all = model.index()
-        req.session.user = all.find(user => user.email == req.body.email)
+        db.Usuario.findOne({
+            where:{
+                email: req.body.email
+            }
+        })
+        .then(res.redirect("/users/profile"))
         if(req.body.rememberMe){
             res.cookie("userEmail", req.body.email, {maxAge: (1000 *60) * 2})
         }
