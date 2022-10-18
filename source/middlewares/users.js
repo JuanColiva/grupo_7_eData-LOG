@@ -11,7 +11,7 @@ let middleware = (req, res,next)=>{
                 email: req.body.email
             }
         }).then(resultado => {
-            req.session.user = resultado
+            return req.session.user = resultado
         })
     if(req.session && req.session.user){
         console.log(req.session)
@@ -20,6 +20,5 @@ let middleware = (req, res,next)=>{
     }
     res.locals.user = user
     return next()
-}
-}
+} }
 module.exports = middleware
