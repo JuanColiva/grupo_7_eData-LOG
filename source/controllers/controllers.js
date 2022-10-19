@@ -1,6 +1,6 @@
-const {generate,actualizar} = require("../models/products.models");
+const {generate} = require("../models/products.models");
 const {unlinkSync} = require ("fs");
-const {join, resolve} = require ("path");
+const {resolve} = require ("path");
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
@@ -51,7 +51,16 @@ const controller = {
         })
       },
     update: (req,res)=>{
-        actualizar(req.body)
+        let data = {}
+        data.name= req.body.name
+            data.descripcion = req.body.descripcion
+            data.plan = req.body.plan
+            req.files && req.files.length > 0 ? data.imagene = req.files[0].filename : null
+            db.Producto.findByPk(req.body.id)
+            .then(producto =>producto.update(data))
+            .then(()=>res.redirect("/productos"))
+            .catch(error => console.log(error))
+        return res.redirect ("/productos")
     },
       remove: (req,res)=>{
         let data = {}
@@ -59,7 +68,7 @@ const controller = {
             data.descripcion = req.body.descripcion
             data.plan = req.body.plan
             req.files && req.files.length > 0 ? data.imagene = req.files[0].filename : null
-            db.Producto.findByPk(req.body.id_producto)
+            db.Producto.findByPk(req.body.id)
             .then(producto =>producto.destroy(data))
             .then(()=>res.redirect("/productos"))
             .catch(error => console.log(error))
