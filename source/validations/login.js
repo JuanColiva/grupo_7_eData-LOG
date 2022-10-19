@@ -11,33 +11,30 @@ let email = body("email").notEmpty().withMessage("Email no puede quedar vacio").
             email: req.body.email
         }
     }).then(resultado => {
-        req.session.user = resultado
-    })
-    let listaOfEmails = users.findByPk(re.body.id_usuario)
-    if(!listaOfEmails){
-        throw new Error("usuario no encontrado")
+        if(!resultado){
+        return Promise.reject("usuario no encontrado")
     }
     return true
+    })
+    
 })
 
 let password = body("password").notEmpty().withMessage("contraseña no puede quedar vacia").bail()
 .isLength({min:6}).withMessage("Minimo 6 caracteres").custom((value,{req})=>{
     let users = db.Usuario
-    let result = users.findByPk(re.body.id_usuario)
     users.findOne({
         where:{
             email: req.body.email
         }
     }).then(resultado => {
-        req.session.user = resultado
+        if(!resultado){
+            return Promise.reject("credenciales invalidas")
+        }
+        if (!compareSync(value, resultado.password)){
+            return Promise.reject("contraseña incorrecta")
+        }
+        return true
     })
-    if(!result){
-        throw new Error("credenciales invalidas")
-    }
-    if (!compareSync(value, result.password)){
-        throw new Error("contraseña incorrecta")
-    }
-    return true
 })
 
 let validaciones = [email, password]

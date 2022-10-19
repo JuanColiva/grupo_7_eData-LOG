@@ -32,21 +32,19 @@ module.exports = {
                 data: req.body
             })
         }
-        res.cookie("/users", req.body.email,{maxAge: 5000})
+        if(req.body.rememberMe){
+            res.cookie("email", req.body.email,{maxAge: 5000})
+        }
         db.Usuario.findOne({
             where:{
                 email: req.body.email
             }
         })
-        .then(res.redirect("/users/profile"))
-        if(req.body.rememberMe){
-            res.cookie("userEmail", req.body.email, {maxAge: (1000 *60) * 2})
-        }
-        return res.redirect("/users/profile")
+        .then(()=>res.redirect("/users/profile"))
     },
     logout:(req, res)=>{
         delete req.session.user
-        res.cookie("/users", null,{maxAge: -1})
+        res.cookie("email", null,{maxAge: -1})
         return res.redirect("/")
     }
 }

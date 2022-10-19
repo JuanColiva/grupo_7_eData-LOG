@@ -3,22 +3,23 @@ const db = require('../database/models');
 const sequelize = db.sequelize;
 
 let middleware = (req, res,next)=>{
-    let user = null
-    if(req.cookies && req.cookies.user){
         let users = db.Usuario
         users.findOne({
             where:{
-                email: req.body.email
+                email:req.cookies && req.cookies.email ? req.cookies.email : ""
             }
         }).then(resultado => {
-            return req.session.user = resultado
+            let user = null
+            if(resultado){
+                req.session.user = resultado
+            }
+            if(req.session && req.session.user){
+                console.log(req.session)
+                user = req.session.user
+                user.admin = req.session.user.email.includes('@data.com')
+            }
+            res.locals.user = user
+            return next()
         })
-    if(req.session && req.session.user){
-        console.log(req.session)
-        user = req.session.user
-        user.admin = req.session.user.email.includes('@data.com')
     }
-    res.locals.user = user
-    return next()
-} }
 module.exports = middleware
