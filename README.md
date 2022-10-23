@@ -6,6 +6,9 @@ https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%
 # Tablero de trabajo:
 https://trello.com/invite/b/bWGR93HT/2c28d3e89b49fe4294e79173ae8618d9/edata-logs-workboard
 
+# Diagrama de base de datos:
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/106563641/197422499-58ed65e0-ade2-4f9c-9a5a-78f9deb52086.png)
+
 # Objetivo del sitio: 
 Objetivo del sitio: eData-LOG permite capturar los datos públicos de los clientes que acceden al Wifi de tu local para generar una base de datos segmentada y hacer acciones de marketing productivas. 
 Nuestro servicio va dirigido a bares, restaurantes, shoppings y cualquier negocio que esté en permanente interacción con sus clientes.
