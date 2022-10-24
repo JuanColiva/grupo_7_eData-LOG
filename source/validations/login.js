@@ -1,14 +1,13 @@
-const { body } = require("express-validator");
-const {index} = require("../models/users.model")
+const {body} = require("express-validator");
 const {compareSync} = require("bcrypt")
 const db = require('../database/models');
 const sequelize = db.sequelize;
+
 let email = body("email").notEmpty().withMessage("Email no puede quedar vacio").bail()
 .isEmail().withMessage("Email no valido").custom((value,{req})=>{
-    let users = db.Usuario
-    users.findOne({
+    return db.Usuario.findOne({
         where:{
-            email: req.body.email
+            email: value
         }
     }).then(resultado => {
         if(!resultado){
@@ -21,8 +20,7 @@ let email = body("email").notEmpty().withMessage("Email no puede quedar vacio").
 
 let password = body("password").notEmpty().withMessage("contraseña no puede quedar vacia").bail()
 .isLength({min:6}).withMessage("Minimo 6 caracteres").custom((value,{req})=>{
-    let users = db.Usuario
-    users.findOne({
+    return db.Usuario.findOne({
         where:{
             email: req.body.email
         }

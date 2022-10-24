@@ -10,6 +10,6 @@ const validatorLogin = require("../validations/login");
 router.get('/profile', profile)
 router.get('/logout', logout)
 router.post('/save', upload.any(), validator, save)
-router.post("/access", access)
+router.post("/access",validatorLogin, access)
 
 module.exports = router

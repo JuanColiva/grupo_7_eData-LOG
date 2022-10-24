@@ -27,10 +27,11 @@
                            placeholder="contraseña"
                            name="password"
                            value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>"
+                           <% console.log(locals.errores) %> 
                            class="barra-login">
                            <% if (locals.errores && locals.errores.password) { %>
                             <p class="feedback">
-                                <%= locals.errores.passwordmsg  %> 
+                                <%= locals.errores.password.msg  %> 
                             </p>
                             <% } %>
                     <label for="recordarme" class="recordarme-aqui">recuerdame

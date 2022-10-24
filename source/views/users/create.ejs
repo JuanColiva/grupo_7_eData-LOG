@@ -16,11 +16,25 @@
 
         <fieldset class="formularioHijo">
             <legend>Nombre de producto</legend>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name"
+            value="<%= locals.errores && !locals.errores.name && locals.data ? locals.data.name : null %>"
+                        class="barra-login">
+                        <% if (locals.errores && locals.errores.name) { %>
+                        <p class="feedback">
+                            <%= locals.errores.name.msg  %> 
+                        </p>
+                        <% } %>
         </fieldset>
         <fieldset class="formularioHijo">
             <legend>Descripción del producto</legend>
-            <input type="text" name="descripcion" id="Descripcion">
+            <input type="text" name="descripcion" id="Descripcion"
+            value="<%= locals.errores && !locals.errores.descripcion && locals.data ? locals.data.descripcion : null %>"
+                        class="barra-login">
+                        <% if (locals.errores && locals.errores.descripcion) { %>
+                        <p class="feedback">
+                            <%= locals.errores.descripcion.msg  %> 
+                        </p>
+                        <% } %>
         </fieldset>
         <fieldset class="formularioHijo2">
             <legend>Plan del producto</legend>

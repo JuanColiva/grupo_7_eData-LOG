@@ -5,6 +5,9 @@ const isAdmin = require("../middlewares/administrador")
 const isLoged = require("../middlewares/isLoged")
 const{resolve, extname} = require ("path")
 const {existsSync, mkdirSync} = require("fs")
+const validaciones = require("../validations/crearP")
+const validacionEdit = require("../validations/actualizarP")
+
 const destination = function(req, file, cb){
     let folder = resolve (__dirname,"..", "..", "public", "products")
     if(!existsSync(folder)){
@@ -39,14 +42,14 @@ route.get("/productos", controller.index);
 
 route.get("/productos/nuevo",isLoged,isAdmin, controller.create);
 
-route.post("/productos/guardar", upload.any(), controller.save);
+route.post("/productos/guardar", upload.any(),validaciones, controller.save);
 
 
 route.get("/productos/:producto", controller.show);
 
 route.get("/productos/editar/:producto",isLoged,isAdmin, controller.edit);
 
-route.put("/productos/actualizar" , upload.any(), controller.update)
+route.put("/productos/actualizar" , upload.any(),validacionEdit, controller.update)
 
 
 route.delete("/productos/borrar", controller.remove)

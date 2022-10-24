@@ -3,6 +3,7 @@ const {unlinkSync} = require ("fs");
 const {resolve} = require ("path");
 const db = require('../database/models');
 const sequelize = db.sequelize;
+const{validationResult} = require("express-validator");
 
 const controller = {
     home: (req, res) => {
@@ -40,6 +41,15 @@ const controller = {
         res.render("users/create");
       },
     save: (req, res) =>{
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render("users/create", {
+                style: "create",
+                errores: errores,
+                data: req.body
+        })
+    }
         req.body.imagene = req.files && req.files.length > 0 ? req.files[0].filename : "default.jpg"
         let nuevo = generate (req.body);
         return res.redirect ("/productos")
@@ -51,6 +61,15 @@ const controller = {
         })
       },
     update: (req,res)=>{
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render("users/edit", {
+                style: "edit",
+                errores: errores,
+                data: req.body
+        })
+    }
         let data = {}
         data.name= req.body.name
             data.descripcion = req.body.descripcion

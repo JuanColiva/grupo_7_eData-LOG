@@ -15,10 +15,28 @@
                 
                     <h2>Crea tu cuenta.</h2>
                     <h3>Informacion de cuenta.</h3>
-                    <input type="text" placeholder="nombre" name= "nombre" id="nombre"
-                    class="barra-register">
-                    <input type="text" name= "apellido" id="apellido" placeholder="apellido"
-                    class="barra-register">
+                    <input type="text"
+                    placeholder="nombre"
+                    name= "nombre"
+                    id="nombre"
+                    class="barra-register"
+                    value="<%= locals.errores && !locals.errores.nombre && locals.data ? locals.data.nombre : null %>">
+                    <% if (locals.errores && locals.errores.nombre) { %>
+                        <p class="feedback">
+                            <%= locals.errores.nombre.msg  %> 
+                        </p>
+                    <% } %>
+                    <input type="text"
+                    name= "apellido"
+                    id="apellido"
+                    placeholder="apellido"
+                    class="barra-register"
+                    value="<%= locals.errores && !locals.errores.apellido && locals.data ? locals.data.apellido : null %>">
+                    <% if (locals.errores && locals.errores.apellido) { %>
+                        <p class="feedback">
+                            <%= locals.errores.apellido.msg  %> 
+                        </p>
+                    <% } %>
                     <input type="email" 
                            name= "email" 
                            id="email" 
@@ -30,8 +48,6 @@
                             <%= locals.errores.email.msg  %> 
                         </p>
                     <% } %>
-                    <input type="email"  placeholder="confirmar email"
-                    class="barra-register">
                     <input type="password" 
                            name= "password" 
                            id="password" 
@@ -43,8 +59,6 @@
                             <%= locals.errores.password.msg  %> 
                         </p>
                     <% } %>
-                    <input type="password"  placeholder="confirmar contraseña"
-                    class="barra-register">
                     <label for="deacuerdo" class="estoy de acuerdo con los terminos y condiciones">recuerdame
                     en este equipo</label>
                     <input type="checkbox" id="deacuerdo">
