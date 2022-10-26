@@ -2,6 +2,9 @@
 @import url("footer.css");
 @import url("base.css");
 
+body{
+   background: white;
+}
 .banner img {
    display: none;
 }

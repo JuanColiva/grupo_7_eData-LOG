@@ -5,6 +5,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background: url("https://media3.giphy.com/media/1hfa48OchcDmJDsY4v/giphy.gif?cid=ecf05e47rk1e4wltmauvdyaax804jad8y0fos1445py0yhtq&rid=giphy.gif&ct=g");
+    background-size:cover ;
+}
 a{
     text-decoration: none;
 }
