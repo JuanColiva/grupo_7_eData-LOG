@@ -9,10 +9,8 @@
             <%- include("../partials/header.ejs")  %> 
         </header>
         <main>
-           
             <section class="register-box">
                 <form action="/users/save" method="post" enctype="multipart/form-data">
-                
                     <h2>Crea tu cuenta.</h2>
                     <h3>Informacion de cuenta.</h3>
                     <input type="text"
@@ -59,15 +57,14 @@
                             <%= locals.errores.password.msg  %> 
                         </p>
                     <% } %>
-                    <label for="deacuerdo" class="estoy de acuerdo con los terminos y condiciones">recuerdame
-                    en este equipo</label>
-                    <input type="checkbox" id="deacuerdo">
+                    <label for="deacuerdo" class="terminos">Acepto los terminos y condiciones</label>
+                    <input type="checkbox" class="checkbox" id="deacuerdo">
                     <button type="submit" class="botton-form">Enviar</button>
                 </form>
             </section>
             <section class="register-box2">
                 <p>¡Sea el primero en enterase de nuestras actualizaciones y ofertas!</p>
-                <input type="email" placeholder="Ingrese su email" class="barra-register">
+                <input type="email" placeholder="Ingrese su email" class="barra-box2">
                 <button type="submit" class="botton-form">Enviar</button>
             </section>
         </main>

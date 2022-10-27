@@ -13,8 +13,8 @@
     <article class="container-detalle">
         <h1> <%= producto.name %> </h1>
         <h2><%= producto.plan %></h2>
-        <span><%= producto.descripcion %> </span>
-        <img  src="/products/<%= producto.imagene %>" >
+        <p><%= producto.descripcion %> </p>
+        <a class="imagen"><img src="/products/<%= producto.imagene %>"></a>
         <a href="/precios" class="comprar">COMPRAR</a>
         <% if (user && user.admin) { %>
             <a href="/productos/editar/<%= producto.id %>" class="editar">EDITAR</a>

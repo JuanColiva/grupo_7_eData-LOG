@@ -4,37 +4,35 @@
 
 
 .register-box form{
-    display: block;
+    display: list-item;
     list-style: none;
+    text-align: center;
     background-color: #ebebeb;
     border: black 1px solid;
-    max-width: 60%;
+    max-width: 75%;
     margin: auto;
     margin-top: 15px;
-}
-.register-box h2 {
-    margin: 17px;
-    margin-left: 34%;
-}
-.register-box h3 {
-    margin: 15px;
-    margin-left: 32%;
+    padding: 8px;
+    border-radius: 15px;
+    border: none
 }
 .barra-register{
-    width: 80%;
-    height: 30px;
+    width: 90%;
+    height: 50px;
     margin: 15px;
     font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
 }
-.deacuerdo {
-    display: inline;
-    width: 60%;
-
+.terminos {
+    display: inline-block;
+    width: 70%;
 }
-#deacuerdo {
-    display: inline;
+.checkbox{
+    display: inline-block;
 }
-.botton-form {
+.botton-form{
     display: block;
     background-color: #39b54a;
     border: none;
@@ -44,13 +42,12 @@
     padding: 5px 10px;
     margin:auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-.botton-form:hover {
+.botton-form:hover{
     background-color: #013220;
 }
 .feedback{
-    flex: 0 0 100%;
     padding: 0.5rem;
     background-color: #ebebeb;
     color: black;
@@ -61,23 +58,34 @@
 .register-box2{
     display: block;
     list-style: none;
-    background-color: #7861fc;
-    border: black 1px solid;
+    text-align: center;
+    background-color: #070720;
+    color: white;
+    border: none;
+    border-radius: 15px;
     max-width: 90%;
     margin: auto;
     margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
 }
 .register-box2 p{
-    text-align: center;
     font-size: 20px;
     margin-top: 15px;
+}
+.barra-box2{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
 }
 
 @media (min-width: 768px){
     .register-box form{
-        width: 45%;
-    }   
-    
+        width: 60%;
+    }  
     .barra-register{
         width: 70%;
         margin: 15px 15%;
@@ -85,6 +93,6 @@
 }
 @media (min-width: 1200px){
     .register-box form{
-        width: 35%;
+        width: 48%;
     }
 }

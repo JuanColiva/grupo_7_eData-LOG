@@ -2,16 +2,23 @@
 @import url("footer.css");
 @import url("base.css");
  
-.main-login{
-    margin-left: 20px;
+.login-box{
+    width: 95%;
+    border: none;
+    border-radius: 15px;
+    background-color: #ebebeb;
+    margin: auto;
+    margin-top: 10px;
+        margin-bottom: 10px;
+    padding: 15px;
 }
-
 .login-form {
     display: block;
     background-color: #ebebeb;
     border-bottom: 10px white solid;
     text-align: start;
-    font-size: 18px;
+    font-size: 18px;  
+    border-radius: 15px;
 }
 
 .login-box h2 {
@@ -25,6 +32,9 @@
     padding: 10px;
     margin-bottom: 20px;
     text-align: start;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
 }
 .recordarme-aqui {
     display: inline;
@@ -46,6 +56,14 @@
     padding: 5px 10px;
     margin:auto;
 }
+.comentary-box{
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    border-radius: 15px;
+}
 .botton-form:hover {
     background-color: #013220;
 }
@@ -62,6 +80,9 @@
     height: 9rem;
     text-align: start;
     margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
 }
 @media (min-width: 768px){
     .barra-login {
@@ -93,28 +114,26 @@
 }
 @media (min-width: 1200px){
     .main-login{
-        display: block;
-        max-width: 90%;
-        background-color: rgb(196, 196, 196);
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin: 3% 5%;
-    }
-    .login-box h2 {
-        margin: 0px 0px 0px 100px;
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        margin: 8% 5%;
     }
     .login-box{
+        margin: 0;
         display: inline-block;
         width: 49%;
-        border-right: #666 solid 1px;
         text-align: center;
+        max-width: 1400px;
     }
     .comentary-box{
         text-align: start;
         display: inline-block;
         width: 49%;
-        margin: 0 0 20px 15px;
+        max-width: 1400px;
+        margin-right: 0;
+        padding: 15px;
+        margin-bottom: 0;
     }
 
     .recordarme-aqui{
@@ -128,7 +147,8 @@
     }
     .comentary-box h2 {
         margin: auto;
-        margin-top: 20px;
+        margin-bottom: 10px;
+        
         text-align: center;
     }
     .texto-bienvenida{
@@ -144,7 +164,7 @@
         text-align: start;
     }
     .botton-form {
-        display: block;
+        
         background-color: #39b54a;
         border: none;
         border-radius: 8px;

@@ -5,7 +5,14 @@
 
 .contacto1{
     background-color: rgb(196, 196, 196);
-    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 .contacto1 img {
     max-width: 30%;
@@ -20,7 +27,7 @@
     color: #2a3354;
 }
 .nav-contactos{
-    display: block;
+    margin-bottom: 10px;
     margin-left: 20px;
 }
 .nav-contactos a {
@@ -36,6 +43,14 @@
 }
 .contacto2 {
     background-color: rgb(196, 196, 196);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 .form-contactos{
     display: list-item;
@@ -46,6 +61,7 @@
     margin: 15px 10px;
     border: none;
     border-radius: 8px;
+    padding-left: 30px;
 }
 .comentarios-contacto{
     width: 60%;
@@ -54,6 +70,7 @@
     margin-right: 30%;
     border: none;
     border-radius: 8px;
+    padding-left: 30px;
 }
 .caja-contactos{
     display: inline;
@@ -67,6 +84,7 @@
     display: list-item;
     margin: auto;
     margin-top: 15px;
+    margin-bottom: 10px;
     background-color: #39b54a;
     border: none;
     border-radius: 8px;
@@ -88,11 +106,14 @@
 @media (min-width: 1200px){
     main{
         display: flex;
-        width: 100%;
-        margin: auto
+        justify-content: space-between;
+        max-width:1400px
     }
     .contacto1{
         width: 50%; 
+        max-width: 1300px;
+        list-style: none;
+        padding: 10px;
     }
     .contacto1 img {
         max-width: 30%;
@@ -112,16 +133,22 @@
         margin-bottom: 40px;
     }
     .contacto2{
-        width: 50%;
+        width: 45%;
+        max-width: 1300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         list-style: none;
-        
+        padding: 10px;
     }
     .barra-contacto{
-        width: 60%;
+        width: 75%;
         height: 60px;
         margin: 15px 50px;
+        padding-left: 30px;
     }
     .comentarios-contacto{
+        width: 75%;
         margin-left: 50px;
+        padding-left: 30px;
     }
 }

@@ -24,9 +24,9 @@ header{
     }
     .encabezado_i{
         display: flex;
-        align-self: center;
+        
+        justify-self: flex-start;
         margin: 0px;
-        align-items: center;
     }
     .encabezado_d{
         display: flex;

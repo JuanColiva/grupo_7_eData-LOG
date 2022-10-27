@@ -7,32 +7,37 @@ body{
 }
 .container-detalle{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: auto;
-    margin-top: 20px;
-    width: 70%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
     background-color: white;
     border-radius: 15px;
 }
-.container-detalle h1{
-    margin: 10px 10px;
-}
 .container-detalle h2{
-    margin: 15px 10px;
+    align-self: flex-start;
+    margin-left: 10px;
 }
-.container-detalle span{
-    margin: auto;
-    margin-bottom: 15px;
+.container-detalle p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
     font-size: 20px;
     width: 100%;
     text-align: center;
 }
-.container-detalle img {
-    margin: auto;
+.imagen{
+    width: 250px;
+    height: 160px;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
     margin-bottom: 10px;
-    border-radius: 10px;
-    width: 281px;
-    height: 200px;
+    border-radius: 15px;
 }
 .editar{
     margin: auto;
@@ -50,6 +55,7 @@ body{
 .comprar{
     margin: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
     color: white;
     border-radius: 5px;
     border: none;
@@ -63,9 +69,10 @@ body{
 }
 .container-detalle form{
     width: 100px;
+    align-self: flex-end;
+    margin-bottom: 8px;
 }
 .eliminar{
-    margin: 1rem;
     border-radius: 3px;
     border: none;
     background-color: #c35f5f;
@@ -74,35 +81,23 @@ body{
 }
 @media (min-width: 768px){
     .container-detalle{
-        max-width: 90%;
+        width: 90%;
         padding: 20px 10px;
     }
     .container-detalle h1{
-        margin: 10px;
-        font-size: 24px;
-        width: 200px;
+        font-size: 35px;
     }
     .container-detalle h2{
-        margin: 15px 10px;
-        width: 40%;
+        font-size: 28px;
     }
-    .container-detalle span{
-        margin: 0;
-        margin-bottom: 15px;
-        font-size: 20px;
-        width: 45%;
-        text-align: center;
+    .container-detalle p{
+       font-size: 25px;
+    }  
+    .imagen{
+        width: 300px;
+        height: 170px;
     }
-    .container-detalle img {
-        align-self: flex-end;
-        order: 1;
-        margin: 0;
-        width: 280px;
-        position: absolute;
-        top: 33vh;
-        
-    }
-    .container-detalle a{
+    .editar{
         margin: 10px;
         font-size: 18px;
         width: 6rem;
@@ -112,7 +107,21 @@ body{
     }
 }
 @media (min-width: 1200px){ 
-    .container-detalle img{
-        top: 40vh;
+    .container-detalle h1{
+        align-self: flex-start;
+        margin: 15px;
+        font-size: 40px;
+    }
+    .container-detalle h2{
+        align-self: flex-start;
+        margin-left: 15px;
+        font-size: 35px;
+    }
+    .container-detalle p{
+        font-size: 30px;
+    }
+    .imagen{
+        width: 400px;
+        height: 270px;
     }
 }
