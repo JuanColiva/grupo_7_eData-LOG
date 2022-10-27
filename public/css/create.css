@@ -2,9 +2,6 @@
 @import url("footer.css");
 @import url("base.css");
 
-body{
-    background-color: white;
-}
 .formularioPadre{
     display: block;
     list-style: none;
