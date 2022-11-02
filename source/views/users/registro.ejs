@@ -10,55 +10,66 @@
         </header>
         <main>
             <section class="register-box">
-                <form action="/users/save" method="post" enctype="multipart/form-data">
+                <form action="/users/save" method="post" enctype="multipart/form-data" id="formulario">
+                    <div id="formulario1">
                     <h2>Crea tu cuenta.</h2>
                     <h3>Informacion de cuenta.</h3>
                     <input type="text"
                     placeholder="nombre"
                     name= "nombre"
-                    id="nombre"
                     class="barra-register"
+                    id="registro-id"
                     value="<%= locals.errores && !locals.errores.nombre && locals.data ? locals.data.nombre : null %>">
+                    <p class="barra-register-error">Nombre solo puede llevar letras, espacios y acentos</p>
                     <% if (locals.errores && locals.errores.nombre) { %>
                         <p class="feedback">
                             <%= locals.errores.nombre.msg  %> 
                         </p>
                     <% } %>
+                    </div>
+                    <div id="formulario2">
                     <input type="text"
                     name= "apellido"
-                    id="apellido"
                     placeholder="apellido"
                     class="barra-register"
+                    id="registro-id2"
                     value="<%= locals.errores && !locals.errores.apellido && locals.data ? locals.data.apellido : null %>">
+                    <p class="barra-register-error">Apellido solo puede llevar letras, espacios y acentos</p>
                     <% if (locals.errores && locals.errores.apellido) { %>
                         <p class="feedback">
                             <%= locals.errores.apellido.msg  %> 
                         </p>
                     <% } %>
-                    <input type="email" 
+                    </div>
+                    <div id="formulario3">
+                        <input type="email" 
                            name= "email" 
-                           id="email" 
                            placeholder="email"
                            class="barra-register"
+                           id="registro-id3"
                            value="<%= locals.errores && !locals.errores.email && locals.data ? locals.data.email : null %>">
-                    <% if (locals.errores && locals.errores.email) { %>
+                           <p class="barra-register-error">El email tiene solo puede ser letras, numeros y debes poner el "@" y ".com"</p>
+                           <% if (locals.errores && locals.errores.email) { %>
                         <p class="feedback">
                             <%= locals.errores.email.msg  %> 
                         </p>
                     <% } %>
-                    <input type="password" 
-                           name= "password" 
-                           id="password" 
+                    </div>
+                    <div id="formulario4">
+                        <input type="password" 
+                           name= "password"  
                            placeholder="contraseña"
                            class="barra-register"
+                           id="registro-id4"
                            value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
-                    <% if (locals.errores && locals.errores.password) { %>
+                           <p class="barra-register-error" id="legenda-error">La contraseña debe contener minimo 8 digitos</p>
+                           <% if (locals.errores && locals.errores.password) { %>
                         <p class="feedback">
                             <%= locals.errores.password.msg  %> 
                         </p>
                     <% } %>
-                    <label for="deacuerdo" class="terminos">Acepto los terminos y condiciones</label>
-                    <input type="checkbox" class="checkbox" id="deacuerdo">
+                    </div>
+                    <label for="deacuerdo" class="terminos">Acepto los terminos y condiciones  <input type="checkbox" class="checkbox" id="deacuerdo"></label>
                     <button type="submit" class="botton-form">Enviar</button>
                 </form>
             </section>
@@ -71,5 +82,6 @@
         <footer class="main-footer">
             <%- include ("../partials/footer.ejs") %> 
         </footer>
+        <script src="/scripts/register.js"></script>
     </body>
 </html>

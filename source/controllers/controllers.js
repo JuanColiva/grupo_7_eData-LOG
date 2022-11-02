@@ -38,13 +38,13 @@ const controller = {
             });
     },
     create: (req, res) =>{      
-        res.render("users/create");
+        res.render("products/create");
       },
     save: (req, res) =>{
         const result = validationResult(req);
         if(!result.isEmpty()){
             let errores = result.mapped();
-            return res.render("users/create", {
+            return res.render("products/create", {
                 style: "create",
                 errores: errores,
                 data: req.body
@@ -57,14 +57,14 @@ const controller = {
     edit: (req, res) =>{
         db.Producto.findByPk(req.params.producto)
         .then(producto => {
-            res.render("users/edit", {producto})
+            res.render("products/edit", {producto})
         })
       },
     update: (req,res)=>{
         const result = validationResult(req);
         if(!result.isEmpty()){
             let errores = result.mapped();
-            return res.render("users/edit", {
+            return res.render("products/edit", {
                 style: "edit",
                 errores: errores,
                 data: req.body

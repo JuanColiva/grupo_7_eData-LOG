@@ -9,7 +9,7 @@
     background-color: #ebebeb;
     margin: auto;
     margin-top: 10px;
-        margin-bottom: 10px;
+    margin-bottom: 10px;
     padding: 15px;
 }
 .login-form {
@@ -25,26 +25,47 @@
     text-align: start;
     margin: 10px 0px 15px 0px;
 }
-.barra-login {
+.class-barra{
     display: list-item;
     width: 70%;
     font-size: 20px;
     padding: 10px;
-    margin-bottom: 20px;
-    text-align: start;
-    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid transparent;
     border-radius: 15px;
     padding-left: 10px;
 }
-.recordarme-aqui {
-    display: inline;
+
+.class-barra-correcto{
+    border: 3px solid #1ed12d;
+    opacity: 1;
 }
-.caja{
-    display:inline;
+.class-barra-incorrecto{
+    border: 3px solid #bb2929;
+    
 }
-.contraseña-olvidada{
-    display:block;
-    margin: 10px 0px 20px 0;
+.class-barra-error{
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #c22e2e;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.class-barra-error-activo{
+    display: flex;
+}
+.debes-marcar{
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #070720;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
 }
 .botton-form {
     display: block;
@@ -80,26 +101,39 @@
     height: 9rem;
     text-align: start;
     margin-bottom: 10px;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 15px;
     padding-left: 10px;
+    transition: 1s ease all;
+}
+.comentrios-login:focus{
+    border: 3px solid #0875ff;
+    outline: none;
+    box-shadow: 3px 0px 38px rgba(163, 163, 63, 0.4);
 }
 @media (min-width: 768px){
-    .barra-login {
+    .class-barra {
         display: list-item;
         width: 70%;
         padding: 10px;
-        margin: 10px 0 20px 15%;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .class-barra-error{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 40%;
         text-align: center;
     }
     .recordarme-aqui{
-        display: inline-block;
-        margin:0;
-        margin-left: 20%;;
+        margin-left: 35%;
     }
-    .contraseña-olvidada{
-        display: inline-block;
-        margin-left: 10%;
+    .debes-marcar{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 40%;
     }
     .texto-bienvenida{
         text-align: center;
@@ -137,7 +171,6 @@
     }
 
     .recordarme-aqui{
-        display: inline-block;
         margin:0;
         text-align: left;
     }
