@@ -1,0 +1,76 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+body{
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+} 
+h1{
+    margin: 10px 0;
+}
+li{
+    background-color: white;
+    width: 55%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.container-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+.container-productos h2{
+    margin: 10px 0;
+}
+.container-productos img{
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.nuevo{
+margin: 1rem auto 1rem auto;
+ font-size: 1.4rem;
+ border: none;
+ width: 15%;
+ background-color: snow;
+ border-radius: 8px;
+}
+.nuevo i{
+    font-size: 1rem;
+   }
+   .nuevo:hover{
+    background-color: lightgrey;
+   }
+
+@media (min-width: 768px){
+    li{
+        width:45%;
+        height:280px;
+        display: inline-block;
+        margin: 2%;
+        padding: 15px;
+        text-align: center;
+    }
+    .container-productos h2{
+        text-align: center;
+        font-size: 19px;
+        padding-top: 0%;
+    }
+    .container-productos img{
+        width: 300px;
+        height: 150px;
+    }
+    
+}
+@media (min-width: 1200px){
+    li{
+        width: 30%;
+        margin: 10px 10px;
+    }
+    .container-productos img{
+        width: 90%;
+    }
+}

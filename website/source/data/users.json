@@ -1,0 +1,58 @@
+[
+  {
+    "nombre": "pedro",
+    "apellido": "gonzalez",
+    "email": "juanchioliva1@gmail.com",
+    "password": "741852",
+    "avatar": null,
+    "id": 1
+  },
+  {
+    "nombre": "juan",
+    "apellido": "perez",
+    "email": "juanchioliva@hotmail.com",
+    "password": "123456",
+    "avatar": null,
+    "id": 2
+  },
+  {
+    "nombre": "gonzalo",
+    "apellido": "rodriguez",
+    "email": "gonzalo@gmail.com",
+    "password": "$2b$10$WYSni0kuDajNuVaFEdFyXulDUW9DfeuKyOxFWzx9H3WLgE6E1/sRO",
+    "avatar": null,
+    "id": 3
+  },
+  {
+    "nombre": "Nazarena",
+    "apellido": "Ceballos",
+    "email": "ceballosnazarena@gmail.com",
+    "password": "$2b$10$ZSpYu5Z/zi.Ey6HkRVanqeoc5BK1c3jNjZH2OviHM/H7VbZ2msNKK",
+    "avatar": null,
+    "id": 4
+  },
+  {
+    "nombre": "juan",
+    "apellido": "berrios",
+    "email": "juancruzberrios73@gmail.com",
+    "password": "$2b$10$gyt8IbXSOwrABjmONRstt.95qQDcAAOdbcd3F32thNzf5/PnEi8/G",
+    "avatar": null,
+    "id": 5
+  },
+  {
+    "nombre": "prueba",
+    "apellido": "prueba",
+    "email": "prueba@data.com",
+    "password": "$2b$10$/Kz18xktt.PK1ED2jLS8BugpbswwRLOqPjwNuDmA12e1EZP9xkL0S",
+    "avatar": null,
+    "id": 6
+  },
+  {
+    "nombre": "prueba",
+    "apellido": "prueba",
+    "email": "prueba@data.com",
+    "password": "$2b$10$CsFi4wfh9Zsp4fCcphov4.nea2dFuSSplZhRI8ndtXZsC2kReBQfS",
+    "avatar": null,
+    "id": 7
+  }
+]

@@ -1,0 +1,115 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+
+form{
+    width: 90%;
+}
+.formularioPadre{
+    display: block;
+    list-style: none;
+    background-color: #ebebeb;
+    border: black 1px solid;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
+}
+.formularioHijo{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+}
+.barra-register-error{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #c22e2e;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.barra-register-error-activo{
+    display: flex;
+}
+.formularioHijo2{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 10px;
+    border: none;
+}
+.formularioHijo input{
+    width: 70%;
+}
+legend{
+    margin-top: 10px;
+}
+.botton{
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin:auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.botton:hover {
+    background-color: #013220;
+}
+
+.subirImagen{
+    border:none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 90%;
+}
+
+ .archivos{
+    margin-left: 1.9rem;
+    margin-bottom: 1rem;
+}
+.vuelta a{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+@media (min-width: 768px){
+    .formularioPadre{
+        width: 45%;
+    } 
+    .formularioHijo2{
+        font-size: 14px;
+    }  
+    .vuelta{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+    }
+    
+}
+@media (min-width: 1200px){
+    .formularioPadre{
+        width: 35%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .formularioHijo2{
+        font-size: 15px;
+    }  
+    .vuelta{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+    }
+}
