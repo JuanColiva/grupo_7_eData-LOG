@@ -1,10 +1,9 @@
 const {body} = require("express-validator");
 const {compareSync} = require("bcrypt")
 const db = require('../database/models');
-const sequelize = db.sequelize;
 
 let email = body("email").notEmpty().withMessage("Email no puede quedar vacio").bail()
-.isEmail().withMessage("Email no valido").custom((value,{req})=>{
+.isEmail().withMessage("Email no valido").custom((value)=>{
     return db.Usuario.findOne({
         where:{
             email: value
@@ -28,7 +27,7 @@ let password = body("password").notEmpty().withMessage("contraseña no puede que
         if(!resultado){
             return Promise.reject("credenciales invalidas")
         }
-        if (!compareSync(value, resultado.password)){
+        if(!compareSync(value,resultado.password)){
             return Promise.reject("contraseña incorrecta")
         }
         return true
