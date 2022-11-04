@@ -58,8 +58,8 @@ CREATE TABLE `pedidos`(
 );
 
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `password`) VALUES
-(1, 'juan', 'berrios', 'juancruzberrios2003@gmail.com', '123456'),
-(2, 'prueba', 'prueba', 'prueba@gmail.com', '123456');
+(1, 'prueba', 'prueba', 'prueba@gmail.com', '$2b$08$nBhjcTRiHgEQfuUOI.kSnOXQaGRbAAerYxz.rQG9VSNUhTSU/sRQe');
+(2, 'prueba', 'prueba', 'prueba@data.com', '$2b$08$nBhjcTRiHgEQfuUOI.kSnOXQaGRbAAerYxz.rQG9VSNUhTSU/sRQe');
 
 alter table pedidos add foreign key (id_producto) references productos(id);
 alter table pedidos add foreign key (id_usuario) references usuarios(id);
