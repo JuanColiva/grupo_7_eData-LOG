@@ -4,7 +4,7 @@
 https://www.figma.com/file/1dVnoJZNAmCE3WrtErnlUR/Proyecto-Integrador?node-id=0%3A1
 
 # Tablero de trabajo:
-https://trello.com/invite/b/bWGR93HT/2c28d3e89b49fe4294e79173ae8618d9/edata-logs-workboard
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/106563641/200053437-59f74571-3a90-46b6-a573-803b3ad9a6d3.png)
 
 # Diagrama de base de datos:
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/106563641/197422499-58ed65e0-ade2-4f9c-9a5a-78f9deb52086.png)
