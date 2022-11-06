@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
+@import url("hb.css");
  
 .login-box{
     width: 95%;
@@ -104,12 +105,6 @@
     border: 3px solid transparent;
     border-radius: 15px;
     padding-left: 10px;
-    transition: 1s ease all;
-}
-.comentrios-login:focus{
-    border: 3px solid #0875ff;
-    outline: none;
-    box-shadow: 3px 0px 38px rgba(163, 163, 63, 0.4);
 }
 @media (min-width: 768px){
     .class-barra {

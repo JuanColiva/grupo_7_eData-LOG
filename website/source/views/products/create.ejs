@@ -10,6 +10,7 @@
         </header>
 <body>
     <main>
+        <%- include("../partials/hb.ejs")  %>
     <form action="/productos/guardar" method="post" enctype="multipart/form-data" id="formulario">
         <section class="formularioPadre">
             <a href="/productos" >Volver</a>
@@ -60,5 +61,6 @@
     <%- include ("../partials/footer.ejs") %> 
 </footer>
 <script src="/scripts/create.js"></script>
+<script src="/scripts/hb.js"></script>
 </body>
 </html>

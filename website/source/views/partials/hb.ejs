@@ -1,0 +1,12 @@
+<nav class="nav-hb" id="nav-hb">
+    <a href="/productos">PRODUCTOS <i class="fa-solid fa-box"></i></a>
+    <a href="/precios">PRECIOS <i class="fa-solid fa-hand-holding-dollar"></i></a>
+    <a href="/contacto">CONTACTO <i class="fa-solid fa-inbox"></i> </a>
+    <% if (!user) { %>
+        <a href="/registro">REGISTRO <i class="fa-solid fa-address-card"></i></a>
+        <a href="/login" class="login">LOGIN <i class="fa-solid fa-right-to-bracket"></i> </a>
+    <% } else { %>
+        <a href="/users/profile">PERFIL <i class="fa-solid fa-user"></i></a>
+        <a href="/users/logout">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></a>
+    <% } %>
+</nav>

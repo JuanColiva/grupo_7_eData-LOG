@@ -10,6 +10,7 @@
         </header>
 <body>
     <main>
+        <%- include("../partials/hb.ejs")  %>
     <form action="/productos/actualizar?m=PUT" method="post" enctype="multipart/form-data" id="formulario">
         <input type="hidden" name="id" value="<%= producto.id %>" >
         <section class="formularioPadre">
@@ -67,5 +68,6 @@
     <%- include ("../partials/footer.ejs") %> 
 </footer>
 <script src="/scripts/edit.js"></script>
+<script src="/scripts/hb.js"></script>
 </body>
 </html>

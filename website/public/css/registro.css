@@ -1,7 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("base.css");
-
+@import url("hb.css");
 
 .register-box form{
     display: list-item;
@@ -24,7 +24,6 @@
     border: none;
     border-radius: 15px;
     padding-left: 10px;
-    transition: 1s ease all;
 }
 .barra-register-correcto{
     border: 3px solid #1ed12d;

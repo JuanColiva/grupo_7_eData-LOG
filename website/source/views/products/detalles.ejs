@@ -9,6 +9,7 @@
             <%- include("../partials/header.ejs")  %>   
         </header>
         <main>
+            <%- include("../partials/hb.ejs")  %>
 <% if (producto){ %>
     <article class="container-detalle">
         <h1> <%= producto.name %> </h1>
@@ -34,6 +35,7 @@
 <footer class="main-footer">
     <%- include ("../partials/footer.ejs") %> 
 </footer>
+<script src="/scripts/hb.js"></script>
 </body>
 </html>
     

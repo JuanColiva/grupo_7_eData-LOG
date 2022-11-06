@@ -9,6 +9,7 @@
             <%- include("../partials/header.ejs")  %>   
         </header>
         <main>
+            <%- include("../partials/hb.ejs")  %>
                 <ul>
                     <% for( let i = 0; i < productos.length; i++ ) { %>
                         <%- include( "../partials/producto.ejs", {producto:productos[i]})  %>
@@ -23,5 +24,6 @@
         <footer class="main-footer">
             <%- include ("../partials/footer.ejs") %> 
         </footer>
+        <script src="/scripts/hb.js"></script>
     </body>
 </html>

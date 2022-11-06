@@ -12,6 +12,11 @@ header{
 .container img{
     width: 180px;
 }
+.hb{
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
 .encabezado_i {
     display: none;
 }
@@ -21,6 +26,9 @@ header{
 @media (min-width:768px){
     .container{
         margin: solid 1px white;
+    }
+    .hb{
+        display: none;
     }
     .encabezado_i{
         display: flex;

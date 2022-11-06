@@ -9,6 +9,7 @@
             <%- include("../partials/header.ejs")  %> 
         </header>
         <main class="main-login">
+            <%- include("../partials/hb.ejs")  %>
             <section class="login-box">
                 <h2>Login</h2>
                 <form action="/users/access" method="post" id="formulario">
@@ -63,5 +64,6 @@
             <%- include ("../partials/footer.ejs") %> 
         </footer>
         <script src="/scripts/login.js"></script>
+        <script src="/scripts/hb.js"></script>
     </body>
 </html>
