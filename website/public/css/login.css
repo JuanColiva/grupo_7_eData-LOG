@@ -1,0 +1,204 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+@import url("hb.css");
+ 
+.login-box{
+    width: 95%;
+    border: none;
+    border-radius: 15px;
+    background-color: #ebebeb;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.login-form {
+    display: block;
+    background-color: #ebebeb;
+    border-bottom: 10px white solid;
+    text-align: start;
+    font-size: 18px;  
+    border-radius: 15px;
+}
+
+.login-box h2 {
+    text-align: start;
+    margin: 10px 0px 15px 0px;
+}
+.class-barra{
+    display: list-item;
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.class-barra-correcto{
+    border: 3px solid #1ed12d;
+    opacity: 1;
+}
+.class-barra-incorrecto{
+    border: 3px solid #bb2929;
+    
+}
+.class-barra-error{
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #c22e2e;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.class-barra-error-activo{
+    display: flex;
+}
+.debes-marcar{
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #070720;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+}
+.botton-form {
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin:auto;
+}
+.comentary-box{
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    border-radius: 15px;
+}
+.botton-form:hover {
+    background-color: #013220;
+}
+.login-box{
+    margin-bottom: 50px;
+}
+.texto-bienvenida{
+    margin: 10px 0px 20px 0px;
+}
+.comentrios-login{
+    display: block;
+    font-size: 25px;
+    width: 70%;
+    height: 9rem;
+    text-align: start;
+    margin-bottom: 10px;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+@media (min-width: 768px){
+    .class-barra {
+        display: list-item;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .class-barra-error{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 40%;
+        text-align: center;
+    }
+    .recordarme-aqui{
+        margin-left: 35%;
+    }
+    .debes-marcar{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        margin: 10px 0 40px 0;
+    }
+    .comentrios-login{
+        display: block;
+        width: 60%;
+        height: 200px;
+        margin: 5% 0px 15px 20%;
+    }
+}
+@media (min-width: 1200px){
+    .main-login{
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        margin: 8% 5%;
+    }
+    .login-box{
+        margin: 0;
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+        max-width: 1400px;
+    }
+    .comentary-box{
+        text-align: start;
+        display: inline-block;
+        width: 49%;
+        max-width: 1400px;
+        margin-right: 0;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    .recordarme-aqui{
+        margin:0;
+        text-align: left;
+    }
+    .contraseña-olvidada{
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .comentary-box h2 {
+        margin: auto;
+        margin-bottom: 10px;
+        
+        text-align: center;
+    }
+    .texto-bienvenida{
+        text-align: center;
+        max-width: 50%;
+        margin: auto;
+    }
+    .comentrios-login{
+        margin: auto;
+        margin-bottom: 15px;
+        width: 65%;
+        height: 150px;
+        text-align: start;
+    }
+    .botton-form {
+        
+        background-color: #39b54a;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        margin: auto;
+    }
+}

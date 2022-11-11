@@ -1,0 +1,129 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+@import url("hb.css");
+
+
+body{
+    background-color: #ebebeb;
+}
+.container-detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+}
+.container-detalle h2{
+    align-self: flex-start;
+    margin-left: 10px;
+}
+.container-detalle p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.imagen{
+    width: 250px;
+    height: 160px;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.editar{
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgb(106, 106, 191);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    padding: 5px 5px;
+}
+.editar:hover{
+    background-color: rgb(77, 77, 170);
+}
+.comprar{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #39b54a;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 5px;
+}
+.comprar:hover{
+    background-color: #013220;
+}
+.container-detalle form{
+    width: 100px;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+.eliminar{
+    border-radius: 3px;
+    border: none;
+    background-color: #c35f5f;
+    color: white;
+    padding: 5px 5px;
+}
+@media (min-width: 768px){
+    .container-detalle{
+        width: 90%;
+        padding: 20px 10px;
+    }
+    .container-detalle h1{
+        font-size: 35px;
+    }
+    .container-detalle h2{
+        font-size: 28px;
+    }
+    .container-detalle p{
+       font-size: 25px;
+    }  
+    .imagen{
+        width: 300px;
+        height: 170px;
+    }
+    .editar{
+        margin: 10px;
+        font-size: 18px;
+        width: 6rem;
+    }
+    .container-detalle form{
+        align-self: flex-end;
+    }
+}
+@media (min-width: 1200px){ 
+    .container-detalle h1{
+        align-self: flex-start;
+        margin: 15px;
+        font-size: 40px;
+    }
+    .container-detalle h2{
+        align-self: flex-start;
+        margin-left: 15px;
+        font-size: 35px;
+    }
+    .container-detalle p{
+        font-size: 30px;
+    }
+    .imagen{
+        width: 400px;
+        height: 270px;
+    }
+}

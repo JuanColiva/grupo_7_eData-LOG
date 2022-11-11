@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/contacto.css">
+        <title>eData-LOG</title>
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header.ejs")  %>   
+        </header>
+        <main>
+            <%- include("../partials/hb.ejs")  %>
+            <section class="contacto1">
+                <img src="../images/Logo eData-LOG.png">
+                <strong>eData-Log</strong>
+                <nav class="nav-contactos">
+                    <a><i class="fa-solid fa-house"></i>221B Beaker Street</a>
+                    <a><i class="fa-solid fa-phone"></i>+54-261-572-5284</a>
+                    <a><i class="fa-solid fa-envelope"></i>equipo@eData-LOG.com</a>
+                </nav>
+            </section>
+            <section class="contacto2">
+                <form class="form-contactos">
+                    <input type="text" placeholder="Nombre y Apellido"
+                    class="barra-contacto">
+                    <input type="text" placeholder="empresa"
+                    class="barra-contacto">
+                    <input type="email" placeholder="email"
+                    class="barra-contacto">
+                    <input type="text" placeholder="telefono"
+                    class="barra-contacto">
+                    <input type="text" placeholder="Comentarios"
+                    class="comentarios-contacto">
+                    <input type="checkbox" id="terminos-leidos" name="terminos"
+                    class="caja-contactos">
+                    <label for="terminos-leidos" class="terminos-contactos">He
+                    leído y acepto los términos de condiciones</label>
+                    <button type="submit"
+                    class="botton-contactos">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <%- include ("../partials/footer.ejs") %> 
+        </footer>
+        <script src="/scripts/hb.js"></script>
+    </body>
+</html>

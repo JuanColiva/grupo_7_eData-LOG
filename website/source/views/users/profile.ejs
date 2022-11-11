@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/profile.css">
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header.ejs")  %> 
+        </header>
+    <main class="cajaPadre">
+        <%- include("../partials/hb.ejs")  %>
+    <% if (!user) { %>
+
+    <h2 >Bienvenido a EDATA-LOG</h2>
+
+    <% } else { %>
+     
+        <h2 >Bienvenido a EDATA-LOG <%= user.email %> </h2>
+     
+    <% } %>
+
+
+    </main>
+    <footer class="main-footer">
+        <%- include ("../partials/footer.ejs") %> 
+    </footer>
+    <script src="/scripts/hb.js"></script>
+</body>
+</html>

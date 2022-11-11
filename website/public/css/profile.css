@@ -1,0 +1,23 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+@import url("hb.css");
+
+
+h2{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    width: 60%;
+    background-color:rgb(196, 196, 196); ;
+    height: 30%;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.cajaPadre{
+    display: flex;
+    height: 70vh;
+}

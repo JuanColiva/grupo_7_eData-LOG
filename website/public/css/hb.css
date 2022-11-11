@@ -1,0 +1,22 @@
+.nav-hb{
+    display: none;
+}
+.nav-hb-activo{
+    display: flex;
+    background-color:rgb(107, 107, 107) ;
+}
+.nav-hb a{
+    color: black;
+    margin: 1% 1%;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+@media (min-width: 768px){
+    .nav-hb{
+        display: none;
+    }
+    .nav-hb-activo{
+        display: none;
+    }
+}

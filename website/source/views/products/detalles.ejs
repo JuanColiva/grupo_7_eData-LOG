@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("../partials/head.ejs")  %>
+        <link rel="stylesheet" href="/css/detalles.css">
+    </head>
+    <body>
+        <header>
+            <%- include("../partials/header.ejs")  %>   
+        </header>
+        <main>
+            <%- include("../partials/hb.ejs")  %>
+<% if (producto){ %>
+    <article class="container-detalle">
+        <h1> <%= producto.name %> </h1>
+        <h2><%= producto.plan %></h2>
+        <p><%= producto.descripcion %> </p>
+        <a class="imagen"><img src="/products/<%= producto.imagene %>"></a>
+        <a href="/precios" class="comprar">COMPRAR</a>
+        <% if (user && user.admin) { %>
+            <a href="/productos/editar/<%= producto.id %>" class="editar">EDITAR</a>
+        <% } %>
+        <form action="/productos/borrar?m=DELETE" method="post">
+            <input type="hidden" name="id" value="<%= producto.id %>">
+            <% if (user && user.admin) { %>
+                <button type="submit" class="eliminar">Borrar</button>
+            <% } %>
+        </form>
+    </article>
+<% } else { %>
+    <h2>No se encontro el producto</h2>
+    <a href="/productos">vea nuestros productos aqui</a>
+<% } %>
+</main>
+<footer class="main-footer">
+    <%- include ("../partials/footer.ejs") %> 
+</footer>
+<script src="/scripts/hb.js"></script>
+</body>
+</html>
+    

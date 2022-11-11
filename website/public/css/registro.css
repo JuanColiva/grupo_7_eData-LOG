@@ -1,0 +1,119 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("base.css");
+@import url("hb.css");
+
+.register-box form{
+    display: list-item;
+    list-style: none;
+    text-align: center;
+    background-color: #ebebeb;
+    border: black 1px solid;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none
+}
+.barra-register{
+    width: 90%;
+    height: 50px;
+    margin: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.barra-register-correcto{
+    border: 3px solid #1ed12d;
+    opacity: 1;
+}
+.barra-register-incorrecto{
+    border: 3px solid #bb2929;
+}
+.barra-register-error{
+    margin: auto;
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #c22e2e;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.barra-register-error-activo{
+    display: flex;
+}
+.terminos {
+    display: inline-block;
+    width: 70%;
+}
+.checkbox{
+    display: inline-block;
+}
+.botton-form{
+    display: block;
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.botton-form:hover{
+    background-color: #013220;
+}
+.feedback{
+    padding: 0.5rem;
+    background-color: #ebebeb;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.register-box2{
+    display: block;
+    list-style: none;
+    text-align: center;
+    background-color: #070720;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.register-box2 p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.barra-box2{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px){
+    .register-box form{
+        width: 60%;
+    }  
+    .barra-register{
+        width: 70%;
+        margin: 15px 15%;
+    }
+}
+@media (min-width: 1200px){
+    .register-box form{
+        width: 48%;
+    }
+}
