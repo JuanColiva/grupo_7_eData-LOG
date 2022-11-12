@@ -28,3 +28,4 @@ app.use(require("./middlewares/users"))
 app.use(require("./routes/routes.js"));
 app.use('/users', require('./routes/users.routes'))
 app.use("/api", require("./routes/api/users"))
+app.use("/api", require("./routes/api/products"))
