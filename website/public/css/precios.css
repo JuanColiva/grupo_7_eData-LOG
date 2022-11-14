@@ -8,9 +8,14 @@ body{
     background-color: rgb(196, 196, 196);
 }
 .titulo-precio{
+    margin: auto;
     text-align: center;
+    padding: 10px;
+    border-radius: 30px;
     font-size: 30px;
     margin-top: 20px;
+    background-color: white;
+    width: 500px;
 }
 .precios-box1{
     display:block;

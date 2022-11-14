@@ -7,12 +7,12 @@
 body{
   font-family: 'Roboto', sans-serif;;
 }
-.navbar {
+.header {
   padding: 0rem 1rem;
   border-bottom: 1px solid black;
   background-color: #070720;
 }
-.navbar img{
+.header img{
   width: 180px
 }
 .flex{
@@ -22,6 +22,17 @@ body{
   width: 9rem;
   border-right: 1px solid black;
   height: 100vh;
+  background-color: white;
+}
+.cargando{
+  margin:10px 0 20px 15px;
+  text-align: center;
+  background-color: #070720;
+  padding: 10px;
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  color: white;
 }
 .sidebar ul{
   padding: 10px;
@@ -35,4 +46,60 @@ body{
   color: white;
   padding: 8px;
   border-radius: 10px;
+}
+.tarjetas li{
+  margin:15px 0px 30px 10px;
+  background-color: #070720;
+  padding: 15px;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+.datos{
+  color: white;
+  margin: 12px
+}
+button{
+    background-color: #39b54a;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin:0px 20px 20px 10px;
+}
+button:hover{
+  background-color: #013220;
+}
+.home-h1{
+  background-color: #39b54a;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.home-div  {
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #070720;
+  width: 250px;
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+.home-div a{
+  color: white;
+}
+@media (min-width: 768px){
+  .tarjetas{
+    display: flex;
+  }
+  .home-div{
+    display: inline-block;
+    margin: 20px 20px 0 ;
+  }
 }
