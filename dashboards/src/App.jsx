@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Usuarios from "./pages/Usuarios"
 import Productos from "./pages/Productos"
 import DetallesUsuario from "./pages/DetallesUsuario"
+import DetalleProducto from "./pages/DetalleProducto"
 import './App.css';
 
 class App extends Component{
@@ -20,6 +21,7 @@ class App extends Component{
           <Route exact path="/usuarios" component={Usuarios}/>
           <Route exact path="/productos" component={Productos}/>
           <Route exact path="/detallesUsuario/:id" component={DetallesUsuario}/>
+          <Route exact path="/detalleProducto/:id" component={DetalleProducto}/>
         </Switch>
         </div>
       </>
