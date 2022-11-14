@@ -47,12 +47,16 @@ body{
   padding: 8px;
   border-radius: 10px;
 }
+.tarjetas{
+  display: list-item;
+  list-style: none;
+}
 .tarjetas li{
   margin:15px 0px 30px 10px;
   background-color: #070720;
   padding: 15px;
-  width: 250px;
-  height: 150px;
+  width: 90%;
+  height: 200px;
   border-radius: 10px;
 }
 .datos{
@@ -60,6 +64,7 @@ body{
   margin: 12px
 }
 button{
+    display: inline-block;
     background-color: #39b54a;
     border: none;
     border-radius: 8px;
@@ -97,9 +102,15 @@ button:hover{
 @media (min-width: 768px){
   .tarjetas{
     display: flex;
+    justify-content: center;
+  }
+  .tarjetas li{
+    width: 280px;
+    height: 215px;
   }
   .home-div{
     display: inline-block;
-    margin: 20px 20px 0 ;
+    margin: 20px 20px 0 20px;
   }
+  
 }

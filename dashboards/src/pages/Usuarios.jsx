@@ -11,7 +11,7 @@ export default function Usuarios() {
         fetch(endpoint)
         .then(response => response.json())
         .then(data =>{
-           setPost(data.data)
+           setPost(data.data.splice(0.2))
         })
         .catch(error => console.log(error))
     },[])
@@ -20,8 +20,8 @@ export default function Usuarios() {
             try {
                 let request = await fetch(endpoint)
                 let data = await request.json()
-                let offset = page*5
-                setPost(data.data.splice(offset,5))
+                let offset = page*2
+                setPost(data.data.splice(offset,2))
             } catch(error){
             console.log(Error)
     }

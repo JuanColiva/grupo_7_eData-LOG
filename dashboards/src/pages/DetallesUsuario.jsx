@@ -20,9 +20,9 @@ export default function UsuariosDetalle() {
                     posts.map((post)=>{
                         return(
                             <li key={post.id}>
-                            <h1 className="datos">{post.nombre}</h1>
-                            <h2 className="datos">{post.apellido}</h2>
-                            <h3 className="datos">{post.email}</h3>
+                            <h3 className="datos">{post.nombre}</h3>
+                            <h4 className="datos">{post.apellido}</h4>
+                            <h4 className="datos">{post.email}</h4>
                             </li>
                         )
                     })
