@@ -12,7 +12,7 @@
             <%- include("../partials/hb.ejs")  %>
                 <ul>
                     <% for( let i = 0; i < productos.length; i++ ) { %>
-                        <%- include( "../partials/producto.ejs", {producto:productos[i]})  %>
+                        <%- include( "../partials/producto.ejs", {producto:productos[i]}) %>
                    <% } %>
                 </ul>
                 <% if (user && user.admin) { %>

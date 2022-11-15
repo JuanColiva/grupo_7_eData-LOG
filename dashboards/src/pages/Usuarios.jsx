@@ -29,7 +29,7 @@ export default function Usuarios() {
     api()
     },[page])
     const increment = ()=> setPage(page < 19 ? page + 1 : 19)
-    const decrement = () => setPage(page > 0 ? - 1 : 0)
+    const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
         <main>
             <h1 className="home-h1">Usuarios de eData-LOG</h1>
@@ -40,8 +40,7 @@ export default function Usuarios() {
                         return(
                             <li key={post.id}>
                             <h5 className="datos">usuario n°{post.id}</h5>
-                            <h1 className="datos">{post.nombre}</h1>
-                            <h2 className="datos">{post.apellido}</h2>
+                            <h1 className="datos">{post.nombre +" " + post.apellido}</h1>
                             <Link to="/detallesUsuario/:id" className="datos">Ver mas</Link>
                             </li>
                         )

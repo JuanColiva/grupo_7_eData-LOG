@@ -1,8 +1,6 @@
 const {generate} = require("../models/products.models");
 const {unlinkSync} = require ("fs");
-const {resolve} = require ("path");
 const db = require('../database/models');
-const sequelize = db.sequelize;
 const{validationResult} = require("express-validator");
 
 const controller = {
@@ -34,7 +32,7 @@ const controller = {
     show: (req, res) => {
         db.Producto.findByPk(req.params.producto)
             .then(producto => {
-                return res.render('products/detalles.ejs', {producto});
+                return res.render('products/detalles', {producto});
             });
     },
     create: (req, res) =>{      

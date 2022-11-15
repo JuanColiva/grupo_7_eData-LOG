@@ -1,12 +1,13 @@
-const {join} = require ("path");
 const{validationResult} = require("express-validator");
 const model = require("../models/users.model")
 const db = require('../database/models');
-const sequelize = db.sequelize;
 module.exports = {
     profile: (req, res) => {
-        res.render("users/profile");
-    },
+            db.Usuario.findByPk(req.params.id)
+            .then(resultado => {
+                res.render("users/profile", {resultado})
+            })
+          },
     save: (req,res) => {
         const result = validationResult(req)
         if(!result.isEmpty()){

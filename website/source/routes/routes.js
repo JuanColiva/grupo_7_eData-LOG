@@ -40,12 +40,11 @@ route.get("/registro", controller.registro);
 
 route.get("/productos", controller.index);
 
+route.get("/productos/:producto", controller.show);
+
 route.get("/productos/nuevo",isLoged,isAdmin, controller.create);
 
 route.post("/productos/guardar", upload.any(),validaciones, controller.save);
-
-
-route.get("/productos/:producto", controller.show);
 
 route.get("/productos/editar/:producto",isLoged,isAdmin, controller.edit);
 

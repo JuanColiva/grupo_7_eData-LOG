@@ -28,7 +28,7 @@ export default function Productos() {
     api()
     },[page])
     const increment = ()=> setPage(page < 19 ? page + 1 : 19)
-    const decrement = () => setPage(page > 0 ? - 1 : 0)
+    const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
         <main>
             <h1 className="home-h1">Productos de eData-LOG</h1>

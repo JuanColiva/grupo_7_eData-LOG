@@ -23,7 +23,8 @@ module.exports = {
                 data: {
                     name: pruducts.name,
                     plan: pruducts.plan,
-                    descripcion: pruducts.descripcion
+                    descripcion: pruducts.descripcion,
+                    imagen: "http://localhost:3001/products/"+ pruducts.imagene
                 }
             })
         })

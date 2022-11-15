@@ -1,6 +1,7 @@
     .contenedor{
         display: flex;
         background-color: #ebebeb;
+        margin-top: 10vh;
     }
     footer picture {
         max-width: 30%;

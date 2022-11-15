@@ -11,12 +11,15 @@
     <main class="cajaPadre">
         <%- include("../partials/hb.ejs")  %>
     <% if (!user) { %>
-
-    <h2 >Bienvenido a EDATA-LOG</h2>
+        <div>
+            <h2 >Bienvenido a EDATA-LOG</h2>
+        </div>
+    
 
     <% } else { %>
-     
-        <h2 >Bienvenido a EDATA-LOG <%= user.email %> </h2>
+        <div>
+            <h2 >Bienvenido a EDATA-LOG <%= user.email %> </h2>
+        </div>
      
     <% } %>
 

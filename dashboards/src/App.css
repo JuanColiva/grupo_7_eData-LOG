@@ -55,8 +55,8 @@ body{
   margin:15px 0px 30px 10px;
   background-color: #070720;
   padding: 15px;
-  width: 90%;
-  height: 200px;
+  width: 80%;
+  height: 25vh;
   border-radius: 10px;
 }
 .datos{
@@ -105,8 +105,8 @@ button:hover{
     justify-content: center;
   }
   .tarjetas li{
-    width: 280px;
-    height: 215px;
+    width: 45%;
+    height: 30vh;
   }
   .home-div{
     display: inline-block;
