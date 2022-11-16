@@ -15,16 +15,16 @@ module.exports = {
         })
     },
     detail: (req,res)=>{
-        db.Producto.findByPk(req.params.id).then(pruducts =>{
+        db.Producto.findByPk(req.params.id).then(products =>{
             return res.status(200).json({
                 meta:{
                     status: 200,
                 },
                 data: {
-                    name: pruducts.name,
-                    plan: pruducts.plan,
-                    descripcion: pruducts.descripcion,
-                    imagen: "http://localhost:3001/products/"+ pruducts.imagene
+                    name: products.name,
+                    plan: products.plan,
+                    descripcion: products.descripcion,
+                    imagen: "http://localhost:3001/products/"+ products.imagene
                 }
             })
         })

@@ -36,6 +36,7 @@ export default function Productos() {
                 {posts.length === 0 && <p className="cargando">Cargando</p> }
                 {
                     posts.map((post)=>{
+                        console.log(post)
                         return(
                             <li key={post.id}>
                             <h5 className="datos"> Producto {post.id}</h5>

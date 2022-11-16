@@ -63,6 +63,9 @@ body{
   color: white;
   margin: 12px
 }
+.tarjetas img{
+ 
+}
 button{
     display: inline-block;
     background-color: #39b54a;
@@ -105,12 +108,25 @@ button:hover{
     justify-content: center;
   }
   .tarjetas li{
-    width: 45%;
-    height: 30vh;
+    width: 50%;
+    height: 35vh;
   }
   .home-div{
     display: inline-block;
     margin: 20px 20px 0 20px;
   }
-  
+  .tarjetas img{
+    width: 180px;
+    height: 110px;
+  }
+ 
+  @media (min-width: 1200px){
+    .tarjetas li{
+      height: 40vh;
+    }
+    .tarjetas img{
+      width: 180px;
+      height: 110px;
+    }
+  }
 }

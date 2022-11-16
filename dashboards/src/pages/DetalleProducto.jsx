@@ -27,7 +27,7 @@ export default function ProductosDetalle() {
 }
     api()
     },[page])
-    const increment = ()=> setPage(page < 19 ? page + 1 : 19)
+    const increment = ()=> setPage(page < 5 ? page + 1 : 5)
     const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
         <main>
@@ -35,14 +35,12 @@ export default function ProductosDetalle() {
                 {posts.length === 0 && <p>Cargando</p> }
                 {
                     posts.map((post)=>{
-                        console.log(post.imagen)
                         return(
                             <li key={post.id}>
                             <h5 className="datos">producto n°{post.id}</h5>
                             <h3 className="datos">{post.name}</h3>
                             <h3 className="datos">{post.plan}</h3>
-                            <h4 className="datos">{post.descripcion}</h4>
-                            <img src={post.imagen} width="100px" alt="" />
+                            <img src={`http://localhost:3001/products/${post.imagene}`}  alt="" />
                             </li>
                         )
                     })
