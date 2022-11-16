@@ -107,6 +107,12 @@
     padding-left: 10px;
 }
 @media (min-width: 768px){
+    .login-box{
+        width: 80%;
+    }
+    .comentary-box{
+        width: 80%;
+    }
     .class-barra {
         display: list-item;
         width: 70%;
