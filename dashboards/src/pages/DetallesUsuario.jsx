@@ -30,6 +30,7 @@ export default function UsuariosDetalle() {
     const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
         <main>
+            <h1 className="home-h1">Usuarios de eData-LOG</h1>
             <ul className="tarjetas">
                 {posts.length === 0 && <p>Cargando</p> }
                 {
