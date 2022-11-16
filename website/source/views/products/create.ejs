@@ -20,7 +20,7 @@
             <input type="text" name="name" id="name"
             value="<%= locals.errores && !locals.errores.name && locals.data ? locals.data.name : null %>"
                         class="barra-login">
-                        <p class="barra-register-error">solo puede tener letras, giones bajos y acentos</p>
+                        <p class="barra-register-error">solo puede tener letras, guiones bajos y acentos</p>
                         <% if (locals.errores && locals.errores.name) { %>
                         <p class="feedback">
                             <%= locals.errores.name.msg  %> 
@@ -32,7 +32,7 @@
             <input type="text" name="descripcion" id="Descripcion"
             value="<%= locals.errores && !locals.errores.descripcion && locals.data ? locals.data.descripcion : null %>"
                         class="barra-login">
-                        <p class="barra-register-error">la descripcion puede tener letras, giones bajos y acentos</p>
+                        <p class="barra-register-error">la descripcion puede tener letras, guiones bajos y acentos</p>
                         <% if (locals.errores && locals.errores.descripcion) { %>
                         <p class="feedback">
                             <%= locals.errores.descripcion.msg  %> 
