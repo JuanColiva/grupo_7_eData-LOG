@@ -31,6 +31,7 @@ export default function ProductosDetalle() {
     const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
         <main>
+             <h1 className="home-h1">Productos de eData-LOG</h1>
             <ul className="tarjetas">
                 {posts.length === 0 && <p>Cargando</p> }
                 {
@@ -38,8 +39,8 @@ export default function ProductosDetalle() {
                         return(
                             <li key={post.id}>
                             <h5 className="datos">producto n°{post.id}</h5>
-                            <h3 className="datos">{post.name}</h3>
-                            <h3 className="datos">{post.plan}</h3>
+                            <h1 className="datos">{post.name}</h1>
+                            <h2 className="datos">{post.plan}</h2>
                             <img src={`http://localhost:3001/products/${post.imagene}`}  alt="" />
                             </li>
                         )
