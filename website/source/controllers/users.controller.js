@@ -2,6 +2,12 @@ const{validationResult} = require("express-validator");
 const model = require("../models/users.model")
 const db = require('../database/models');
 module.exports = {
+    login: (req, res) => {
+        res.render( "users/login")
+    },
+    registro: (req, res) => {
+        res.render("users/registro");
+    },
     profile: (req, res) => {
             db.Usuario.findByPk(req.params.id)
             .then(resultado => {

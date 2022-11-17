@@ -12,18 +12,12 @@ const controller = {
     contacto: (req, res) => {
         res.render("users/contacto")
     },
-    login: (req, res) => {
-        res.render( "users/login")
-    },
     
     detalle: (req, res) => {
         res.render("products/detalles")
     },
     precios: (req, res) => {
         res.render("products/precios");
-    },
-    registro: (req, res) => {
-        res.render("users/registro");
     },
     index: (req, res) => {
         db.Producto.findAll()
