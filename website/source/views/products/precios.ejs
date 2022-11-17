@@ -10,6 +10,9 @@
         </header>
         <main>
             <%- include("../partials/hb.ejs")  %>
+            <% if (!user){ %> 
+                <p class="logueate">Necesitas loguearte para comprar nuestros productos</p>
+            <% } %> 
             <h1 class="titulo-precio">¡Descubre nuestros precios!</h1>
             <section class="precios-box1">
                 <h2>Pack Básico</h2>

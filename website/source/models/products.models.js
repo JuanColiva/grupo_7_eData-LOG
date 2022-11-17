@@ -5,7 +5,6 @@ const one = id => index().find(e => e.id == id)
 const write = data => fs.writeFileSync(resolve(__dirname,'..','data','products.json'),JSON.stringify(data,null,2))
 module.exports = {index,one,write};
 const db = require('../database/models');
-const sequelize = db.sequelize;
 
 let model = {
     generate: data => {

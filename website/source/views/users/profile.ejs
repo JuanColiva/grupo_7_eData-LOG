@@ -17,10 +17,16 @@
     
 
     <% } else { %>
-        <div>
-            <h2 >Bienvenido a EDATA-LOG <%= user.email %> </h2>
+        <div class="hijo">
+            <h2 class="info">Bienvenido a EDATA-LOG </h2>
+            <h3 class="info">Nombre: <%= user.nombre %> </h3>
+            <h3 class="info">Apellido: <%= user.nombre %></h3>
+            <img src="/avatars/<%= user.imagene %>" alt="" width="100px">
+            <a href="/users/modificar/<%= user.id %>" class="editar">editar</a>
+            <form action="/users/delete/<%= user.id %>?m=DELETE" method="POST">
+                <button type="submit" class="borrar">Borrar</button>
+            </form>
         </div>
-     
     <% } %>
 
 

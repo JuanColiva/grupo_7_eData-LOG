@@ -26,12 +26,13 @@ const filename = function(req, file, cb){
 }
 
 const multer = require("multer");
-
 const upload = multer({storage: multer.diskStorage({destination, filename})})
 
 route.get("/", controller.home)
 
 route.get("/contacto", controller.contacto);
+
+route.get("/precios", controller.precios);
 
 route.get("/productos", controller.index);
 

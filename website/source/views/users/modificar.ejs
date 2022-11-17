@@ -11,9 +11,9 @@
         <main>
             <%- include("../partials/hb.ejs")  %>
             <section class="register-box">
-                <form action="/users/save" method="post" enctype="multipart/form-data" id="formulario">
+                <form action="/users/update/<%= usuario.id %>?m=PUT" method="post" enctype="multipart/form-data" id="formulario">
                     <div id="formulario1">
-                    <h2>Crea tu cuenta.</h2>
+                    <h2>Modifica tu cuenta.</h2>
                     <h3>Informacion de cuenta.</h3>
                     <input type="text"
                     placeholder="nombre"
@@ -56,32 +56,12 @@
                         </p>
                     <% } %>
                     </div>
-                    <div id="formulario4">
-                        <input type="password" 
-                           name= "password"  
-                           placeholder="contraseña"
-                           class="barra-register"
-                           id="registro-id4"
-                           value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
-                           <p class="barra-register-error" id="legenda-error">La contraseña debe contener minimo 6 digitos</p>
-                           <% if (locals.errores && locals.errores.password) { %>
-                            <p class="feedback">
-                                <%= locals.errores.password.msg  %> 
-                            </p>
-                        <% } %>
-                           <div class="subirImagen" id="formulario5">
+                    <div class="subirImagen" id="formulario5">
                             <input type="file" name="imagene">
                             <p class="barra-register-error">No has subido una imagen</p>
-                        </div>
                     </div>
-                    <label for="deacuerdo" class="terminos">Acepto los terminos y condiciones  <input type="checkbox" class="checkbox" id="deacuerdo"></label>
                     <button type="submit" class="botton-form">Enviar</button>
                 </form>
-            </section>
-            <section class="register-box2">
-                <p>¡Sea el primero en enterase de nuestras actualizaciones y ofertas!</p>
-                <input type="email" placeholder="Ingrese su email" class="barra-box2">
-                <button type="submit" class="botton-form">Enviar</button>
             </section>
         </main>
         <footer class="main-footer">

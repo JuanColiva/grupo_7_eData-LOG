@@ -17,6 +17,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         email:{
             type: dataTypes.STRING
+        },
+        imagene:{
+            type: dataTypes.INTEGER
         }
     };
     let config = {

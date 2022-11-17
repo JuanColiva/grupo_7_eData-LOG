@@ -1,5 +1,6 @@
 const formulario = document.getElementById("formulario")
 const inputs = document.querySelectorAll("#formulario input")
+const inputImg = document.querySelector("#formulario5 input")
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -55,7 +56,17 @@ const validarForm = (e)=>{
         }
     }
 
+    const validarImg = ()=>{
+        let a = inputImg.files[0].type
+        if(!a.includes("image")){
+            document.querySelector("#formulario5 .barra-register-error").classList.add("barra-register-error-activo")
+        }else{
+            document.querySelector("#formulario5 .barra-register-error").classList.remove("barra-register-error-activo")
+        }
+    }
+
 inputs.forEach((input)=>{
     input.addEventListener("keydown",validarForm);
     input.addEventListener("click",validarForm);
+    input.addEventListener("change",validarImg)
 })

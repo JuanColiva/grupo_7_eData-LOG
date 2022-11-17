@@ -3,21 +3,55 @@
 @import url("base.css");
 @import url("hb.css");
 
-
-div{
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5rem;
-    width: 60%;
-    background-color:rgb(196, 196, 196); ;
-    height: 30%;
-    border-radius: 8px;
-    text-align: center;
-    padding: 2rem;
-
+main{
+    height: 50vh;
 }
-
-.cajaPadre{
+.hijo{
     display: flex;
-    height: 70vh;
+    flex-direction: column;
+    width: 70%;
+    max-width: 1400px;
+    height: 60vh ;
+    margin: auto;
+    margin-top: 35px;
+    background-color:rgb(192, 192, 192);
+    border: 3px solid rgb(112, 111, 111);
+    border-radius: 20px;
+}
+img{
+    margin: 20px 10px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+.borrar{
+    border-radius: 3px;
+    border: none;
+    background-color: #c35f5f;
+    border-radius: 10px;
+    padding: 5px 5px;
+    width: 50px;
+    margin: 10px 10px;
+}
+.editar{
+    margin: 10px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(106, 106, 191);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    padding: 5px 5px;
+    width: 50px;
+}
+.editar:hover{
+    background-color: rgb(77, 77, 170);
+}
+.info{
+    margin: 10px 20px;
+}
+@media (min-width: 768px){
+    .hijo{
+        width: 40%;
+    }
 }

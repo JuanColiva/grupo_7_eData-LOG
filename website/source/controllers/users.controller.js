@@ -24,9 +24,10 @@ module.exports = {
                 data: req.body
             })
         }
+        req.body.imagene = req.files && req.files.length > 0 ? req.files[0].filename : "default.jpg"
         model.generate(req.body)
         
-        return res.redirect('/login')
+        return res.redirect('/users/login')
 
     },
     access: (req, res) =>{
@@ -47,11 +48,46 @@ module.exports = {
                 email: req.body.email
             }
         })
-        .then(()=>res.redirect("/users/profile"))
+        .then(()=>res.redirect("/users/profile/"+ req.params.id))
+    },
+    edit: (req,res)=>{
+        db.Usuario.findByPk(req.params.id)
+        .then(usuario => {
+            res.render("users/modificar", {usuario})
+        })
+    },
+    update: (req,res)=>{
+        const result = validationResult(req);
+        if(!result.isEmpty()){
+            let errores = result.mapped();
+            return res.render("users/modificar", {
+                style: "edit",
+                errores: errores,
+                data: req.body
+        })
+    }
+    let data = {}
+    data.nombre = req.body.nombre,
+    data.apellido = req.body.apellido,
+    data.email = req.body.email,
+    req.files && req.files.length > 0 ? data.imagene = req.files[0].filename : null
+    db.Usuario.findByPk(req.params.id)
+    .then(user =>user.update(data))
+            .then(()=>res.redirect("/users/profile/"+ req.params.id))
+            .catch(error => console.log(error))
+        return res.redirect ("/users/profile/"+ req.params.id)
+    },
+    destroy: (req,res)=>{
+        db.Usuario.destroy({
+            where:{id:req.params.id}
+        }
+        );
+        res.redirect('/')
+        
     },
     logout:(req, res)=>{
         delete req.session.user
         res.cookie("email", null,{maxAge: -1})
         return res.redirect("/")
-    }
+    },
 }

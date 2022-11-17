@@ -86,6 +86,6 @@ const controller = {
             .then(()=>res.redirect("/productos"))
             .catch(error => console.log(error))
         return res.redirect ("/productos")
-      }
+      },
 }
 module.exports = controller;

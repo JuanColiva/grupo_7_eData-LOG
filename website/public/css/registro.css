@@ -35,6 +35,8 @@
 .barra-register-error{
     margin: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
     color: white;
     padding:6px;
     background-color: #c22e2e;

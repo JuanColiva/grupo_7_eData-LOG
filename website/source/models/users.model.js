@@ -14,7 +14,8 @@ let model ={
     nombre: data.nombre,
     apellido: data.apellido,
     password: hashSync(data.password,8),
-    email: data.email
+    email: data.email,
+    imagene: data.imagene
 })
     const success = data => console.log(data)
     const error = error => console.log(error)
