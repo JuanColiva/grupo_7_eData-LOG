@@ -81,42 +81,7 @@ button{
 button:hover{
   background-color: #013220;
 }
-.home-h1{
-  background-color: #39b54a;
-  padding: 10px;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.home-div  {
-  margin:auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #070720;
-  width: 250px;
-  height: 150px;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-}
-.home-div a{
-  color: white;
-}
-@media (min-width: 768px){
-  .tarjetas{
-    display: flex;
-    
-  }
-  .tarjetas li{
-    width: 50%;
-    height: 35vh;
-  }
-  .home-div{
-    display: inline-block;
-    margin: 20px 20px 0 20px;
-  }
+
   .tarjetas img{
     width: 180px;
     height: 110px;
@@ -132,4 +97,3 @@ button:hover{
       height: 110px;
     }
   }
-}

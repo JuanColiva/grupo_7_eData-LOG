@@ -43,6 +43,7 @@
     width: 70%;
     display: none;
 }
+
 .barra-register-error-activo{
     display: flex;
 }
@@ -67,14 +68,6 @@
 }
 .botton-form:hover{
     background-color: #013220;
-}
-.feedback{
-    padding: 0.5rem;
-    background-color: #ebebeb;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 .register-box2{
     display: block;

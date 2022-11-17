@@ -1,4 +1,8 @@
 import {Link} from "react-router-dom"
+import LastProduct from "../components/LastProduct"
+import LastUser from "../components/LastUser"
+import TotalProductos from "../components/TotalPrdoductos"
+import '../assets/Home.css';
 const Home = () =>{
     return(
         <main>
@@ -12,6 +16,9 @@ const Home = () =>{
                     <Link to="/usuarios">Aqui</Link> 
                     <p>encontraras una lista con los Usuarios registrados</p>
                 </article>
+                <LastProduct  />
+                <LastUser />
+               <TotalProductos/> 
             </div>
         </main>
     )

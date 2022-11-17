@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+}
+.home-h1{
+    background-color: #39b54a;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+.home-div {
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #12123a;
+    border: #070720 5px solid;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  .home-div a{
+    color: white;
+  }
+  .home-list{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #12123a;
+    border: #070720 5px solid;
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  .home-list-u{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #12123a;
+    border: #070720 5px solid;
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  .home-list img{
+    width: 180px;
+    height: 110px;
+    border-radius: 20px;
+  }

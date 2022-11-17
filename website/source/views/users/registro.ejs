@@ -63,7 +63,7 @@
                            class="barra-register"
                            id="registro-id4"
                            value="<%= locals.errores && !locals.errores.password && locals.data ? locals.data.password : null %>">
-                           <p class="barra-register-error" id="legenda-error">La contraseña debe contener minimo 8 digitos</p>
+                           <p class="barra-register-error" id="legenda-error">La contraseña debe contener minimo 6 digitos</p>
                            <% if (locals.errores && locals.errores.password) { %>
                         <p class="feedback">
                             <%= locals.errores.password.msg  %> 

@@ -16,3 +16,13 @@ li{
     list-style-type: none;
     text-decoration: none;
 }
+.feedback{
+    margin: auto;
+    margin-bottom: 10px;
+    color: white;
+    padding:6px;
+    background-color: #c22e2e;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+}

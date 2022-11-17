@@ -3,6 +3,8 @@ const router = Router();
 const controller = require('../../controllers/api/productsControllers');
 
 router.get("/products",controller.list)
+router.get("/products/last",controller.last)
 router.get("/products/:id",controller.detail)
+
 
 module.exports = router

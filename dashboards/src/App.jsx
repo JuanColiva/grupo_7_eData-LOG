@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component{
   render(){
     return (
-      <>
+      <div>
         <Header />
         <div className="flex">
         <Sidebar/>
@@ -24,7 +24,7 @@ class App extends Component{
           <Route exact path="/detalleProducto/:id" component={DetalleProducto}/>
         </Switch>
         </div>
-      </>
+      </div>
     )
   }
 }

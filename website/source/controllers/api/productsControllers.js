@@ -28,5 +28,17 @@ module.exports = {
                 }
             })
         })
+    },
+    last: (req,res) => {
+    db.Producto.findAll().then(products =>{
+        return res.status(200).json({
+            meta:{
+                status: 200,
+                total: products.length,
+                url: req.url
+            },
+                data: products.pop()
+            })
+        })
     }
 }
