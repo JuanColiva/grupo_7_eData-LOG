@@ -1,0 +1,80 @@
+.productos{
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjetas{
+    display: list-item;
+    list-style: none;
+  }
+  .tarjetas li{
+    margin:15px 0px 30px 10px;
+    background-color: #070720;
+    padding: 15px;
+    width: 80%;
+    height: 38vh;
+    border-radius: 10px;
+  }
+  .tarjetas img{
+    width: 180px;
+    height: 110px;
+    border-radius: 20px;
+  }
+  .datos{
+    color: white;
+    margin: 12px
+  }
+  .botones{
+    display: flex;
+    flex-direction: row;
+  }
+  button{
+      width: 30%;
+      display: inline-block;
+      background-color: #39b54a;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      color: white;
+      padding: 5px 10px;
+      margin:0px 20px 20px 10px;
+  }
+  button:hover{
+    background-color: #013220;
+  }
+  
+  .tarjetas img{
+      width: 180px;
+      height: 110px;
+  }
+  .cargando{
+    margin:10px 0 20px 15px;
+    text-align: center;
+    background-color: #070720;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  @media (min-width: 768px){
+    .tarjetas{
+      display: flex;
+      flex-direction: row;
+    }
+    .tarjetas li{
+      width: 49%;
+      height: 40vh;
+    }
+    .tarjetas img{
+      width: 180px;
+      height: 130px;
+    }
+    @media (min-width: 1200px){
+      .tarjetas li{
+        width: 40%;
+        height: 40vh;
+        margin-right: 20px;
+      }
+    }
+  }

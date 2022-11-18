@@ -1,5 +1,4 @@
 import React,{Component} from "react"
-import Header  from "./components/Header";
 import Sidebar from "./components/Sidebar"
 import {Switch,Route} from "react-router-dom";
 import Home from "./pages/Home"
@@ -12,8 +11,7 @@ import './App.css';
 class App extends Component{
   render(){
     return (
-      <div>
-        <Header />
+      <main>
         <div className="flex">
         <Sidebar/>
         <Switch className="content">
@@ -24,7 +22,7 @@ class App extends Component{
           <Route exact path="/detalleProducto/:id" component={DetalleProducto}/>
         </Switch>
         </div>
-      </div>
+      </main>
     )
   }
 }

@@ -1,26 +1,26 @@
-import {Link} from "react-router-dom"
 import LastProduct from "../components/LastProduct"
 import LastUser from "../components/LastUser"
 import TotalProductos from "../components/TotalPrdoductos"
+import TotalUsers from "../components/TotalUsers"
+import Rutas from "../components/rutas"
 import '../assets/Home.css';
 const Home = () =>{
     return(
-        <main>
+        <div className="home">
             <h1 className="home-h1">¡Bievenido al dashboard de eData-LOG!</h1>
             <div className="padre">
-                <article className="home-div">
-                    <Link to="/productos">Aqui</Link> 
-                    <p>encontraras una lista con nuestros Productos</p>
-                </article>
-                <article className="home-div">
-                    <Link to="/usuarios">Aqui</Link> 
-                    <p>encontraras una lista con los Usuarios registrados</p>
-                </article>
-                <LastProduct  />
-                <LastUser />
-               <TotalProductos/> 
+                <div className="hijo1">
+                    <LastProduct />
+                    <LastUser />
+                </div>
+                <div className="totales">
+                <TotalProductos/> 
+                <TotalUsers />
+                <Rutas />
+                </div>
+
             </div>
-        </main>
+        </div>
     )
 }
 export default Home

@@ -1,9 +1,8 @@
 import {useState,useEffect} from "react"
-import '../assets/Home.css';
-const endpoint = "http://localhost:3001/api/products"
+const endpoint = "http://localhost:3001/api/users"
 
 export default function TotalProductos() {
-    const [product, setProduct] = useState([])
+    const [users, setProduct] = useState([])
     useEffect(()=>{
         fetch(endpoint)
         .then(response => response.json())
@@ -15,11 +14,11 @@ export default function TotalProductos() {
     return(
         <>
             <ul className="total">
-                {product.length === 0 && <p>Cargando</p> }
+                {users.length === 0 && <p>Cargando</p> }
                 {
                     <li>
-                        <h3>total de productos</h3>
-                        <h3>{product.length}</h3>
+                        <h3>total de usuarios</h3>
+                        <h3>{users.length}</h3>
                     </li>
                 }
             </ul>

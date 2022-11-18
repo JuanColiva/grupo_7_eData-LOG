@@ -3,7 +3,6 @@ const endpoint = "http://localhost:3001/api/users/last"
 
 export default function LastUser() {
     const [usuario, setUsuario] = useState([])
-
     useEffect(()=>{
         fetch(endpoint)
         .then(response => response.json())
@@ -14,13 +13,14 @@ export default function LastUser() {
     }, [])
     return(
         <>
-        <h2 className="home-h1">Ultimo usuario.</h2>
-            <ul className="home-list-u">
+            <ul className="home-list">
                 {usuario.length === 0 && <p>cargando</p>}
                 {
-                    <li key={usuario.id}>
-                        <h3>nombre: {usuario.nombre}</h3>
-                        <h3>apellido: {usuario.apellido}</h3>
+                    <li>
+                        <h3>Ultimo usuario.</h3>
+                        <h4>nombre: {usuario.nombre}</h4>
+                        <h4>apellido: {usuario.apellido}</h4>
+                        <img src={`http://localhost:3001/avatars/${usuario.imagene}`}  alt="" />
                     </li>
                 }
             </ul>

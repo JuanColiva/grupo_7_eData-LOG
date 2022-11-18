@@ -15,21 +15,6 @@ module.exports = {
             })
         })
     },
-    detail: (req,res)=>{
-        db.Usuario.findByPk(req.params.id)
-        .then(user =>{
-            return res.status(200).json({
-                meta:{
-                    status: 200,
-                },
-                data: {
-                    nombre: user.nombre,
-                    apellido: user.apellido,
-                    email: user.email
-                }
-            })
-        })
-    },
     last: (req,res) => {
         db.Usuario.findAll().then(products =>{
             return res.status(200).json({
@@ -41,5 +26,21 @@ module.exports = {
                  data: products.pop()
             })
         })
+    },
+    detail: (req,res)=>{
+        db.Usuario.findByPk(req.params.id)
+        .then(user =>{
+            return res.status(200).json({
+                meta:{
+                    status: 200,
+                },
+                data: {
+                    id: user.id,
+                    nombre: user.nombre,
+                    apellido: user.apellido,
+                    email: user.email
+                }
+            })
+        }).catch(error => res.send(error)) 
     }
 }

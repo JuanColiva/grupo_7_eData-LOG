@@ -4,63 +4,95 @@
   padding: 0px;
   list-style: none;
 }
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
 .padre{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: #cecaca;
+    height: 100vh;
 }
 .home-h1{
-    background-color: #39b54a;
-    padding: 10px;
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 20px;
-    text-align: center;
-  }
-.home-div {
-    margin:auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #12123a;
-    border: #070720 5px solid;
-    width: 250px;
-    height: 150px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-  }
-  .home-div a{
-    color: white;
-  }
-  .home-list{
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #12123a;
-    border: #070720 5px solid;
-    width: 250px;
-    height: 200px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-  }
-  .home-list-u{
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #12123a;
-    border: #070720 5px solid;
-    width: 250px;
-    height: 70px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-  }
-  .home-list img{
+  border-bottom: solid rgb(136, 136, 136) 3px;
+  padding: 25px;
+  width: 82.5vw;
+  margin: 0
+}
+.hijo1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70vh;
+  background-color: white;
+  margin: 5px 5px;
+  border: #8a8888 solid 3px;
+  border-radius: 5px;
+}
+.home-list{
+  text-align: center;
+  padding: 10px;
+  width: 49%;;
+  width: 250px;
+  height: 200px;
+  font-size: 20px;
+  color: #505053;
+  margin: 10px 0;
+}
+.home-list h3{
+  margin: 5px 0
+}
+.home-list h4{
+  margin: 5px 0;
+}
+.home-list picture{
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+.home-list img{
     width: 180px;
-    height: 110px;
+    height: 130px;
+    margin-bottom: 6px;
     border-radius: 20px;
+}
+.home-div a{
+    color: white;
+}
+.total{
+    background-color: white;
+    width: 50%;
+    height: 15vh;
+    padding: 10px;
+    text-align: center;
+    margin: 5px 15px;
+    border: #8a8888 solid 3px;
+    border-radius: 5px;
+}
+@media (min-width: 1200px){
+  .home-h1{
+    width: 86vw;
+    text-align: center;
   }
+  .padre{
+    flex-direction: column;
+  }
+  .hijo1{
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    height: 37vh;
+    margin-top: 3px;
+  }
+  .total{
+    width: 20%;
+  }
+  .totales{
+    display: flex;
+    align-self: center;
+  }
+  .home-list picture{
+    border-bottom:none ; 
+  }
+}

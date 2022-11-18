@@ -30,7 +30,7 @@ export default function ProductosDetalle() {
     const increment = ()=> setPage(page < 5 ? page + 1 : 5)
     const decrement = () => setPage(page > 0 ? page - 1 : 0)
     return(
-        <main>
+        <div className="productos">
              <h1 className="home-h1">Productos de eData-LOG</h1>
             <ul className="tarjetas">
                 {posts.length === 0 && <p>Cargando</p> }
@@ -47,9 +47,11 @@ export default function ProductosDetalle() {
                     })
                 }
             </ul>
-            <button onClick={()=> decrement()}>previus</button>
-            <button onClick={()=> increment()}>next</button>
+            <div className="botones">
+                <button onClick={()=> decrement()}>previus</button>
+                <button onClick={()=> increment()}>next</button>
+            </div>
             <Link to="/">volver a inicio</Link>
-        </main>
+        </div>
     )
 }

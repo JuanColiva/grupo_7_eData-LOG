@@ -12,15 +12,16 @@ export default function LastProduct() {
         })
         .catch(error => console.log(error))
     }, [])
+    
     return(
         <>
-        <h2 className="home-h1">Ultimo producto.</h2>
             <ul className="home-list">
                 {producto.length === 0 && <p>cargando</p>}
                 {
-                    <li key={producto.id}>
-                        <h3>{producto.name}</h3>
-                        <img src={`http://localhost:3001/products/${producto.imagene}`}  alt="" />
+                    <li >
+                        <h3>Ultimo producto.</h3>
+                        <h4>{producto.name}</h4>
+                        <picture><img src={`http://localhost:3001/products/${producto.imagene}`}  alt="" /></picture>
                     </li>
                 }
             </ul>

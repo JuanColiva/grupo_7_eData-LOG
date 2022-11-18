@@ -21,6 +21,7 @@ module.exports = {
                     status: 200,
                 },
                 data: {
+                    id: products.id,
                     name: products.name,
                     plan: products.plan,
                     descripcion: products.descripcion,

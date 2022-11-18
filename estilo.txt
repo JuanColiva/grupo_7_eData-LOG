@@ -1,0 +1,11 @@
+margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #12123a;
+    border: #070720 5px solid;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
