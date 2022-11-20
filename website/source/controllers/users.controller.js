@@ -73,17 +73,18 @@ module.exports = {
     req.files && req.files.length > 0 ? data.imagene = req.files[0].filename : null
     db.Usuario.findByPk(req.params.id)
     .then(user =>user.update(data))
-            .then(()=>res.redirect("/users/profile/"+ req.params.id))
+            .then(()=>res.redirect("/"))
             .catch(error => console.log(error))
-        return res.redirect ("/users/profile/"+ req.params.id)
+        return res.redirect ("/")
     },
     destroy: (req,res)=>{
         db.Usuario.destroy({
             where:{id:req.params.id}
-        }
-        );
-        res.redirect('/')
-        
+        }).then((user)=>{
+            delete req.session.user
+            res.cookie("email", null,{maxAge: -1})
+        return res.redirect("/")
+        }).catch(error => console.log(error))
     },
     logout:(req, res)=>{
         delete req.session.user
